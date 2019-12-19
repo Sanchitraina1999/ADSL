@@ -154,11 +154,11 @@ int main() {
 	Tree t,t1,t2;
 start:
 	cout<<"\nMAIN MENU";
-	cout<<"\n1. Enter a binary tree (Given)";
+	cout<<"\n1. Enter a binary tree (Given)";        //done
 	cout<<"\n2. Assign this tree to another tree";
 	cout<<"\n3. Create a mirror image of the tree";
 	cout<<"\n4. Check two binary trees are equal or not";
-	cout<<"\n5. Tree Traversals";
+	cout<<"\n5. Tree Traversals";            //recursive wale done
 	cout<<"\n6. Print internal and leaf nodes";
 	cout<<"\n Enter your choice";
 	int choice; 	cin>>choice;
