@@ -2,7 +2,7 @@
 // Name        : 01BinaryTree.cpp
 // Author      : Sanchit Raina
 // Version     :
-// Copyright   : https://www.github.com/Sanchitraina1999/ADSL
+// Copyright   : https://github.com/Sanchitraina1999/ADSL/blob/master/01BinaryTree/src/01BinaryTree.cpp
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
@@ -43,11 +43,11 @@ public:
 	void copyTree(Tree &);
 	void mirrorImage();
 	void equal(Tree &);
-	void preorderRecursive();
+	void preorderRecursive(node *);
 	void preorderNonRecursive();
 	void inorderRecursive(node *);
 	void inorderNonRecursive();
-	void postorderRecursive();
+	void postorderRecursive(node *);
 	void postorderNonRecursive();
 	void display();
 };
@@ -108,18 +108,23 @@ void Tree::mirrorImage(){
 void Tree::equal(Tree &t){
 
 }
-void Tree::preorderRecursive(){
-
+void Tree::preorderRecursive(node* root){
+	if (root)
+	{
+		cout << root->data << " ";
+		preorderRecursive(root->left);
+		preorderRecursive(root->right);
+	}
 }
 
 void Tree::preorderNonRecursive(){
 
 }
 
-void Tree::inorderRecursive(node *temp){
-	if(temp){
+void Tree::inorderRecursive(node* root){
+	if(root){
 		inorderRecursive(root->left);
-		cout<<temp->data<<" ";
+		cout<<root->data<<" ";
 		inorderRecursive(root->right);
 	}
 }
@@ -128,8 +133,13 @@ void Tree::inorderNonRecursive(){
 
 }
 
-void Tree::postorderRecursive(){
-
+void Tree::postorderRecursive(node* root){
+	if (root)
+	{
+		postorderRecursive(root->left);
+		postorderRecursive(root->right);
+		cout << root->data << " ";
+	}
 }
 
 void Tree::postorderNonRecursive(){
@@ -179,20 +189,22 @@ start:
 		int choice1;	cin>>choice1;
 		switch(choice1){
 			case 1:
-				t.preorderRecursive();
+				cout << "\nPreorder Traversal is : \n";
+				t.preorderRecursive(t.root);
 				break;
 			case 2:
 				t.preorderNonRecursive();
 				break;
 			case 3:
-				cout<<"\nInoder Traversal is : \n";
+				cout << "\nInorder Traversal is : \n";
 				t.inorderRecursive(t.root);
 				break;
 			case 4:
 				t.inorderNonRecursive();
 				break;
 			case 5:
-				t.postorderRecursive();
+				cout << "\nPostorder Traversal is : \n";
+				t.postorderRecursive(t.root);
 				break;
 			case 6:
 				t.postorderNonRecursive();
