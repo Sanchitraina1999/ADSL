@@ -44,11 +44,11 @@ public:
 	void mirrorImage();
 	void equal(Tree &);
 	void preorderRecursive(node *);
-	void preorderNonRecursive();
+	void preorderNonRecursive(node *);
 	void inorderRecursive(node *);
-	void inorderNonRecursive();
+	void inorderNonRecursive(node *);
 	void postorderRecursive(node *);
-	void postorderNonRecursive();
+	void postorderNonRecursive(node *);
 	void display();
 };
 
@@ -108,6 +108,7 @@ void Tree::mirrorImage(){
 void Tree::equal(Tree &t){
 
 }
+
 void Tree::preorderRecursive(node* root){
 	if (root)
 	{
@@ -193,21 +194,21 @@ start:
 				t.preorderRecursive(t.root);
 				break;
 			case 2:
-				t.preorderNonRecursive();
+				t.preorderNonRecursive(t.root);
 				break;
 			case 3:
 				cout << "\nInorder Traversal is : \n";
 				t.inorderRecursive(t.root);
 				break;
 			case 4:
-				t.inorderNonRecursive();
+				t.inorderNonRecursive(t.root);
 				break;
 			case 5:
 				cout << "\nPostorder Traversal is : \n";
 				t.postorderRecursive(t.root);
 				break;
 			case 6:
-				t.postorderNonRecursive();
+				t.postorderNonRecursive(t.root);
 				break;
 			default:
 				cout<<"\nNo such option for traversal !";
