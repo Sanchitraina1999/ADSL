@@ -1,0 +1,352 @@
+12:19:41 **** Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::create()’:
+../src/01BinaryTree.cpp:77:19: error: ‘tempy’ was not declared in this scope
+      temp1->right=tempy;
+                   ^
+../src/01BinaryTree.cpp:81:19: error: ‘class node’ has no member named ‘rig’
+      temp1=temp1->rig;
+                   ^
+../src/01BinaryTree.cpp:87:2: error: expected ‘while’ before ‘}’ token
+  }
+  ^
+../src/01BinaryTree.cpp:87:2: error: expected ‘(’ before ‘}’ token
+../src/01BinaryTree.cpp:87:2: error: expected primary-expression before ‘}’ token
+../src/01BinaryTree.cpp:87:2: error: expected ‘)’ before ‘}’ token
+../src/01BinaryTree.cpp:87:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/01BinaryTree.o] Error 1
+12:19:57 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::create()’:
+../src/01BinaryTree.cpp:87:2: error: expected ‘while’ before ‘}’ token
+  }
+  ^
+../src/01BinaryTree.cpp:87:2: error: expected ‘(’ before ‘}’ token
+../src/01BinaryTree.cpp:87:2: error: expected primary-expression before ‘}’ token
+../src/01BinaryTree.cpp:87:2: error: expected ‘)’ before ‘}’ token
+../src/01BinaryTree.cpp:87:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/01BinaryTree.o] Error 1
+12:20:29 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:20:46 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:26:01 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::create()’:
+../src/01BinaryTree.cpp:93:8: error: ‘ch1’ was not declared in this scope
+ }while(ch1=='y'||ch1=='Y')
+        ^
+../src/01BinaryTree.cpp:95:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:156:7: error: jump to case label [-fpermissive]
+  case 3:
+       ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:159:7: error: jump to case label [-fpermissive]
+  case 4:
+       ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:165:7: error: jump to case label [-fpermissive]
+  case 5:
+       ^
+../src/01BinaryTree.cpp:161:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:198:7: error: jump to case label [-fpermissive]
+  case 6:
+       ^
+../src/01BinaryTree.cpp:161:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:201:2: error: jump to case label [-fpermissive]
+  default:
+  ^
+../src/01BinaryTree.cpp:161:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+make: *** [src/01BinaryTree.o] Error 1
+12:26:06 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::create()’:
+../src/01BinaryTree.cpp:93:8: error: ‘ch1’ was not declared in this scope
+ }while(ch1=='y'||ch1=='Y')
+        ^
+../src/01BinaryTree.cpp:95:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:156:7: error: jump to case label [-fpermissive]
+  case 3:
+       ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:159:7: error: jump to case label [-fpermissive]
+  case 4:
+       ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:165:7: error: jump to case label [-fpermissive]
+  case 5:
+       ^
+../src/01BinaryTree.cpp:161:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:198:7: error: jump to case label [-fpermissive]
+  case 6:
+       ^
+../src/01BinaryTree.cpp:161:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:201:2: error: jump to case label [-fpermissive]
+  default:
+  ^
+../src/01BinaryTree.cpp:161:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+make: *** [src/01BinaryTree.o] Error 1
+12:26:28 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::create()’:
+../src/01BinaryTree.cpp:93:9: error: ‘ch1’ was not declared in this scope
+  }while(ch1=='y'||ch1=='Y');
+         ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:156:7: error: jump to case label [-fpermissive]
+  case 3:
+       ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:159:7: error: jump to case label [-fpermissive]
+  case 4:
+       ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:165:7: error: jump to case label [-fpermissive]
+  case 5:
+       ^
+../src/01BinaryTree.cpp:161:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:198:7: error: jump to case label [-fpermissive]
+  case 6:
+       ^
+../src/01BinaryTree.cpp:161:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:201:2: error: jump to case label [-fpermissive]
+  default:
+  ^
+../src/01BinaryTree.cpp:161:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:153:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+make: *** [src/01BinaryTree.o] Error 1
+12:26:46 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:157:7: error: jump to case label [-fpermissive]
+  case 3:
+       ^
+../src/01BinaryTree.cpp:154:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:160:7: error: jump to case label [-fpermissive]
+  case 4:
+       ^
+../src/01BinaryTree.cpp:154:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:166:7: error: jump to case label [-fpermissive]
+  case 5:
+       ^
+../src/01BinaryTree.cpp:162:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:154:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:199:7: error: jump to case label [-fpermissive]
+  case 6:
+       ^
+../src/01BinaryTree.cpp:162:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:154:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+../src/01BinaryTree.cpp:202:2: error: jump to case label [-fpermissive]
+  default:
+  ^
+../src/01BinaryTree.cpp:162:8: error:   crosses initialization of ‘Tree t2’
+   Tree t2;
+        ^
+../src/01BinaryTree.cpp:154:8: error:   crosses initialization of ‘Tree t1’
+   Tree t1;
+        ^
+make: *** [src/01BinaryTree.o] Error 1
+12:27:13 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:27:22 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:28:19 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:28:24 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:28:35 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:28:37 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:29:16 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:29:18 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:29:59 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:30:00 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:32:39 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::create()’:
+../src/01BinaryTree.cpp:86:13: error: expected primary-expression before ‘;’ token
+       cout<<;
+             ^
+make: *** [src/01BinaryTree.o] Error 1
+12:32:40 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::create()’:
+../src/01BinaryTree.cpp:86:13: error: expected primary-expression before ‘;’ token
+       cout<<;
+             ^
+make: *** [src/01BinaryTree.o] Error 1
+12:33:10 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:33:11 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.

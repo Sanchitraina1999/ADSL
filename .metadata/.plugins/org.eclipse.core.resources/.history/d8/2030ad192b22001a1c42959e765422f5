@@ -37,12 +37,12 @@ class Tree{
 	node *root;
 public:
 	Tree(){
-		root=NULL;
+		root = NULL;
 	}
 	void create();
-	void copyTree(Tree &);
+	void copyTree();
 	void mirrorImage();
-	void equal(Tree &);
+	void equal(Tree);
 	void preorderRecursive();
 	void preorderNonRecursive();
 	void inorderRecursive();
@@ -52,92 +52,9 @@ public:
 	void display();
 };
 
-void Tree::create(){
-	char ch1;
-	root=NULL;
-	do{
-		node *temp= new node(); //temp is the new node to be added
-		cout<<"\nEnter data : ";
-		cin>>temp->data;
-		if(root==NULL){
-			root=temp;
-			cout<<"\n"<<root->data<<" added as ROOT node of the Binary Tree";
-		}
-		else{
-			node *temp1=root;       //temp1 is for primary root nodes at each level
-			int flag=0;           //flag 0 implies new node has NOT been added YET
-			while(flag==0){
-				cout<<"\nDo you place "<< temp->data <<" left or right of "<< temp1->data<<" (l/r) : ";
-				char ch;	cin>>ch;
-				if(ch=='l'){
-					if(temp1->left==NULL){
-						temp1->left=temp;
-						flag=1;
-						cout<<"\n"<<temp->data<<" added to the left of "<<temp1->data;
-					}
-					else{
-						temp1=temp1->left;
-					}
-				}
-				else{
-					if(temp1->right==NULL){
-						temp1->right=temp;
-						flag=1;
-						cout<<"\n"<<temp->data<<" added to the right of "<<temp1->data;
-					}
-					else{
-						temp1=temp1->right;
-					}
-				}
-			}
-		}
-		cout<<"\nDo you want to add more nodes to the tree: (y/n)";
-		cin>>ch1;
-	}while(ch1=='y'||ch1=='Y');
-
-}
-
-void Tree::copyTree(Tree &t){
-
-}
-
-void Tree::mirrorImage(){
-
-}
-
-void Tree::equal(Tree &t){
-
-}
-void Tree::preorderRecursive(){
-
-}
-
-void Tree::preorderNonRecursive(){
-
-}
-
-void Tree::inorderRecursive(){
-
-}
-
-void Tree::inorderNonRecursive(){
-
-}
-
-void Tree::postorderRecursive(){
-
-}
-
-void Tree::postorderNonRecursive(){
-
-}
-
-void Tree::display(){
-
-}
 
 int main() {
-	Tree t,t1,t2;
+	Tree t;
 start:
 	cout<<"\nMAIN MENU";
 	cout<<"\n1. Enter a binary tree (Given)";
@@ -153,15 +70,16 @@ start:
 		t.create();
 		break;
 	case 2:
-		t.copyTree(t1);
+		t.copyTree();
 		break;
 	case 3:
 		t.mirrorImage();
 		break;
 	case 4:
 		cout<<"\nANOTHER binary tree you want to check with given Binary tree";
-		t2.create();
-		t.equal(t2);
+		Tree t1;
+		t1.create();
+		t.equal(t1);
 		break;
 	case 5:
 		cout<<"\n\t\tTREE TRAVERSALS";

@@ -61,19 +61,18 @@ void Tree::create(){
 		cin>>temp->data;
 		if(root==NULL){
 			root=temp;
-			cout<<"\n"<<root->data<<" added as ROOT node of the Binary Tree";
+			cout<<root->data<<"added as ROOT node of the Binary Tree"
 		}
 		else{
 			node *temp1=root;       //temp1 is for primary root nodes at each level
 			int flag=0;           //flag 0 implies new node has NOT been added YET
 			while(flag==0){
-				cout<<"\nDo you place "<< temp->data <<" left or right of "<< temp1->data<<" (l/r) : ";
+				cout<<"\nDo you place "<< temp->data <<" left or right of "<< temp1->data<<" ";
 				char ch;	cin>>ch;
 				if(ch=='l'){
 					if(temp1->left==NULL){
 						temp1->left=temp;
 						flag=1;
-						cout<<"\n"<<temp->data<<" added to the left of "<<temp1->data;
 					}
 					else{
 						temp1=temp1->left;
@@ -83,15 +82,15 @@ void Tree::create(){
 					if(temp1->right==NULL){
 						temp1->right=temp;
 						flag=1;
-						cout<<"\n"<<temp->data<<" added to the right of "<<temp1->data;
 					}
 					else{
 						temp1=temp1->right;
+						flag=1;
 					}
 				}
 			}
 		}
-		cout<<"\nDo you want to add more nodes to the tree: (y/n)";
+		cout<<"\nDo you want to add more nodes to the tree:";
 		cin>>ch1;
 	}while(ch1=='y'||ch1=='Y');
 

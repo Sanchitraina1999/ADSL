@@ -83,10 +83,12 @@ void Tree::create(){
 					if(temp1->right==NULL){
 						temp1->right=temp;
 						flag=1;
-						cout<<"\n"<<temp->data<<" added to the right of "<<temp1->data;
+						cout<<;
 					}
 					else{
 						temp1=temp1->right;
+						flag=1;
+						cout<<"\n"<<temp->data<<" added to the right of "<<temp1->data;
 					}
 				}
 			}
