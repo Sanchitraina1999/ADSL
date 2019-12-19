@@ -34,8 +34,8 @@ public:
 };
 
 class Tree{
-public:
 	node *root;
+public:
 	Tree(){
 		root=NULL;
 	}
@@ -117,10 +117,11 @@ void Tree::preorderNonRecursive(){
 }
 
 void Tree::inorderRecursive(node *temp){
-	if(temp){
+	cout<<"\nInoder Traversal is : \n";
+	if(root){
 		inorderRecursive(root->left);
 		cout<<temp->data<<" ";
-		inorderRecursive(root->right);
+		inorderRecursive(root->left);
 	}
 }
 
@@ -185,7 +186,6 @@ start:
 				t.preorderNonRecursive();
 				break;
 			case 3:
-				cout<<"\nInoder Traversal is : \n";
 				t.inorderRecursive(t.root);
 				break;
 			case 4:

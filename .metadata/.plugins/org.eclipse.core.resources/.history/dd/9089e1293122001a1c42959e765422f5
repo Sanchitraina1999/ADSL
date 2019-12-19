@@ -117,7 +117,7 @@ void Tree::preorderNonRecursive(){
 }
 
 void Tree::inorderRecursive(node *temp){
-	if(temp){
+	if(root){
 		inorderRecursive(root->left);
 		cout<<temp->data<<" ";
 		inorderRecursive(root->right);

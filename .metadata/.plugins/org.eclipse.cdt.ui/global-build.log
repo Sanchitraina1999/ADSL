@@ -350,3 +350,89 @@ Finished building target: 01BinaryTree
 12:33:11 **** Incremental Build of configuration Debug for project 01BinaryTree ****
 make all 
 make: Nothing to be done for `all'.
+12:49:28 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:37:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:189:26: error: within this context
+     t.inorderRecursive(t.root);
+                          ^
+make: *** [src/01BinaryTree.o] Error 1
+12:49:31 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:37:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:189:26: error: within this context
+     t.inorderRecursive(t.root);
+                          ^
+make: *** [src/01BinaryTree.o] Error 1
+12:49:51 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:49:52 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:53:05 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:53:07 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:57:46 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:57:47 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:58:34 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:58:35 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.

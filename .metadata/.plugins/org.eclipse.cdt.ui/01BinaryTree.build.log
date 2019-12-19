@@ -1,6 +1,6 @@
-12:33:11 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+12:58:35 **** Incremental Build of configuration Debug for project 01BinaryTree ****
 make all 
 make: Nothing to be done for `all'.
 
-12:33:12 Build Finished (took 63ms)
+12:58:35 Build Finished (took 61ms)
 
