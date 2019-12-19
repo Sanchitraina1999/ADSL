@@ -49,15 +49,14 @@ public:
 	void inorderNonRecursive();
 	void postorderRecursive();
 	void postorderNonRecursive();
-	void display();
+
 };
 
 
 int main() {
 	Tree t;
-start:
 	cout<<"\nMAIN MENU";
-	cout<<"\n1. Enter a binary tree (Given)";
+	cout<<"\n1. Enter a binary tree";
 	cout<<"\n2. Assign this tree to another tree";
 	cout<<"\n3. Create a mirror image of the tree";
 	cout<<"\n4. Check two binary trees are equal or not";
@@ -96,30 +95,25 @@ start:
 				t.preorderRecursive();
 				break;
 			case 2:
-				t.preorderNonRecursive();
+				t.preorderRecursive();
 				break;
 			case 3:
-				t.inorderRecursive();
+				t.preorderRecursive();
 				break;
 			case 4:
-				t.inorderNonRecursive();
+				t.preorderRecursive();
 				break;
 			case 5:
-				t.postorderRecursive();
+				t.preorderRecursive();
 				break;
 			case 6:
-				t.postorderNonRecursive();
+				t.preorderRecursive();
 				break;
 			default:
 				cout<<"\nNo such option for traversal !";
 		}
 		break;
-	case 6:
-		t.display();
-		break;
-	default:
-		cout<<"\nNo such option in Main Menu !";
 	}
-	goto start;
+
 	return 0;
 }

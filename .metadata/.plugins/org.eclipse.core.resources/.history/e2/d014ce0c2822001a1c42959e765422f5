@@ -57,7 +57,7 @@ int main() {
 	Tree t;
 start:
 	cout<<"\nMAIN MENU";
-	cout<<"\n1. Enter a binary tree (Given)";
+	cout<<"\n1. Enter a binary tree";
 	cout<<"\n2. Assign this tree to another tree";
 	cout<<"\n3. Create a mirror image of the tree";
 	cout<<"\n4. Check two binary trees are equal or not";

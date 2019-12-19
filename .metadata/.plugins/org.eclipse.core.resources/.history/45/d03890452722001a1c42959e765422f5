@@ -43,21 +43,14 @@ public:
 	void copyTree();
 	void mirrorImage();
 	void equal(Tree);
-	void preorderRecursive();
-	void preorderNonRecursive();
-	void inorderRecursive();
-	void inorderNonRecursive();
-	void postorderRecursive();
-	void postorderNonRecursive();
-	void display();
+	void
 };
 
 
 int main() {
 	Tree t;
-start:
 	cout<<"\nMAIN MENU";
-	cout<<"\n1. Enter a binary tree (Given)";
+	cout<<"\n1. Enter a binary tree";
 	cout<<"\n2. Assign this tree to another tree";
 	cout<<"\n3. Create a mirror image of the tree";
 	cout<<"\n4. Check two binary trees are equal or not";
@@ -83,43 +76,14 @@ start:
 		break;
 	case 5:
 		cout<<"\n\t\tTREE TRAVERSALS";
-		cout<<"\n\t\t1. Preorder Recursive";
-		cout<<"\n\t\t2. Preorder Non-Recursive";
-		cout<<"\n\t\t3. Inorder Recursive";
-		cout<<"\n\t\t4. Inorder Non-Recursive";
-		cout<<"\n\t\t5. Postorder Recursive";
-		cout<<"\n\t\t6. Postorder Non-Recursive";
-		cout<<"\n Enter your choice";
-		int choice1;	cin>>choice1;
-		switch(choice1){
-			case 1:
-				t.preorderRecursive();
-				break;
-			case 2:
-				t.preorderNonRecursive();
-				break;
-			case 3:
-				t.inorderRecursive();
-				break;
-			case 4:
-				t.inorderNonRecursive();
-				break;
-			case 5:
-				t.postorderRecursive();
-				break;
-			case 6:
-				t.postorderNonRecursive();
-				break;
-			default:
-				cout<<"\nNo such option for traversal !";
-		}
-		break;
-	case 6:
-		t.display();
-		break;
-	default:
-		cout<<"\nNo such option in Main Menu !";
+			cout<<"\n\t\t1. Preorder Recursive";
+			cout<<"\n\t\t2. Preorder Non-Recursive";
+			cout<<"\n\t\t3. Inorder Recursive";
+			cout<<"\n\t\t4. Inorder Non-Recursive";
+			cout<<"\n\t\t5. Postorder Recursive";
+			cout<<"\n\t\t6. Postorder Non-Recursive";
+			cout<<"\n Enter your choice";
 	}
-	goto start;
+
 	return 0;
 }
