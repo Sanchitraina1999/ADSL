@@ -56,7 +56,7 @@ void Tree::create(){
 	char ch1;
 	root=NULL;
 	do{
-		node *temp= new node(); //temp is the new node to be added
+		node *temp= new node(); //temp is the new node to be added to the tree
 		cout<<"\nEnter data : ";
 		cin>>temp->data;
 		if(root==NULL){
@@ -67,28 +67,28 @@ void Tree::create(){
 			node *temp1=root;       //temp1 is for primary root nodes at each level
 			int flag=0;           //flag 0 implies new node has NOT been added YET
 			while(flag==0){
-			cout<<"\nDo you place "<< temp->data <<" left or right of "<< temp1->data<<" (l/r) : ";
-			char ch;	cin>>ch;
-			if(ch=='l'){
-				if(temp1->left==NULL){
-					temp1->left=temp;
-					flag=1;
-					cout<<"\n"<<temp->data<<" added to the left of "<<temp1->data;
+				cout<<"\nDo you place "<< temp->data <<" left or right of "<< temp1->data<<" (l/r) : ";
+				char ch;	cin>>ch;
+				if(ch=='l'){
+					if(temp1->left==NULL){
+						temp1->left=temp;
+						flag=1;
+						cout<<"\n"<<temp->data<<" added to the left of "<<temp1->data;
+					}
+					else{
+						temp1=temp1->left;
+					}
 				}
 				else{
-					temp1=temp1->left;
+					if(temp1->right==NULL){
+						temp1->right=temp;
+						flag=1;
+						cout<<"\n"<<temp->data<<" added to the right of "<<temp1->data;
+					}
+					else{
+						temp1=temp1->right;
+					}
 				}
-			}
-			else{
-				if(temp1->right==NULL){
-					temp1->right=temp;
-					flag=1;
-					cout<<"\n"<<temp->data<<" added to the right of "<<temp1->data;
-				}
-				else{
-					temp1=temp1->right;
-				}
-			}
 			}
 		}
 		cout<<"\nDo you want to add more nodes to the tree: (y/n)";
