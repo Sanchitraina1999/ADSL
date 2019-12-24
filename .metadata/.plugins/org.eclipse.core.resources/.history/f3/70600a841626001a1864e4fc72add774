@@ -187,14 +187,7 @@ void Tree::postorderNonRecursive(node* root){
 }
 
 void Tree::display(node* root){
-
-	if(root==NULL){
-		cout<<"\nTree is empty";
-	}
-	else{
-		cout<<"\nRoot node is : "<<root->data;
-
-	}
+	if(root)
 }
 
 int main() {

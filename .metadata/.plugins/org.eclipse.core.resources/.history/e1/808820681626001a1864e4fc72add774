@@ -50,7 +50,7 @@ public:
 	void inorderNonRecursive(node *);
 	void postorderRecursive(node *);
 	void postorderNonRecursive(node *);
-	void display(node*);
+	void display();
 };
 
 void Tree::create(){
@@ -186,15 +186,8 @@ void Tree::postorderNonRecursive(node* root){
 
 }
 
-void Tree::display(node* root){
+void Tree::display(){
 
-	if(root==NULL){
-		cout<<"\nTree is empty";
-	}
-	else{
-		cout<<"\nRoot node is : "<<root->data;
-
-	}
 }
 
 int main() {
@@ -264,7 +257,7 @@ start:
 		}
 		break;
 	case 6:
-		t.display(t.root);
+		t.display();
 		break;
 	default:
 		cout<<"\nNo such option in Main Menu !";
