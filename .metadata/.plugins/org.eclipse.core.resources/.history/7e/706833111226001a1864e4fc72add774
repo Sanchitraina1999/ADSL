@@ -20,8 +20,66 @@ f) Print internal and leaf nodes
 
 
 #include <iostream>
-#include <stack>   //STL Stack
 using namespace std;
+
+class node2{
+public:
+    int val;
+    node2 *next;
+};
+	
+class STACK
+{
+    node2 *head, *tail;
+
+public:
+    STACK()
+    {
+        head = tail = NULL;
+    }
+    void push(int);
+    int pop();
+};
+
+void STACK::push(int item)
+{
+    node2 *temp = new node2();
+    temp->val = item;
+    temp->next = NULL;
+    if (head == NULL)
+    {
+        head = temp;
+        tail = temp;
+    }
+    else
+    {
+        tail -> next = temp;
+        tail = tail -> next;
+    }
+}
+
+int STACK::pop()
+{
+    if (head == NULL)
+        return -1;
+    else
+    {
+        node2 *temp = head;
+        if (head -> next == NULL)
+        {
+            return (head->val);
+            head = NULL;
+        }
+        else
+        {
+            while (temp -> next -> next != NULL){
+                temp = temp -> next;
+            }
+            return (temp -> next -> val);
+            temp -> next = NULL;
+        }
+    }
+}
 
 class node{
 public:
@@ -120,25 +178,6 @@ void Tree::preorderRecursive(node* root){
 }
 
 void Tree::preorderNonRecursive(node* root){
-	stack <node*> s;
-
-	node* temp=root;
-	int flag=0;
-
-	while(flag==0){
-		if(temp != NULL){
-			cout<< temp -> data<<" ";
-			s.push(temp);
-			temp = temp -> left;
-		}
-		else if(!s.empty()){
-			temp = s.top();
-			s.pop();
-			temp = temp -> right;
-		}
-		else
-			flag=1;
-	}
 
 }
 
@@ -151,25 +190,6 @@ void Tree::inorderRecursive(node* root){
 }
 
 void Tree::inorderNonRecursive(node* root){
-	stack <node*> s;
-
-	node* temp=root;
-	int flag=0;
-
-	while(flag==0){
-		if(temp != NULL){
-			s.push(temp);
-			temp = temp -> left;
-		}
-		else if(!s.empty()){
-			temp = s.top();
-			s.pop();
-			cout<< temp -> data<<" ";
-			temp = temp -> right;
-		}
-		else
-			flag=1;
-	}
 
 }
 
@@ -198,7 +218,7 @@ start:
 	cout<<"\n2. Assign this tree to another tree";
 	cout<<"\n3. Create a mirror image of the tree";
 	cout<<"\n4. Check two binary trees are equal or not";
-	cout<<"\n5. Tree Traversals";            //nonRecursive Postorder pending
+	cout<<"\n5. Tree Traversals";            //recursive wale done
 	cout<<"\n6. Print internal and leaf nodes";
 	cout<<"\n Enter your choice";
 	int choice; 	cin>>choice;

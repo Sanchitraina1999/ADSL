@@ -20,7 +20,7 @@ f) Print internal and leaf nodes
 
 
 #include <iostream>
-#include <stack>   //STL Stack
+#define MAX 100
 using namespace std;
 
 class node{
@@ -33,6 +33,37 @@ public:
 		right=NULL;
 	}
 };
+
+class Stack{
+	node* arr[MAX];
+	int top;
+public:
+	Stack(){
+		top=-1;
+	}
+	void push(node* );
+	node* pop();
+	int empty();
+	friend class Tree;
+};
+
+void Stack::push(Node* p){
+	if(top<MAX)
+		arr[top++]=p;
+	else{
+		cout<<"\nStack Full!";
+	}
+}
+node* Stack::pop(){
+	if(top==-1){
+		cout<<"\nStack is Empty";
+		return;
+	}
+	return arr[]
+}
+int Stack::empty(){
+	return index==-1;
+}
 
 class Tree{
 public:
@@ -120,11 +151,9 @@ void Tree::preorderRecursive(node* root){
 }
 
 void Tree::preorderNonRecursive(node* root){
-	stack <node*> s;
-
+	Stack s;
 	node* temp=root;
 	int flag=0;
-
 	while(flag==0){
 		if(temp != NULL){
 			cout<< temp -> data<<" ";
@@ -139,7 +168,6 @@ void Tree::preorderNonRecursive(node* root){
 		else
 			flag=1;
 	}
-
 }
 
 void Tree::inorderRecursive(node* root){
@@ -151,11 +179,9 @@ void Tree::inorderRecursive(node* root){
 }
 
 void Tree::inorderNonRecursive(node* root){
-	stack <node*> s;
-
+	Stack s;
 	node* temp=root;
 	int flag=0;
-
 	while(flag==0){
 		if(temp != NULL){
 			s.push(temp);
@@ -170,7 +196,6 @@ void Tree::inorderNonRecursive(node* root){
 		else
 			flag=1;
 	}
-
 }
 
 void Tree::postorderRecursive(node* root){
@@ -198,7 +223,7 @@ start:
 	cout<<"\n2. Assign this tree to another tree";
 	cout<<"\n3. Create a mirror image of the tree";
 	cout<<"\n4. Check two binary trees are equal or not";
-	cout<<"\n5. Tree Traversals";            //nonRecursive Postorder pending
+	cout<<"\n5. Tree Traversals";            //recursive wale done
 	cout<<"\n6. Print internal and leaf nodes";
 	cout<<"\n Enter your choice";
 	int choice; 	cin>>choice;

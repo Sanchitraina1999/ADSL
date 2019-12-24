@@ -436,3 +436,320 @@ Finished building target: 01BinaryTree
 12:58:35 **** Incremental Build of configuration Debug for project 01BinaryTree ****
 make all 
 make: Nothing to be done for `all'.
+11:22:49 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:180:6: error: prototype for ‘void Tree::preorderNonRecursive()’ does not match any in class ‘Tree’
+ void Tree::preorderNonRecursive(){
+      ^
+../src/01BinaryTree.cpp:106:7: error: candidate is: void Tree::preorderNonRecursive(node*)
+  void preorderNonRecursive(node *);
+       ^
+../src/01BinaryTree.cpp:192:6: error: prototype for ‘void Tree::inorderNonRecursive()’ does not match any in class ‘Tree’
+ void Tree::inorderNonRecursive(){
+      ^
+../src/01BinaryTree.cpp:108:7: error: candidate is: void Tree::inorderNonRecursive(node*)
+  void inorderNonRecursive(node *);
+       ^
+../src/01BinaryTree.cpp:205:6: error: prototype for ‘void Tree::postorderNonRecursive()’ does not match any in class ‘Tree’
+ void Tree::postorderNonRecursive(){
+      ^
+../src/01BinaryTree.cpp:110:7: error: candidate is: void Tree::postorderNonRecursive(node*)
+  void postorderNonRecursive(node *);
+       ^
+make: *** [src/01BinaryTree.o] Error 1
+11:23:18 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:30:56 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:143:13: error: ‘class std::stack<node*>’ has no member named ‘isE’
+   else if(s.isE)
+             ^
+../src/01BinaryTree.cpp:144:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/01BinaryTree.cpp:144:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/01BinaryTree.o] Error 1
+11:31:03 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:143:13: error: ‘class std::stack<node*>’ has no member named ‘isEmpty’
+   else if(s.isEmpty)
+             ^
+../src/01BinaryTree.cpp:144:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/01BinaryTree.cpp:144:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/01BinaryTree.o] Error 1
+11:31:07 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:143:13: error: ‘class std::stack<node*>’ has no member named ‘isEmpty’
+   else if(s.isEmpty())
+             ^
+../src/01BinaryTree.cpp:144:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/01BinaryTree.cpp:144:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/01BinaryTree.o] Error 1
+11:31:48 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:144:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/01BinaryTree.cpp:144:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/01BinaryTree.o] Error 1
+11:33:55 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:144:9: error: void value not ignored as it ought to be
+    temp = s.pop();
+         ^
+make: *** [src/01BinaryTree.o] Error 1
+11:35:05 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:35:43 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:35:52 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:36:38 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:36:40 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:36:41 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:39:05 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:39:06 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:39:39 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::preorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:122:2: error: ‘stack’ was not declared in this scope
+  stack <node*> s;
+  ^
+../src/01BinaryTree.cpp:122:13: error: expected primary-expression before ‘*’ token
+  stack <node*> s;
+             ^
+../src/01BinaryTree.cpp:122:14: error: expected primary-expression before ‘>’ token
+  stack <node*> s;
+              ^
+../src/01BinaryTree.cpp:122:16: error: ‘s’ was not declared in this scope
+  stack <node*> s;
+                ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:150:2: error: ‘stack’ was not declared in this scope
+  stack <node*> s;
+  ^
+../src/01BinaryTree.cpp:150:13: error: expected primary-expression before ‘*’ token
+  stack <node*> s;
+             ^
+../src/01BinaryTree.cpp:150:14: error: expected primary-expression before ‘>’ token
+  stack <node*> s;
+              ^
+../src/01BinaryTree.cpp:150:16: error: ‘s’ was not declared in this scope
+  stack <node*> s;
+                ^
+make: *** [src/01BinaryTree.o] Error 1
+11:41:30 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:29:12: error: ‘node’ has not been declared
+  void push(node*);
+            ^
+../src/01BinaryTree.cpp:30:2: error: ‘node’ does not name a type
+  node* pop();
+  ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::preorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:131:2: error: ‘stack’ was not declared in this scope
+  stack s;
+  ^
+../src/01BinaryTree.cpp:131:8: error: expected ‘;’ before ‘s’
+  stack s;
+        ^
+../src/01BinaryTree.cpp:137:4: error: ‘s’ was not declared in this scope
+    s.push(temp);
+    ^
+../src/01BinaryTree.cpp:140:12: error: ‘s’ was not declared in this scope
+   else if(!s.empty()){
+            ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:159:2: error: ‘stack’ was not declared in this scope
+  stack s;
+  ^
+../src/01BinaryTree.cpp:159:8: error: expected ‘;’ before ‘s’
+  stack s;
+        ^
+../src/01BinaryTree.cpp:164:4: error: ‘s’ was not declared in this scope
+    s.push(temp);
+    ^
+../src/01BinaryTree.cpp:167:12: error: ‘s’ was not declared in this scope
+   else if(!s.empty()){
+            ^
+make: *** [src/01BinaryTree.o] Error 1
+11:45:34 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::preorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:155:13: error: ‘push’ was not declared in this scope
+    push(temp);
+             ^
+../src/01BinaryTree.cpp:39:6: error: ‘int Stack::top’ is private
+  int top;
+      ^
+../src/01BinaryTree.cpp:159:13: error: within this context
+    temp = s.top();
+             ^
+../src/01BinaryTree.cpp:159:17: error: expression cannot be used as a function
+    temp = s.top();
+                 ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:39:6: error: ‘int Stack::top’ is private
+  int top;
+      ^
+../src/01BinaryTree.cpp:186:13: error: within this context
+    temp = s.top();
+             ^
+../src/01BinaryTree.cpp:186:17: error: expression cannot be used as a function
+    temp = s.top();
+                 ^
+make: *** [src/01BinaryTree.o] Error 1
+11:45:57 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::preorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:156:13: error: ‘push’ was not declared in this scope
+    push(temp);
+             ^
+../src/01BinaryTree.cpp:160:17: error: expression cannot be used as a function
+    temp = s.top();
+                 ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:187:17: error: expression cannot be used as a function
+    temp = s.top();
+                 ^
+make: *** [src/01BinaryTree.o] Error 1
+11:47:59 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:50:18: error: variable or field ‘push’ declared void
+ void Stack::push(Node* p){
+                  ^
+../src/01BinaryTree.cpp:50:18: error: ‘Node’ was not declared in this scope
+../src/01BinaryTree.cpp:50:24: error: ‘p’ was not declared in this scope
+ void Stack::push(Node* p){
+                        ^
+make: *** [src/01BinaryTree.o] Error 1
+11:50:16 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:50:18: error: variable or field ‘push’ declared void
+ void Stack::push(Node* p){
+                  ^
+../src/01BinaryTree.cpp:50:18: error: ‘Node’ was not declared in this scope
+../src/01BinaryTree.cpp:50:24: error: ‘p’ was not declared in this scope
+ void Stack::push(Node* p){
+                        ^
+make: *** [src/01BinaryTree.o] Error 1
+11:50:25 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:50:18: error: variable or field ‘push’ declared void
+ void Stack::push(Node* p){
+                  ^
+../src/01BinaryTree.cpp:50:18: error: ‘Node’ was not declared in this scope
+../src/01BinaryTree.cpp:50:24: error: ‘p’ was not declared in this scope
+ void Stack::push(Node* p){
+                        ^
+make: *** [src/01BinaryTree.o] Error 1
+11:52:15 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
