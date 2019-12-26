@@ -42,7 +42,7 @@ public:
 	}
 	void create();
 	void copyTree(Tree &);
-	void mirrorImage();
+	void mirrorImage(node*);
 	void equal(Tree &);
 	void preorderRecursive(node *);
 	void preorderNonRecursive(node *);
@@ -66,7 +66,7 @@ void Tree::create(){
 		}
 		else{
 			node *temp1=root;       //temp1 is for primary root nodes at each level
-			int flag=0;           //flag 0 implies new node has NOT been added YET
+			int flag=0;           //flag 0 implies new node has NOT YET been added
 			while(flag==0){
 				cout<<"\nDo you place "<< temp->data <<" left or right of "<< temp1->data<<" (l/r) : ";
 				char ch;	cin>>ch;
@@ -102,8 +102,12 @@ void Tree::copyTree(Tree &t){
 
 }
 
-void Tree::mirrorImage(){
-
+void Tree::mirrorImage(node* root){
+	if(root){
+		mirrorImage(root -> left);
+		mirrorImage(root -> right);
+		swap(root -> left, root -> right);
+	}
 }
 
 void Tree::equal(Tree &t){
@@ -203,7 +207,7 @@ start:
 	cout<<"\nMAIN MENU";
 	cout<<"\n1. Enter a binary tree (Given)";        //done
 	cout<<"\n2. Assign this tree to another tree";
-	cout<<"\n3. Create a mirror image of the tree";
+	cout<<"\n3. Create a mirror image of the tree";   //done
 	cout<<"\n4. Check two binary trees are equal or not";
 	cout<<"\n5. Tree Traversals";            //nonRecursive Postorder pending
 	cout<<"\n6. Print internal and leaf nodes";
@@ -217,7 +221,8 @@ start:
 		t.copyTree(t1);
 		break;
 	case 3:
-		t.mirrorImage();
+		t.mirrorImage(t.root);
+		cout<<"\nTree has been mirrored";
 		break;
 	case 4:
 		cout<<"\nANOTHER binary tree you want to check with given Binary tree";
@@ -269,6 +274,7 @@ start:
 	default:
 		cout<<"\nNo such option in Main Menu !";
 	}
+	cout<<endl;
 	goto start;
 	return 0;
 }
