@@ -43,7 +43,7 @@ public:
 	void create();
 	void copyTree(node* );
 	void mirrorImage(node* );
-	void equal(node* );
+	void equal(Tree &);
 	void preorderRecursive(node* );
 	void preorderNonRecursive(node* );
 	void inorderRecursive(node* );
@@ -110,7 +110,7 @@ void Tree::mirrorImage(node* root){
 	}
 }
 
-void Tree::equal(node* root2){
+void Tree::equal(Tree &t){
 
 }
 
@@ -265,7 +265,7 @@ start:
 	cout<<"\n2. Assign this tree to another tree";
 	cout<<"\n3. Create a mirror image of the tree";   //done
 	cout<<"\n4. Check two binary trees are equal or not";
-	cout<<"\n5. Tree Traversals";            //done
+	cout<<"\n5. Tree Traversals";            //nonRecursive Postorder pending
 	cout<<"\n6. Print internal and leaf nodes";  //done
 	cout<<"\n Enter your choice";
 	int choice; 	cin>>choice;
@@ -283,7 +283,7 @@ start:
 	case 4:
 		cout<<"\nANOTHER binary tree you want to check with given Binary tree";
 		t2.create();
-		t.equal(t2.root);
+		t.equal(t2);
 		break;
 	case 5:
 		cout<<"\n\tTREE TRAVERSALS";

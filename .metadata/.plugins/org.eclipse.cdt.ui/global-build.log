@@ -821,3 +821,100 @@ Invoking: GCC C++ Linker
 g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
 Finished building target: 01BinaryTree
  
+11:26:06 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:49:55 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::copyTree(node*)’:
+../src/01BinaryTree.cpp:103:8: error: could not convert ‘T’ from ‘Tree’ to ‘bool’
+  while(T)
+        ^
+../src/01BinaryTree.cpp:104:1: error: expected primary-expression before ‘}’ token
+ }
+ ^
+../src/01BinaryTree.cpp:104:1: error: expected ‘;’ before ‘}’ token
+make: *** [src/01BinaryTree.o] Error 1
+11:50:04 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::copyTree(node*)’:
+../src/01BinaryTree.cpp:103:8: error: could not convert ‘T’ from ‘Tree’ to ‘bool’
+  while(T)
+        ^
+../src/01BinaryTree.cpp:104:1: error: expected primary-expression before ‘}’ token
+ }
+ ^
+../src/01BinaryTree.cpp:104:1: error: expected ‘;’ before ‘}’ token
+make: *** [src/01BinaryTree.o] Error 1
+11:50:24 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:50:27 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:55:14 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:55:17 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:04:57 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:05:00 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:07:56 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 

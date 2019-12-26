@@ -41,15 +41,15 @@ public:
 		root=NULL;
 	}
 	void create();
-	void copyTree(node* );
-	void mirrorImage(node* );
-	void equal(node* );
-	void preorderRecursive(node* );
-	void preorderNonRecursive(node* );
-	void inorderRecursive(node* );
-	void inorderNonRecursive(node* );
-	void postorderRecursive(node* );
-	void postorderNonRecursive(node* );
+	void copyTree(Tree &);
+	void mirrorImage(node*);
+	void equal(Tree &);
+	void preorderRecursive(node *);
+	void preorderNonRecursive(node *);
+	void inorderRecursive(node *);
+	void inorderNonRecursive(node *);
+	void postorderRecursive(node *);
+	void postorderNonRecursive(node *);
 	void display(node* );
 };
 
@@ -98,7 +98,7 @@ void Tree::create(){
 
 }
 
-void Tree::copyTree(node* root){
+void Tree::copyTree(Tree &t){
 
 }
 
@@ -110,7 +110,7 @@ void Tree::mirrorImage(node* root){
 	}
 }
 
-void Tree::equal(node* root2){
+void Tree::equal(Tree &t){
 
 }
 
@@ -187,26 +187,7 @@ void Tree::postorderRecursive(node* root){
 }
 
 void Tree::postorderNonRecursive(node* root){
-	stack <node*> s1,s2;
-	s1.push(root);  			//s1 will always contain 1 element ..the node whose left and right nodes are to be chechked
-	while(!s1.empty()){
-		node* temp;
-		temp=s1.top();
-		s1.pop();           //s1 becomes empty
-		s2.push(temp);
 
-		if(temp->left!=NULL){
-			s1.push(temp->left);
-		}
-		if(temp->right!=NULL)
-			s1.push(temp->right);
-											// if both of temp's left and temp's right are NULL, s1 remains empty
-	}
-	while(!s2.empty()){
-		node* temp=s2.top();
-		cout<<temp->data<<" ";
-		s2.pop();
-	}
 }
 
 void Tree::display(node* root){
@@ -216,45 +197,8 @@ void Tree::display(node* root){
 	}
 	else{
 		cout<<"\nRoot node is : "<<root->data;
-		int l=0,in=-1;                // Stack is already having root..will be considered as interior node
-		stack<node*> s;
-		stack<int> Leaf,Interior;
-		node *temp;
-		s.push(root);
-		if(root->left!=NULL || root->right!=NULL){
-			while(!s.empty()){
-				temp=s.top();
-				s.pop();
-				if(temp->left==NULL && temp->right==NULL){
-					l++;
-					Leaf.push(temp->data);
-				}
-				else{
-					in++;
-					Interior.push(temp->data);
-				}
-				if(temp->right!=NULL)
-					s.push(temp->right);
-				if(temp->left!=NULL)
-					s.push(temp->left);
-				}
-				cout<<"\nTotal leaf nodes: "<<l<<" are:"<<endl;
-				while(!Leaf.empty()){
-					cout<<Leaf.top()<<" ";
-					Leaf.pop();
-				}
-				cout<<"\nTotal internal nodes: "<<in<<" are:"<<endl;
-				while(!Leaf.empty()){
-						cout<<Interior.top()<<" ";
-						Interior.pop();
-					}
-				}
-		else{
-			cout<<"\nOnly root: "<<root->data<<" is present";
-		}
 
-		}
-
+	}
 }
 
 int main() {
@@ -265,8 +209,8 @@ start:
 	cout<<"\n2. Assign this tree to another tree";
 	cout<<"\n3. Create a mirror image of the tree";   //done
 	cout<<"\n4. Check two binary trees are equal or not";
-	cout<<"\n5. Tree Traversals";            //done
-	cout<<"\n6. Print internal and leaf nodes";  //done
+	cout<<"\n5. Tree Traversals";            //nonRecursive Postorder pending
+	cout<<"\n6. Print internal and leaf nodes";
 	cout<<"\n Enter your choice";
 	int choice; 	cin>>choice;
 	switch(choice){
@@ -274,7 +218,7 @@ start:
 		t.create();
 		break;
 	case 2:
-		t.copyTree(t.root);
+		t.copyTree(t1);
 		break;
 	case 3:
 		t.mirrorImage(t.root);
@@ -283,16 +227,16 @@ start:
 	case 4:
 		cout<<"\nANOTHER binary tree you want to check with given Binary tree";
 		t2.create();
-		t.equal(t2.root);
+		t.equal(t2);
 		break;
 	case 5:
-		cout<<"\n\tTREE TRAVERSALS";
-		cout<<"\n\t1. Preorder Recursive";
-		cout<<"\n\t2. Preorder Non-Recursive";
-		cout<<"\n\t3. Inorder Recursive";
-		cout<<"\n\t4. Inorder Non-Recursive";
-		cout<<"\n\t5. Postorder Recursive";
-		cout<<"\n\t6. Postorder Non-Recursive";
+		cout<<"\n\t\tTREE TRAVERSALS";
+		cout<<"\n\t\t1. Preorder Recursive";
+		cout<<"\n\t\t2. Preorder Non-Recursive";
+		cout<<"\n\t\t3. Inorder Recursive";
+		cout<<"\n\t\t4. Inorder Non-Recursive";
+		cout<<"\n\t\t5. Postorder Recursive";
+		cout<<"\n\t\t6. Postorder Non-Recursive";
 		cout<<"\n Enter your choice";
 		int choice1;	cin>>choice1;
 		switch(choice1){
