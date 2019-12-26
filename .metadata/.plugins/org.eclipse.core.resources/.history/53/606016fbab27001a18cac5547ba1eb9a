@@ -41,7 +41,6 @@ public:
 		root=NULL;
 	}
 	void create();
-	void Delete(node* );
 	void copyTree(node* );
 	void mirrorImage(node* );
 	void equal(node* );
@@ -96,10 +95,6 @@ void Tree::create(){
 		cout<<"\nDo you want to add more nodes to the tree: (y/n)";
 		cin>>ch1;
 	}while(ch1=='y'||ch1=='Y');
-
-}
-
-void Tree::Delete(node* root){
 
 }
 
@@ -264,17 +259,14 @@ void Tree::display(node* root){
 
 int main() {
 	Tree t,t1,t2;
-	cout<<"\n Enter a binary tree (Given)";        //done
-	t.create();
 start:
 	cout<<"\nMAIN MENU";
-	cout<<"\n1. Re-Enter binary tree ";        //done
-	cout<<"\n2. Delete all nodes of the tree";
-	cout<<"\n3. Assign this tree to another tree";
-	cout<<"\n4. Create a mirror image of the tree";   //done
-	cout<<"\n5. Check two binary trees are equal or not";
-	cout<<"\n6. Tree Traversals";            //done
-	cout<<"\n7. Print internal and leaf nodes";  //done
+	cout<<"\n1. Enter a binary tree (Given)";        //done
+	cout<<"\n2. Assign this tree to another tree";
+	cout<<"\n3. Create a mirror image of the tree";   //done
+	cout<<"\n4. Check two binary trees are equal or not";
+	cout<<"\n5. Tree Traversals";            //done
+	cout<<"\n6. Print internal and leaf nodes";  //done
 	cout<<"\n Enter your choice";
 	int choice; 	cin>>choice;
 	switch(choice){
@@ -282,21 +274,18 @@ start:
 		t.create();
 		break;
 	case 2:
-		t.Delete(t.root);
-		break;
-	case 3:
 		t.copyTree(t.root);
 		break;
-	case 4:
+	case 3:
 		t.mirrorImage(t.root);
 		cout<<"\nTree has been mirrored";
 		break;
-	case 5:
+	case 4:
 		cout<<"\nANOTHER binary tree you want to check with given Binary tree";
 		t2.create();
 		t.equal(t2.root);
 		break;
-	case 6:
+	case 5:
 		cout<<"\n\tTREE TRAVERSALS";
 		cout<<"\n\t1. Preorder Recursive";
 		cout<<"\n\t2. Preorder Non-Recursive";
@@ -335,7 +324,7 @@ start:
 				cout<<"\nNo such option for traversal !";
 		}
 		break;
-	case 7:
+	case 6:
 		t.display(t.root);
 		break;
 	default:
