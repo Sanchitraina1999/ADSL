@@ -250,7 +250,7 @@ void Tree::display(node* root){
 				Leaf.pop();
 			}
 			cout<<"\nTotal internal nodes: "<<in<<" are:"<<endl;
-			while(!Interior.empty()){
+			while(!Leaf.empty()){
 					cout<<Interior.top()<<" ";
 					Interior.pop();
 				}
