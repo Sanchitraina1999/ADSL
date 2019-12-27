@@ -100,7 +100,13 @@ void Tree::create(){
 }
 
 void Tree::Delete(node* root){
-
+    if(root==NULL)
+        return;
+    if(root->left!=NULL)
+        Delete(root->left);
+    if(root->right!=NULL)
+        Delete(root->right);
+    delete(root);
 }
 
 void Tree::copyTree(node* root){
@@ -282,6 +288,7 @@ start:
 		break;
 	case 2:
 		t.Delete(t.root);
+		t.display(t.root);
 		break;
 	case 3:
 		t.copyTree(t.root);
