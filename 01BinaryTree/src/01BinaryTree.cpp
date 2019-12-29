@@ -21,6 +21,7 @@ f) Print internal and leaf nodes
 
 #include <iostream>
 #include <stack>   //STL Stack
+#include <queue>
 using namespace std;
 
 class node{
@@ -220,10 +221,10 @@ void Tree::display(node* root){
 		cout<<"\nTree is empty";
 	}
 	else{
-		cout<<"\nRoot node is : "<<root->data;
+		cout<<"\n\nRoot node is : "<<root->data;
 		int l=0,in=-1;                // Stack is already having root..will be considered as interior node
 		stack<node*> s;
-		stack<int> Leaf,Interior;
+		queue<int> Leaf,Interior;
 		node *temp;
 		s.push(root);
 		if(root->left!=NULL || root->right!=NULL){
@@ -244,14 +245,15 @@ void Tree::display(node* root){
 					s.push(temp->left);
 			}
 
-			cout<<"\nTotal leaf nodes: "<<l<<" are:"<<endl;
+			cout<<"\n\nTotal leaf nodes: "<<l<<" are:"<<endl;
 			while(!Leaf.empty()){
-				cout<<Leaf.top()<<" ";
+				cout<<Leaf.front()<<" ";
 				Leaf.pop();
 			}
-			cout<<"\nTotal internal nodes: "<<in<<" are:"<<endl;
+			Interior.pop();
+			cout<<"\n\nTotal internal nodes: "<<in<<" are:"<<endl;
 			while(!Interior.empty()){
-					cout<<Interior.top()<<" ";
+					cout<<Interior.front()<<" ";
 					Interior.pop();
 				}
 		}
