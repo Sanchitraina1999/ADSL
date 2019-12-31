@@ -9,14 +9,20 @@
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
 			<item value="dele"/>
+			<item value="copy"/>
+			<item value="callmir"/>
+			<item value="disp"/>
+			<item value="delete`"/>
+			<item value="delete"/>
+			<item value="Dele"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="287" key="DIALOG_WIDTH"/>
+		<item value="289" key="DIALOG_WIDTH"/>
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="479" key="DIALOG_HEIGHT"/>
+		<item value="480" key="DIALOG_HEIGHT"/>
 		<item value="578" key="DIALOG_X_ORIGIN"/>
 		<item value="118" key="DIALOG_Y_ORIGIN"/>
 	</section>

@@ -384,7 +384,7 @@ void Tree::print2DUtil(node *root, int space)
     // count
     cout<<endl;
     for (int i = COUNT; i < space; i++)
-        cout<<"";
+        cout<<"--";
     cout<<root->data<<"\n";
 
     // Process left child
