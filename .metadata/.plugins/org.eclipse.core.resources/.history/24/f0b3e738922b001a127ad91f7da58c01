@@ -297,7 +297,7 @@ start:
 	cout<<"\n2. Delete all nodes of the tree";
 	cout<<"\n3. Assign this tree to another tree";
 	cout<<"\n4. Create a mirror image of the tree";   //done
-	cout<<"\n5. Check two binary trees are equal or not";  //done
+	cout<<"\n5. Check two binary trees are equal or not";
 	cout<<"\n6. Tree Traversals";            //done
 	cout<<"\n7. Print internal and leaf nodes";  //done
 	cout<<"\n Enter your choice";

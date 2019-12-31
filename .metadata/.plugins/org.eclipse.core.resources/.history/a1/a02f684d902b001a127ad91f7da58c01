@@ -46,7 +46,6 @@ public:
 	void copyTree(node* );
 	void mirrorImage(node* );
 	void equal(node* );
-	bool compare(node*, node*);
 	void preorderRecursive(node* );
 	void preorderNonRecursive(node* );
 	void inorderRecursive(node* );
@@ -122,26 +121,8 @@ void Tree::mirrorImage(node* root){
 	}
 }
 
-void Tree::equal(node* root){
-	if (compare(this->root,root))
-			cout<<"\nTrees are equal";
-	else
-		cout<<"\nTrees are NOT equal";
-}
+void Tree::equal(node* root2){
 
-bool Tree::compare(node* root1,node* root2){
-	if(root1==NULL&&root2==NULL)
-		return true;
-	else if(root1==NULL&&root2!=NULL)
-		return false;
-	else if(root1!=NULL&&root2==NULL)
-		return false;
-	else{
-		if(root1->data==root2->data&&compare(root1->left,root2->left)&&compare(root1->right,root2->right))
-			return true;
-		else
-			return false;
-	}
 }
 
 void Tree::preorderRecursive(node* root){
@@ -297,14 +278,13 @@ start:
 	cout<<"\n2. Delete all nodes of the tree";
 	cout<<"\n3. Assign this tree to another tree";
 	cout<<"\n4. Create a mirror image of the tree";   //done
-	cout<<"\n5. Check two binary trees are equal or not";  //done
+	cout<<"\n5. Check two binary trees are equal or not";
 	cout<<"\n6. Tree Traversals";            //done
 	cout<<"\n7. Print internal and leaf nodes";  //done
 	cout<<"\n Enter your choice";
 	int choice; 	cin>>choice;
 	switch(choice){
 	case 1:
-		//nothing
 		t.create();
 		break;
 	case 2:
