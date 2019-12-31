@@ -1104,3 +1104,2024 @@ Invoking: GCC C++ Linker
 g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
 Finished building target: 01BinaryTree
  
+11:36:18 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:313:14: error: within this context
+   t.Delete(t.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:314:15: error: within this context
+   t.display(t.root);
+               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:317:16: error: within this context
+   t.copyTree(t.root);
+                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:320:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:326:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:340:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:342:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:349:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:351:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:358:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:360:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:367:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:369:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:376:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:378:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:385:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:387:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:400:15: error: within this context
+   t.display(t.root);
+               ^
+make: *** [src/01BinaryTree.o] Error 1
+11:36:20 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:313:14: error: within this context
+   t.Delete(t.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:314:15: error: within this context
+   t.display(t.root);
+               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:317:16: error: within this context
+   t.copyTree(t.root);
+                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:320:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:326:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:340:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:342:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:349:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:351:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:358:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:360:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:367:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:369:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:376:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:378:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:385:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:387:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:400:15: error: within this context
+   t.display(t.root);
+               ^
+make: *** [src/01BinaryTree.o] Error 1
+11:38:21 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:40:13: error: ‘s’ does not name a type
+  node *root;s
+             ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:291:9: warning: unused variable ‘t1’ [-Wunused-variable]
+  Tree t,t1,t2;
+         ^
+make: *** [src/01BinaryTree.o] Error 1
+11:38:25 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:38:27 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:42:21 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:42:21 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:42:27 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:42:27 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:42:33 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:42:34 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:44:07 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:44:08 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:47:27 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::create()’:
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:65:14: error: within this context
+   cin>>temp->data;
+              ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:68:22: error: within this context
+    cout<<"\n"<<root->data<<" added as ROOT node of the Binary Tree";
+                      ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:74:37: error: within this context
+     cout<<"\nDo you place "<< temp->data <<" left or right of "<< temp1->data<<" (l/r) : ";
+                                     ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:74:74: error: within this context
+     cout<<"\nDo you place "<< temp->data <<" left or right of "<< temp1->data<<" (l/r) : ";
+                                                                          ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:77:16: error: within this context
+      if(temp1->left==NULL){
+                ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:78:14: error: within this context
+       temp1->left=temp;
+              ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:80:25: error: within this context
+       cout<<"\n"<<temp->data<<" added to the left of "<<temp1->data;
+                         ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:80:64: error: within this context
+       cout<<"\n"<<temp->data<<" added to the left of "<<temp1->data;
+                                                                ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:83:20: error: within this context
+       temp1=temp1->left;
+                    ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:87:16: error: within this context
+      if(temp1->right==NULL){
+                ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:88:14: error: within this context
+       temp1->right=temp;
+              ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:90:25: error: within this context
+       cout<<"\n"<<temp->data<<" added to the right of "<<temp1->data;
+                         ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:90:65: error: within this context
+       cout<<"\n"<<temp->data<<" added to the right of "<<temp1->data;
+                                                                 ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:93:20: error: within this context
+       temp1=temp1->right;
+                    ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::Delete(node*)’:
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:106:16: error: within this context
+   Delete(root->left);
+                ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:107:16: error: within this context
+   Delete(root->right);
+                ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:108:17: error: within this context
+   delete (root->right);
+                 ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:109:17: error: within this context
+   delete (root->left);
+                 ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::mirrorImage(node*)’:
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:120:23: error: within this context
+   mirrorImage(root -> left);
+                       ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:121:23: error: within this context
+   mirrorImage(root -> right);
+                       ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:122:16: error: within this context
+   swap(root -> left, root -> right);
+                ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:122:30: error: within this context
+   swap(root -> left, root -> right);
+                              ^
+../src/01BinaryTree.cpp: In member function ‘bool Tree::compare(node*, node*)’:
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:141:13: error: within this context
+   if(root1->data==root2->data&&compare(root1->left,root2->left)&&compare(root1->right,root2->right))
+             ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:141:26: error: within this context
+   if(root1->data==root2->data&&compare(root1->left,root2->left)&&compare(root1->right,root2->right))
+                          ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:141:47: error: within this context
+   if(root1->data==root2->data&&compare(root1->left,root2->left)&&compare(root1->right,root2->right))
+                                               ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:141:59: error: within this context
+   if(root1->data==root2->data&&compare(root1->left,root2->left)&&compare(root1->right,root2->right))
+                                                           ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:141:81: error: within this context
+   if(root1->data==root2->data&&compare(root1->left,root2->left)&&compare(root1->right,root2->right))
+                                                                                 ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:141:94: error: within this context
+   if(root1->data==root2->data&&compare(root1->left,root2->left)&&compare(root1->right,root2->right))
+                                                                                              ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::preorderRecursive(node*)’:
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:151:17: error: within this context
+   cout << root->data << " ";
+                 ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:152:27: error: within this context
+   preorderRecursive(root->left);
+                           ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:153:27: error: within this context
+   preorderRecursive(root->right);
+                           ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::preorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:165:19: error: within this context
+    cout<< temp -> data<<" ";
+                   ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:167:19: error: within this context
+    temp = temp -> left;
+                   ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:172:19: error: within this context
+    temp = temp -> right;
+                   ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderRecursive(node*)’:
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:182:26: error: within this context
+   inorderRecursive(root->left);
+                          ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:183:15: error: within this context
+   cout<<root->data<<" ";
+               ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:184:26: error: within this context
+   inorderRecursive(root->right);
+                          ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::inorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:197:19: error: within this context
+    temp = temp -> left;
+                   ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:202:19: error: within this context
+    cout<< temp -> data<<" ";
+                   ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:203:19: error: within this context
+    temp = temp -> right;
+                   ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::postorderRecursive(node*)’:
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:214:28: error: within this context
+   postorderRecursive(root->left);
+                            ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:215:28: error: within this context
+   postorderRecursive(root->right);
+                            ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:216:17: error: within this context
+   cout << root->data << " ";
+                 ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::postorderNonRecursive(node*)’:
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:229:12: error: within this context
+   if(temp->left!=NULL){
+            ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:230:18: error: within this context
+    s1.push(temp->left);
+                  ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:232:12: error: within this context
+   if(temp->right!=NULL)
+            ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:233:18: error: within this context
+    s1.push(temp->right);
+                  ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:238:15: error: within this context
+   cout<<temp->data<<" ";
+               ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::display(node*)’:
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:249:38: error: within this context
+   cout<<"\n\nRoot node is : "<<root->data;
+                                      ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:255:12: error: within this context
+   if(root->left!=NULL || root->right!=NULL){
+            ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:255:32: error: within this context
+   if(root->left!=NULL || root->right!=NULL){
+                                ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:259:14: error: within this context
+     if(temp->left==NULL && temp->right==NULL){
+              ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:259:34: error: within this context
+     if(temp->left==NULL && temp->right==NULL){
+                                  ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:261:22: error: within this context
+      Leaf.push(temp->data);
+                      ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:265:26: error: within this context
+      Interior.push(temp->data);
+                          ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:267:14: error: within this context
+     if(temp->right!=NULL)
+              ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:268:19: error: within this context
+      s.push(temp->right);
+                   ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:269:14: error: within this context
+     if(temp->left!=NULL)
+              ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:270:19: error: within this context
+      s.push(temp->left);
+                   ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:286:33: error: within this context
+    cout<<"\nOnly root: "<<root->data<<" is present";
+                                 ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:312:14: error: within this context
+   t.Delete(t.root);
+              ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:313:5: error: within this context
+   t.root=NULL;
+     ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:314:15: error: within this context
+   t.display(t.root);
+               ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:317:16: error: within this context
+   t.copyTree(t.root);
+                ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:320:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:326:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:340:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:342:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:349:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:351:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:358:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:360:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:367:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:369:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:376:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:378:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:385:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:387:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+../src/01BinaryTree.cpp:39:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:400:15: error: within this context
+   t.display(t.root);
+               ^
+make: *** [src/01BinaryTree.o] Error 1
+11:47:58 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:59:15: warning: class ‘Tree’ is implicitly friends with itself [enabled by default]
+  friend class Tree;
+               ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:315:14: error: within this context
+   t.Delete(t.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:316:5: error: within this context
+   t.root=NULL;
+     ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:317:15: error: within this context
+   t.display(t.root);
+               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:320:16: error: within this context
+   t.copyTree(t.root);
+                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:323:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:329:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:343:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:345:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:352:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:354:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:361:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:363:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:370:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:372:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:379:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:381:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:388:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:390:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:403:15: error: within this context
+   t.display(t.root);
+               ^
+make: *** [src/01BinaryTree.o] Error 1
+11:48:15 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:315:14: error: within this context
+   t.Delete(t.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:316:5: error: within this context
+   t.root=NULL;
+     ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:317:15: error: within this context
+   t.display(t.root);
+               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:320:16: error: within this context
+   t.copyTree(t.root);
+                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:323:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:329:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:343:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:345:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:352:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:354:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:361:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:363:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:370:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:372:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:379:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:381:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:388:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:390:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:403:15: error: within this context
+   t.display(t.root);
+               ^
+make: *** [src/01BinaryTree.o] Error 1
+11:49:49 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:107:6: error: prototype for ‘void Tree::Delete()’ does not match any in class ‘Tree’
+ void Tree::Delete(){
+      ^
+../src/01BinaryTree.cpp:46:7: error: candidate is: void Tree::Delete(node*)
+  void Delete(node* );
+       ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:315:12: error: no matching function for call to ‘Tree::Delete()’
+   t.Delete();
+            ^
+../src/01BinaryTree.cpp:315:12: note: candidate is:
+../src/01BinaryTree.cpp:46:7: note: void Tree::Delete(node*)
+  void Delete(node* );
+       ^
+../src/01BinaryTree.cpp:46:7: note:   candidate expects 1 argument, 0 provided
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:316:5: error: within this context
+   t.root=NULL;
+     ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:317:15: error: within this context
+   t.display(t.root);
+               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:320:16: error: within this context
+   t.copyTree(t.root);
+                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:323:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:329:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:343:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:345:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:352:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:354:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:361:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:363:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:370:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:372:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:379:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:381:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:388:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:390:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:403:15: error: within this context
+   t.display(t.root);
+               ^
+make: *** [src/01BinaryTree.o] Error 1
+11:50:01 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::Delete()’:
+../src/01BinaryTree.cpp:109:20: error: no matching function for call to ‘Tree::Delete(node*&)’
+   Delete(root->left);
+                    ^
+../src/01BinaryTree.cpp:109:20: note: candidate is:
+../src/01BinaryTree.cpp:107:6: note: void Tree::Delete()
+ void Tree::Delete(){
+      ^
+../src/01BinaryTree.cpp:107:6: note:   candidate expects 0 arguments, 1 provided
+../src/01BinaryTree.cpp:110:21: error: no matching function for call to ‘Tree::Delete(node*&)’
+   Delete(root->right);
+                     ^
+../src/01BinaryTree.cpp:110:21: note: candidate is:
+../src/01BinaryTree.cpp:107:6: note: void Tree::Delete()
+ void Tree::Delete(){
+      ^
+../src/01BinaryTree.cpp:107:6: note:   candidate expects 0 arguments, 1 provided
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:316:5: error: within this context
+   t.root=NULL;
+     ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:317:15: error: within this context
+   t.display(t.root);
+               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:320:16: error: within this context
+   t.copyTree(t.root);
+                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:323:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:329:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:343:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:345:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:352:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:354:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:361:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:363:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:370:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:372:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:379:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:381:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:388:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:390:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:403:15: error: within this context
+   t.display(t.root);
+               ^
+make: *** [src/01BinaryTree.o] Error 1
+11:51:03 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:114:6: error: prototype for ‘void Tree::Delete()’ does not match any in class ‘Tree’
+ void Tree::Delete(){
+      ^
+../src/01BinaryTree.cpp:47:7: error: candidate is: void Tree::Delete(node*)
+  void Delete(node*);
+       ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:322:12: error: no matching function for call to ‘Tree::Delete()’
+   t.Delete();
+            ^
+../src/01BinaryTree.cpp:322:12: note: candidate is:
+../src/01BinaryTree.cpp:47:7: note: void Tree::Delete(node*)
+  void Delete(node*);
+       ^
+../src/01BinaryTree.cpp:47:7: note:   candidate expects 1 argument, 0 provided
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:323:5: error: within this context
+   t.root=NULL;
+     ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:324:15: error: within this context
+   t.display(t.root);
+               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:327:16: error: within this context
+   t.copyTree(t.root);
+                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:330:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:336:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:350:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:352:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:359:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:361:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:368:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:370:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:377:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:379:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:386:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:388:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:395:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:397:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:410:15: error: within this context
+   t.display(t.root);
+               ^
+make: *** [src/01BinaryTree.o] Error 1
+11:51:26 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:323:5: error: within this context
+   t.root=NULL;
+     ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:324:15: error: within this context
+   t.display(t.root);
+               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:327:16: error: within this context
+   t.copyTree(t.root);
+                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:330:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:336:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:350:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:352:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:359:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:361:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:368:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:370:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:377:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:379:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:386:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:388:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:395:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:397:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:410:15: error: within this context
+   t.display(t.root);
+               ^
+make: *** [src/01BinaryTree.o] Error 1
+11:53:57 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:334:16: error: within this context
+   t.copyTree(t.root);
+                ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:337:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:343:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:357:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:359:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:366:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:368:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:375:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:377:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:384:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:386:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:393:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:395:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:402:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:404:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+make: *** [src/01BinaryTree.o] Error 1
+11:55:00 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:341:19: error: within this context
+   t.mirrorImage(t.root);
+                   ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:347:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:361:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:363:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:370:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:372:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:379:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:381:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:388:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:390:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:397:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:399:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:406:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:408:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+make: *** [src/01BinaryTree.o] Error 1
+11:56:25 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:134:28: error: no ‘void Tree::callmirrorImage()’ member function declared in class ‘Tree’
+ void Tree::callmirrorImage(){
+                            ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:346:5: error: ‘class Tree’ has no member named ‘callmirrorImage’
+   t.callmirrorImage();
+     ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:352:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:366:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:368:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:375:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:377:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:384:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:386:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:393:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:395:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:402:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:404:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:411:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:413:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+make: *** [src/01BinaryTree.o] Error 1
+11:56:39 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:353:14: error: within this context
+   t.equal(t2.root);
+              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:367:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:369:28: error: within this context
+      t.preorderRecursive(t.root);
+                            ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:376:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:378:31: error: within this context
+      t.preorderNonRecursive(t.root);
+                               ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:385:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:387:27: error: within this context
+      t.inorderRecursive(t.root);
+                           ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:394:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:396:30: error: within this context
+      t.inorderNonRecursive(t.root);
+                              ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:403:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:405:29: error: within this context
+      t.postorderRecursive(t.root);
+                             ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:412:10: error: within this context
+     if(t.root){
+          ^
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:414:32: error: within this context
+      t.postorderNonRecursive(t.root);
+                                ^
+make: *** [src/01BinaryTree.o] Error 1
+12:01:21 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:359:14: error: within this context
+   t.equal(t2.root);
+              ^
+make: *** [src/01BinaryTree.o] Error 1
+12:02:01 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:362:14: error: within this context
+   t.equal(t2.root);
+              ^
+make: *** [src/01BinaryTree.o] Error 1
+12:02:46 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:365:14: error: within this context
+   t.equal(t2.root);
+              ^
+make: *** [src/01BinaryTree.o] Error 1
+12:03:17 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:370:14: error: within this context
+   t.equal(t2.root);
+              ^
+make: *** [src/01BinaryTree.o] Error 1
+12:03:37 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:370:14: error: within this context
+   t.equal(t2.root);
+              ^
+make: *** [src/01BinaryTree.o] Error 1
+12:05:17 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:40:8: error: ‘node* Tree::root’ is private
+  node *root;
+        ^
+../src/01BinaryTree.cpp:385:14: error: within this context
+   t.equal(t2.root);
+              ^
+make: *** [src/01BinaryTree.o] Error 1
+12:06:10 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:154:22: error: no ‘void Tree::callequal()’ member function declared in class ‘Tree’
+ void Tree::callequal(){
+                      ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:390:5: error: ‘class Tree’ has no member named ‘callequal’
+   t.callequal();
+     ^
+make: *** [src/01BinaryTree.o] Error 1
+12:06:27 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:07:46 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 

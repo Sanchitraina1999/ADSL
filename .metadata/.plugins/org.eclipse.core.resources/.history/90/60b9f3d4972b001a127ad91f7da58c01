@@ -49,7 +49,6 @@ public:
 	void copyTree(node* );
 	void callmirrorImage();
 	void mirrorImage(node* );
-	void callequal();
 	void equal(node* );
 	bool compare(node*, node*);
 	void callpreorderRecursive();
@@ -150,11 +149,6 @@ void Tree::mirrorImage(node* root){
 		mirrorImage(root -> right);
 		swap(root -> left, root -> right);
 	}
-}
-
-void Tree::callequal(){
-	if(root)
-		equal(root);
 }
 
 void Tree::equal(node* root){

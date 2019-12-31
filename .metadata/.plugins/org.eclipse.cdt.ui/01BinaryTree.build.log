@@ -1,4 +1,4 @@
-11:32:49 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+12:07:46 **** Incremental Build of configuration Debug for project 01BinaryTree ****
 make all 
 Building file: ../src/01BinaryTree.cpp
 Invoking: GCC C++ Compiler
@@ -11,5 +11,5 @@ g++  -o "01BinaryTree"  ./src/01BinaryTree.o
 Finished building target: 01BinaryTree
  
 
-11:32:50 Build Finished (took 1s.263ms)
+12:07:46 Build Finished (took 462ms)
 

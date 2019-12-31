@@ -49,7 +49,6 @@ public:
 	void copyTree(node* );
 	void callmirrorImage();
 	void mirrorImage(node* );
-	void callequal();
 	void equal(node* );
 	bool compare(node*, node*);
 	void callpreorderRecursive();

@@ -45,26 +45,16 @@ public:
 	void create();
 	void callDelete();
 	void Delete(node*);
-	void callcopyTree();
 	void copyTree(node* );
-	void callmirrorImage();
 	void mirrorImage(node* );
-	void callequal();
 	void equal(node* );
 	bool compare(node*, node*);
-	void callpreorderRecursive();
 	void preorderRecursive(node* );
-	void callpreorderNonRecursive();
 	void preorderNonRecursive(node* );
-	void callinorderRecursive();
 	void inorderRecursive(node* );
-	void callinorderNonRecursive();
 	void inorderNonRecursive(node* );
-	void callpostorderRecursive();
 	void postorderRecursive(node* );
-	void callpostorderNonRecursive();
 	void postorderNonRecursive(node* );
-	void calldisplay();
 	void display(node* );
 
 	friend class node;
@@ -118,7 +108,7 @@ void Tree::create(){
 void Tree::callDelete(){
 	if(root){
 		Delete(root);
-		root=NULL;           //occurs only in last
+		t.root=NULL;           //occurs only in last
 	}
 }
 
@@ -131,17 +121,9 @@ void Tree::Delete(node*){
 		return;
 	}
 }
-void Tree::callcopyTree(){
-
-}
 
 void Tree::copyTree(node* root){
 
-}
-
-void Tree::callmirrorImage(){
-	if(root)
-		mirrorImage(root);
 }
 
 void Tree::mirrorImage(node* root){
@@ -150,11 +132,6 @@ void Tree::mirrorImage(node* root){
 		mirrorImage(root -> right);
 		swap(root -> left, root -> right);
 	}
-}
-
-void Tree::callequal(){
-	if(root)
-		equal(root);
 }
 
 void Tree::equal(node* root){
@@ -178,10 +155,7 @@ bool Tree::compare(node* root1,node* root2){
 			return false;
 	}
 }
-void Tree::callpreorderRecursive(){
-	if(root)
-		preorderRecursive(root);
-}
+
 void Tree::preorderRecursive(node* root){
 	if (root)
 	{
@@ -190,10 +164,7 @@ void Tree::preorderRecursive(node* root){
 		preorderRecursive(root->right);
 	}
 }
-void Tree::callpreorderNonRecursive(){
-	if(root)
-		preorderNonRecursive(root);
-}
+
 void Tree::preorderNonRecursive(node* root){
 	stack <node*> s;
 
@@ -217,22 +188,12 @@ void Tree::preorderNonRecursive(node* root){
 
 }
 
-void Tree::callinorderRecursive(){
-	if(root)
-		inorderRecursive(root);
-}
-
 void Tree::inorderRecursive(node* root){
 	if(root){
 		inorderRecursive(root->left);
 		cout<<root->data<<" ";
 		inorderRecursive(root->right);
 	}
-}
-
-void Tree::callinorderNonRecursive(){
-	if(root)
-		inorderNonRecursive(root);
 }
 
 void Tree::inorderNonRecursive(node* root){
@@ -258,11 +219,6 @@ void Tree::inorderNonRecursive(node* root){
 
 }
 
-void Tree::callpostorderRecursive(){
-	if(root)
-		postorderRecursive(root);
-}
-
 void Tree::postorderRecursive(node* root){
 	if (root)
 	{
@@ -270,11 +226,6 @@ void Tree::postorderRecursive(node* root){
 		postorderRecursive(root->right);
 		cout << root->data << " ";
 	}
-}
-
-void Tree::callpostorderNonRecursive(){
-	if(root)
-		postorderNonRecursive(root);
 }
 
 void Tree::postorderNonRecursive(node* root){
@@ -297,12 +248,6 @@ void Tree::postorderNonRecursive(node* root){
 		node* temp=s2.top();
 		cout<<temp->data<<" ";
 		s2.pop();
-	}
-}
-
-void Tree::calldisplay(){
-	if(root){
-		display(root);
 	}
 }
 
@@ -376,19 +321,19 @@ start:
 		break;
 	case 2:
 		t.callDelete();
-		t.calldisplay();
+		t.display(t.root);
 		break;
 	case 3:
-		t.callcopyTree();
+		t.copyTree(t.root);
 		break;
 	case 4:
-		t.callmirrorImage();
+		t.mirrorImage(t.root);
 		cout<<"\nTree has been mirrored";
 		break;
 	case 5:
 		cout<<"\nANOTHER binary tree you want to check with given Binary tree";
 		t2.create();
-		t.callequal();
+		t.equal(t2.root);
 		break;
 	case 6:
 		cout<<"\n\tTREE TRAVERSALS";
@@ -402,29 +347,58 @@ start:
 		int choice1;	cin>>choice1;
 		switch(choice1){
 			case 1:
-				cout << "\nPreorder Traversal is : \n";
-				t.callpreorderRecursive();
+				if(t.root){
+					cout << "\nPreorder Traversal is : \n";
+					t.preorderRecursive(t.root);
+				}
+				else
+					cout<<"Tree is empty";
+
 				break;
 			case 2:
-				cout << "\nPreorder Traversal is : \n";
-				t.callpreorderNonRecursive();
+				if(t.root){
+					cout << "\nPreorder Traversal is : \n";
+					t.preorderNonRecursive(t.root);
+				}
+				else
+					cout<<"Tree is empty";
+
 				break;
 			case 3:
-				cout << "\nInorder Traversal is : \n";
-				t.callinorderRecursive();
+				if(t.root){
+					cout << "\nInorder Traversal is : \n";
+					t.inorderRecursive(t.root);
+				}
+				else
+					cout<<"Tree is empty";
+
 				break;
 			case 4:
-				cout << "\nInorder Traversal is : \n";
-				t.callinorderNonRecursive();
+				if(t.root){
+					cout << "\nInorder Traversal is : \n";
+					t.inorderNonRecursive(t.root);
+				}
+				else
+					cout<<"Tree is empty";
 
 				break;
 			case 5:
-				cout << "\nPostorder Traversal is : \n";
-				t.callpostorderRecursive();
+				if(t.root){
+					cout << "\nPostorder Traversal is : \n";
+					t.postorderRecursive(t.root);
+				}
+				else
+					cout<<"Tree is empty";
+
 				break;
 			case 6:
-				cout << "\nPostorder Traversal is : \n";
-				t.callpostorderNonRecursive();
+				if(t.root){
+					cout << "\nPostorder Traversal is : \n";
+					t.postorderNonRecursive(t.root);
+				}
+				else
+					cout<<"Tree is empty";
+
 				break;
 			default:
 
@@ -433,7 +407,7 @@ start:
 		}
 		break;
 	case 7:
-		t.calldisplay();
+		t.display(t.root);
 		break;
 	default:
 		cout<<"\nNo such option in Main Menu !";

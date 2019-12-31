@@ -49,7 +49,6 @@ public:
 	void copyTree(node* );
 	void callmirrorImage();
 	void mirrorImage(node* );
-	void callequal();
 	void equal(node* );
 	bool compare(node*, node*);
 	void callpreorderRecursive();
@@ -150,11 +149,6 @@ void Tree::mirrorImage(node* root){
 		mirrorImage(root -> right);
 		swap(root -> left, root -> right);
 	}
-}
-
-void Tree::callequal(){
-	if(root)
-		equal(root);
 }
 
 void Tree::equal(node* root){
@@ -258,11 +252,6 @@ void Tree::inorderNonRecursive(node* root){
 
 }
 
-void Tree::callpostorderRecursive(){
-	if(root)
-		postorderRecursive(root);
-}
-
 void Tree::postorderRecursive(node* root){
 	if (root)
 	{
@@ -270,11 +259,6 @@ void Tree::postorderRecursive(node* root){
 		postorderRecursive(root->right);
 		cout << root->data << " ";
 	}
-}
-
-void Tree::callpostorderNonRecursive(){
-	if(root)
-		postorderNonRecursive(root);
 }
 
 void Tree::postorderNonRecursive(node* root){
@@ -388,7 +372,7 @@ start:
 	case 5:
 		cout<<"\nANOTHER binary tree you want to check with given Binary tree";
 		t2.create();
-		t.callequal();
+		t.equal(t2.root);
 		break;
 	case 6:
 		cout<<"\n\tTREE TRAVERSALS";
