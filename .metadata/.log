@@ -2913,3 +2913,24 @@ java.lang.NoClassDefFoundError: org/python/pydev/core/docutils/StringUtils
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 2 2019-12-31 12:54:38.304
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NoClassDefFoundError: org/python/pydev/core/docutils/StringUtils
+	at org.python.pydev.ui.filetypes.FileTypesPreferencesPage$PreferencesCacheHelper.getCacheValidSourceFiles(FileTypesPreferencesPage.java:166)
+	at org.python.pydev.ui.filetypes.FileTypesPreferencesPage$PreferencesCacheHelper.getCacheValidInitFiles(FileTypesPreferencesPage.java:152)
+	at org.python.pydev.ui.filetypes.FileTypesPreferencesPage.getValidInitFiles(FileTypesPreferencesPage.java:252)
+	at org.python.pydev.navigator.PythonBaseModelProvider.checkInit(PythonBaseModelProvider.java:1264)
+	at org.python.pydev.navigator.PythonBaseModelProvider.processDelta(PythonBaseModelProvider.java:1163)
+	at org.python.pydev.navigator.PythonBaseModelProvider.processDelta(PythonBaseModelProvider.java:1126)
+	at org.python.pydev.navigator.PythonBaseModelProvider.processDelta(PythonBaseModelProvider.java:988)
+	at org.python.pydev.navigator.PythonBaseModelProvider.resourceChanged(PythonBaseModelProvider.java:973)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:396)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1531)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
