@@ -3125,3 +3125,476 @@ Invoking: GCC C++ Linker
 g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
 Finished building target: 01BinaryTree
  
+12:10:52 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:10:54 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:20:50 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:142:6: error: prototype for ‘void Tree::callmirrorImage(Tree)’ does not match any in class ‘Tree’
+ void Tree::callmirrorImage(Tree){
+      ^
+../src/01BinaryTree.cpp:50:7: error: candidate is: void Tree::callmirrorImage()
+  void callmirrorImage();
+       ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:385:23: error: no matching function for call to ‘Tree::callmirrorImage(Tree&)’
+   t.callmirrorImage(t2);
+                       ^
+../src/01BinaryTree.cpp:385:23: note: candidate is:
+../src/01BinaryTree.cpp:50:7: note: void Tree::callmirrorImage()
+  void callmirrorImage();
+       ^
+../src/01BinaryTree.cpp:50:7: note:   candidate expects 0 arguments, 1 provided
+make: *** [src/01BinaryTree.o] Error 1
+12:20:53 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:385:23: error: no matching function for call to ‘Tree::callmirrorImage(Tree&)’
+   t.callmirrorImage(t2);
+                       ^
+../src/01BinaryTree.cpp:385:23: note: candidate is:
+../src/01BinaryTree.cpp:142:6: note: void Tree::callmirrorImage()
+ void Tree::callmirrorImage(){
+      ^
+../src/01BinaryTree.cpp:142:6: note:   candidate expects 0 arguments, 1 provided
+make: *** [src/01BinaryTree.o] Error 1
+12:21:01 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:22:20 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::callcopyTree()’:
+../src/01BinaryTree.cpp:136:18: error: ‘l’ was not declared in this scope
+   copyTree(root);l
+                  ^
+../src/01BinaryTree.cpp:137:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+make: *** [src/01BinaryTree.o] Error 1
+12:22:22 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:24:15 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::copyTree(Tree*)’:
+../src/01BinaryTree.cpp:141:4: error: no match for ‘operator=’ (operand types are ‘Tree’ and ‘Tree*’)
+  t3=t;
+    ^
+../src/01BinaryTree.cpp:141:4: note: candidate is:
+../src/01BinaryTree.cpp:39:7: note: Tree& Tree::operator=(const Tree&)
+ class Tree{
+       ^
+../src/01BinaryTree.cpp:39:7: note:   no known conversion for argument 1 from ‘Tree*’ to ‘const Tree&’
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:384:18: error: no matching function for call to ‘Tree::callcopyTree()’
+   t.callcopyTree();
+                  ^
+../src/01BinaryTree.cpp:384:18: note: candidate is:
+../src/01BinaryTree.cpp:134:6: note: void Tree::callcopyTree(Tree*)
+ void Tree::callcopyTree(Tree *t){
+      ^
+../src/01BinaryTree.cpp:134:6: note:   candidate expects 1 argument, 0 provided
+make: *** [src/01BinaryTree.o] Error 1
+12:24:29 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:139:6: error: prototype for ‘void Tree::copyTree(Tree)’ does not match any in class ‘Tree’
+ void Tree::copyTree(Tree t){
+      ^
+../src/01BinaryTree.cpp:49:7: error: candidate is: void Tree::copyTree(Tree*)
+  void copyTree(Tree* );
+       ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:384:18: error: no matching function for call to ‘Tree::callcopyTree()’
+   t.callcopyTree();
+                  ^
+../src/01BinaryTree.cpp:384:18: note: candidate is:
+../src/01BinaryTree.cpp:134:6: note: void Tree::callcopyTree(Tree*)
+ void Tree::callcopyTree(Tree *t){
+      ^
+../src/01BinaryTree.cpp:134:6: note:   candidate expects 1 argument, 0 provided
+make: *** [src/01BinaryTree.o] Error 1
+12:24:34 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:134:6: error: prototype for ‘void Tree::callcopyTree(Tree)’ does not match any in class ‘Tree’
+ void Tree::callcopyTree(Tree t){
+      ^
+../src/01BinaryTree.cpp:48:7: error: candidate is: void Tree::callcopyTree(Tree*)
+  void callcopyTree(Tree*);
+       ^
+../src/01BinaryTree.cpp:139:6: error: prototype for ‘void Tree::copyTree(Tree)’ does not match any in class ‘Tree’
+ void Tree::copyTree(Tree t){
+      ^
+../src/01BinaryTree.cpp:49:7: error: candidate is: void Tree::copyTree(Tree*)
+  void copyTree(Tree* );
+       ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:384:18: error: no matching function for call to ‘Tree::callcopyTree()’
+   t.callcopyTree();
+                  ^
+../src/01BinaryTree.cpp:384:18: note: candidate is:
+../src/01BinaryTree.cpp:48:7: note: void Tree::callcopyTree(Tree*)
+  void callcopyTree(Tree*);
+       ^
+../src/01BinaryTree.cpp:48:7: note:   candidate expects 1 argument, 0 provided
+make: *** [src/01BinaryTree.o] Error 1
+12:24:37 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:134:6: error: prototype for ‘void Tree::callcopyTree(Tree)’ does not match any in class ‘Tree’
+ void Tree::callcopyTree(Tree t){
+      ^
+../src/01BinaryTree.cpp:48:7: error: candidate is: void Tree::callcopyTree(Tree*)
+  void callcopyTree(Tree*);
+       ^
+../src/01BinaryTree.cpp:139:6: error: prototype for ‘void Tree::copyTree(Tree)’ does not match any in class ‘Tree’
+ void Tree::copyTree(Tree t){
+      ^
+../src/01BinaryTree.cpp:49:7: error: candidate is: void Tree::copyTree(Tree*)
+  void copyTree(Tree* );
+       ^
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:384:18: error: no matching function for call to ‘Tree::callcopyTree()’
+   t.callcopyTree();
+                  ^
+../src/01BinaryTree.cpp:384:18: note: candidate is:
+../src/01BinaryTree.cpp:48:7: note: void Tree::callcopyTree(Tree*)
+  void callcopyTree(Tree*);
+       ^
+../src/01BinaryTree.cpp:48:7: note:   candidate expects 1 argument, 0 provided
+make: *** [src/01BinaryTree.o] Error 1
+12:24:47 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘int main()’:
+../src/01BinaryTree.cpp:384:18: error: no matching function for call to ‘Tree::callcopyTree()’
+   t.callcopyTree();
+                  ^
+../src/01BinaryTree.cpp:384:18: note: candidate is:
+../src/01BinaryTree.cpp:134:6: note: void Tree::callcopyTree(Tree)
+ void Tree::callcopyTree(Tree t){
+      ^
+../src/01BinaryTree.cpp:134:6: note:   candidate expects 1 argument, 0 provided
+make: *** [src/01BinaryTree.o] Error 1
+12:24:57 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:25:21 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::copyTree(Tree)’:
+../src/01BinaryTree.cpp:142:13: error: no matching function for call to ‘Tree::display()’
+  t3.display();
+             ^
+../src/01BinaryTree.cpp:142:13: note: candidate is:
+../src/01BinaryTree.cpp:68:7: note: void Tree::display(node*)
+  void display(node* );
+       ^
+../src/01BinaryTree.cpp:68:7: note:   candidate expects 1 argument, 0 provided
+make: *** [src/01BinaryTree.o] Error 1
+12:25:34 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:25:42 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:25:43 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:29:06 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:362:18: error: variable or field ‘print2DUtil’ declared void
+ void print2DUtil(Node *root, int space)
+                  ^
+../src/01BinaryTree.cpp:362:18: error: ‘Node’ was not declared in this scope
+../src/01BinaryTree.cpp:362:24: error: ‘root’ was not declared in this scope
+ void print2DUtil(Node *root, int space)
+                        ^
+../src/01BinaryTree.cpp:362:30: error: expected primary-expression before ‘int’
+ void print2DUtil(Node *root, int space)
+                              ^
+../src/01BinaryTree.cpp:386:14: error: variable or field ‘print2D’ declared void
+ void print2D(Node *root)
+              ^
+../src/01BinaryTree.cpp:386:14: error: ‘Node’ was not declared in this scope
+../src/01BinaryTree.cpp:386:20: error: ‘root’ was not declared in this scope
+ void print2D(Node *root)
+                    ^
+make: *** [src/01BinaryTree.o] Error 1
+12:30:49 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp:363:18: error: variable or field ‘print2DUtil’ declared void
+ void print2DUtil(Node *root, int space)
+                  ^
+../src/01BinaryTree.cpp:363:18: error: ‘Node’ was not declared in this scope
+../src/01BinaryTree.cpp:363:24: error: ‘root’ was not declared in this scope
+ void print2DUtil(Node *root, int space)
+                        ^
+../src/01BinaryTree.cpp:363:30: error: expected primary-expression before ‘int’
+ void print2DUtil(Node *root, int space)
+                              ^
+../src/01BinaryTree.cpp:387:14: error: variable or field ‘print2D’ declared void
+ void print2D(Node *root)
+              ^
+../src/01BinaryTree.cpp:387:14: error: ‘Node’ was not declared in this scope
+../src/01BinaryTree.cpp:387:20: error: ‘root’ was not declared in this scope
+ void print2D(Node *root)
+                    ^
+make: *** [src/01BinaryTree.o] Error 1
+12:31:51 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In function ‘void callprint2D()’:
+../src/01BinaryTree.cpp:364:5: error: ‘root’ was not declared in this scope
+  if(root)
+     ^
+../src/01BinaryTree.cpp:365:16: error: ‘print2Dl’ was not declared in this scope
+   print2Dl(root);
+                ^
+../src/01BinaryTree.cpp: In function ‘void print2DUtil(node*, int)’:
+../src/01BinaryTree.cpp:375:14: error: ‘COUNT’ was not declared in this scope
+     space += COUNT;
+              ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:378:23: error: within this context
+     print2DUtil(root->right, space);
+                       ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:385:17: error: within this context
+     cout<<root->data<<"\n";
+                 ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:388:23: error: within this context
+     print2DUtil(root->left, space);
+                       ^
+../src/01BinaryTree.cpp: At global scope:
+../src/01BinaryTree.cpp:392:14: error: variable or field ‘print2D’ declared void
+ void print2D(Node *root)
+              ^
+../src/01BinaryTree.cpp:392:14: error: ‘Node’ was not declared in this scope
+../src/01BinaryTree.cpp:392:20: error: ‘root’ was not declared in this scope
+ void print2D(Node *root)
+                    ^
+make: *** [src/01BinaryTree.o] Error 1
+12:32:07 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::callprint2D()’:
+../src/01BinaryTree.cpp:365:16: error: ‘print2Dl’ was not declared in this scope
+   print2Dl(root);
+                ^
+../src/01BinaryTree.cpp: In function ‘void print2DUtil(node*, int)’:
+../src/01BinaryTree.cpp:375:14: error: ‘COUNT’ was not declared in this scope
+     space += COUNT;
+              ^
+../src/01BinaryTree.cpp:29:14: error: ‘node* node::right’ is private
+  node *left,*right;
+              ^
+../src/01BinaryTree.cpp:378:23: error: within this context
+     print2DUtil(root->right, space);
+                       ^
+../src/01BinaryTree.cpp:28:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/01BinaryTree.cpp:385:17: error: within this context
+     cout<<root->data<<"\n";
+                 ^
+../src/01BinaryTree.cpp:29:8: error: ‘node* node::left’ is private
+  node *left,*right;
+        ^
+../src/01BinaryTree.cpp:388:23: error: within this context
+     print2DUtil(root->left, space);
+                       ^
+../src/01BinaryTree.cpp: At global scope:
+../src/01BinaryTree.cpp:392:14: error: variable or field ‘print2D’ declared void
+ void print2D(Node *root)
+              ^
+../src/01BinaryTree.cpp:392:14: error: ‘Node’ was not declared in this scope
+../src/01BinaryTree.cpp:392:20: error: ‘root’ was not declared in this scope
+ void print2D(Node *root)
+                    ^
+make: *** [src/01BinaryTree.o] Error 1
+12:32:24 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::callprint2D()’:
+../src/01BinaryTree.cpp:365:16: error: ‘print2Dl’ was not declared in this scope
+   print2Dl(root);
+                ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::print2DUtil(node*, int)’:
+../src/01BinaryTree.cpp:375:14: error: ‘COUNT’ was not declared in this scope
+     space += COUNT;
+              ^
+../src/01BinaryTree.cpp: At global scope:
+../src/01BinaryTree.cpp:392:21: error: variable or field ‘print2D’ declared void
+ void Tree:: print2D(Node *root)
+                     ^
+../src/01BinaryTree.cpp:392:21: error: ‘Node’ was not declared in this scope
+../src/01BinaryTree.cpp:392:27: error: ‘root’ was not declared in this scope
+ void Tree:: print2D(Node *root)
+                           ^
+make: *** [src/01BinaryTree.o] Error 1
+12:32:41 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::callprint2D()’:
+../src/01BinaryTree.cpp:365:16: error: ‘print2Dl’ was not declared in this scope
+   print2Dl(root);
+                ^
+../src/01BinaryTree.cpp: In member function ‘void Tree::print2DUtil(node*, int)’:
+../src/01BinaryTree.cpp:375:14: error: ‘COUNT’ was not declared in this scope
+     space += COUNT;
+              ^
+make: *** [src/01BinaryTree.o] Error 1
+12:33:07 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+../src/01BinaryTree.cpp: In member function ‘void Tree::callprint2D()’:
+../src/01BinaryTree.cpp:366:16: error: ‘print2Dl’ was not declared in this scope
+   print2Dl(root);
+                ^
+make: *** [src/01BinaryTree.o] Error 1
+12:33:38 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:33:43 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:34:46 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:34:48 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:49:00 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+12:49:02 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:49:48 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:49:51 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
