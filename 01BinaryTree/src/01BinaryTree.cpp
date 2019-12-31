@@ -22,6 +22,7 @@ f) Print internal and leaf nodes
 #include <iostream>
 #include <stack>   //STL Stack
 #include <queue>
+#define COUNT 5
 using namespace std;
 
 class node{
@@ -45,10 +46,10 @@ public:
 	void create();
 	void callDelete();
 	void Delete(node*);
-	void callcopyTree();
-	void copyTree(node* );
+	void callcopyTree(Tree);
+	void copyTree(Tree);
 	void callmirrorImage();
-	void mirrorImage(node* );
+	void mirrorImage(node*);
 	void callequal();
 	void equal(node* );
 	bool compare(node*, node*);
@@ -66,7 +67,9 @@ public:
 	void postorderNonRecursive(node* );
 	void calldisplay();
 	void display(node* );
-
+	void callprint2D();
+	void print2D(node*);
+	void print2DUtil(node*, int );
 	friend class node;
 };
 
@@ -126,17 +129,23 @@ void Tree::Delete(node*){
 	if(root){
 		Delete(root->left);
 		Delete(root->right);
+		root->left=NULL;
+		root->right=NULL;
 		delete (root->right);
 		delete (root->left);
 		return;
 	}
 }
-void Tree::callcopyTree(){
-
+void Tree::callcopyTree(Tree t){
+	if(root)
+		copyTree(t);
 }
 
-void Tree::copyTree(node* root){
-
+void Tree::copyTree(Tree t){
+	Tree t3;          //another object of Tree class created
+	t3=t;
+	cout<<"\nAssigned Tree t to Tree t3";
+	t3.calldisplay();
 }
 
 void Tree::callmirrorImage(){
@@ -354,19 +363,55 @@ void Tree::display(node* root){
 
 }
 
+void Tree::callprint2D(){
+	if(root)
+		print2D(root);
+}
+
+void Tree::print2DUtil(node *root, int space)
+{
+    // Base case
+    if (root == NULL)
+        return;
+
+    // Increase distance between levels
+    space += COUNT;
+
+    // Process right child first
+    print2DUtil(root->right, space);
+
+    // Print current node after space
+    // count
+    cout<<endl;
+    for (int i = COUNT; i < space; i++)
+        cout<<" ";
+    cout<<root->data<<"\n";
+
+    // Process left child
+    print2DUtil(root->left, space);
+}
+
+// Wrapper over print2DUtil()del
+void Tree:: print2D(node *root)
+{
+    // Pass initial space count as 0
+    print2DUtil(root, 0);
+}
+
 int main() {
 	Tree t,t1,t2;
-	cout<<"\n Enter a binary tree (Given)";        //done
+	cout<<"\n Enter a binary tree (Given)";
 	t.create();
 start:
 	cout<<"\nMAIN MENU";
-	cout<<"\n1. Re-Enter binary tree ";        //done
-	cout<<"\n2. Delete all nodes of the tree";  //pending
-	cout<<"\n3. Assign this tree to another tree";  //pending
-	cout<<"\n4. Create a mirror image of the tree";   //done
-	cout<<"\n5. Check two binary trees are equal or not";  //done
-	cout<<"\n6. Tree Traversals";            //done
-	cout<<"\n7. Print internal and leaf nodes";  //done
+	cout<<"\n1. Re-Enter binary tree ";
+	cout<<"\n2. Delete all nodes of the tree";
+	cout<<"\n3. Assign this tree to another tree";
+	cout<<"\n4. Create a mirror image of the tree";
+	cout<<"\n5. Check two binary trees are equal or not";
+	cout<<"\n6. Tree Traversals";
+	cout<<"\n7. Print internal and leaf nodes";
+	cout<<"\n8. Display Binary Tree in 2D format";
 	cout<<"\n Enter your choice";
 	int choice; 	cin>>choice;
 	switch(choice){
@@ -379,7 +424,7 @@ start:
 		t.calldisplay();
 		break;
 	case 3:
-		t.callcopyTree();
+		t.callcopyTree(t);
 		break;
 	case 4:
 		t.callmirrorImage();
@@ -435,6 +480,9 @@ start:
 	case 7:
 		t.calldisplay();
 		break;
+	case 8:
+		 t.callprint2D();
+		 break;
 	default:
 		cout<<"\nNo such option in Main Menu !";
 	}
