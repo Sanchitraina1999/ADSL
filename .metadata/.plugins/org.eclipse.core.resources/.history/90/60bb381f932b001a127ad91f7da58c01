@@ -372,26 +372,26 @@ start:
 				break;
 			case 5:
 				if(t.root){
-					cout << "\nPostorder Traversal is : \n";
-					t.postorderRecursive(t.root);
-				}
-				else
-					cout<<"Tree is empty";
-
+									cout << "\nPreorder Traversal is : \n";
+									t.preorderNonRecursive(t.root);
+								}
+								else
+									cout<<"Tree is empty";
+				cout << "\nPostorder Traversal is : \n";
+				t.postorderRecursive(t.root);
 				break;
 			case 6:
 				if(t.root){
-					cout << "\nPostorder Traversal is : \n";
-					t.postorderNonRecursive(t.root);
-				}
-				else
-					cout<<"Tree is empty";
-
+									cout << "\nPreorder Traversal is : \n";
+									t.preorderNonRecursive(t.root);
+								}
+								else
+									cout<<"Tree is empty";
+				cout << "\nPostorder Traversal is : \n";
+				t.postorderNonRecursive(t.root);
 				break;
 			default:
-
 				cout<<"\nNo such option for traversal !";
-
 		}
 		break;
 	case 7:

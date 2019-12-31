@@ -391,7 +391,6 @@ start:
 			default:
 
 				cout<<"\nNo such option for traversal !";
-
 		}
 		break;
 	case 7:
