@@ -45,6 +45,7 @@ public:
 	int maxComparisons();
 
 	void inorderRecursive(node *);
+	void RVLorderREcusive(node *);
 
 	friend class node;
 };
@@ -103,6 +104,8 @@ void BST::add(){
 void BST::displayASC(){
 	if(root)
 		inorderRecursive(root);
+	else
+		cout<<"\nDictionary has no keywords";
 }
 
 void BST::inorderRecursive(node* root){
@@ -117,7 +120,21 @@ void BST::inorderRecursive(node* root){
 }
 
 void BST::displayDESC(){
+	if(root)
+		RVLorderREcusive(root);
+	else
+		cout<<"\nDictionary has no keywords";
+}
 
+void BST::RVLorderREcusive(node *root){
+	if(root){
+		RVLorderREcusive(root->right);
+			cout<<root->key<<" :>> ";
+			for(unsigned int i=0;i<root->meanings.size();i++)
+				cout<<root->meanings[i]<<" ";
+			cout<<endl;
+		RVLorderREcusive(root->left);
+	}
 }
 
 int main(){
