@@ -46,6 +46,7 @@ public:
 
 	void inorderRecursive(node *);
 	void RVLorderREcusive(node *);
+	node* search(string, node*);
 
 	friend class node;
 };
@@ -137,6 +138,45 @@ void BST::RVLorderREcusive(node *root){
 	}
 }
 
+void BST::updatemeaning(){
+	string s,meanChange;
+	cout<<"Enter the keyword for which you want to update the meanings";
+	cin>>s;
+	node* temp = search(s,root);
+	if(temp){
+		cout<<temp->meanings.size()<<" meanings exist for keyword: "<<s<<" , they are as follows: ";
+		for(int i=0;i<temp->meanings.size();i++){
+			cout<<temp->meanings[i]<<" ";
+			cout<<"\n";
+		}
+		cout<<"Meaning you want to change: ";
+		cin>>meanChange;
+		//to do
+	}
+	else{
+		cout<<"\n"<<s<<" keyword not found in the dictionary";
+	}
+}
+
+node* BST::search(string s,node* root){
+	int found=0;
+	while(found!=1){
+		if (root->key.compare(s) < 0){
+			if(root->right!=NULL)
+				root = root->right;
+		}
+		else if (root->key.compare(s) > 0){
+			if(root->left!=NULL)
+				root = root->left;
+		}
+		else{
+			found = 1;
+			return root;
+		}
+	}
+	return NULL;
+}
+
 int main(){
 	BST t;
 	int choice;
@@ -162,7 +202,7 @@ int main(){
 			t.displayDESC();
 			break;
 		case 4:
-
+			t.updatemeaning();
 			break;
 		case 5:
 
