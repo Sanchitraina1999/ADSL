@@ -42,8 +42,7 @@ public:
 	void updatemeaning();
 	void displayASC();
 	void displayDESC();
-	void copy();
-	void comparisons();
+	int maxComparisons();
 
 	void inorderRecursive(node *);
 	void RVLorderREcusive(node *);
@@ -217,14 +216,6 @@ void BST::deleteKeyword(){
 	}
 }
 
-void BST::copy(){
-
-}
-
-void BST::comparisons(){
-
-}
-
 int main(){
 	BST t;
 	int choice;
@@ -256,10 +247,10 @@ int main(){
 			t.deleteKeyword();
 			break;
 		case 6:
-			t.copy();
+
 			break;
 		case 7:
-			t.comparisons();
+
 			break;
 		default:
 			cout<<"\nYou have entered a wrong choice";

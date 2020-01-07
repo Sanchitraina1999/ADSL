@@ -43,7 +43,7 @@ public:
 	void displayASC();
 	void displayDESC();
 	void copy();
-	void comparisons();
+	int comparisons();
 
 	void inorderRecursive(node *);
 	void RVLorderREcusive(node *);
