@@ -207,13 +207,6 @@ void BST::deleteKeyword(){
 	string keyword;
 	cout<<"\nEnter the keyword you want to delete from the dictionary: ";
 	cin>>keyword;
-	node *found=search(keyword,root);
-	if(found){
-
-	}
-	else{
-		cout<<"\nKeyword ("<<keyword<<") is not the dictionary";
-	}
 }
 
 int main(){
