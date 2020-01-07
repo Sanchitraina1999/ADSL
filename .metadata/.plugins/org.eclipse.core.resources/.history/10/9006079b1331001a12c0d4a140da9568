@@ -1,0 +1,244 @@
+//============================================================================
+// Name        : 02BinarySearchTree.cpp
+// Author      : Sanchit Raina
+// Version     :
+// Copyright   : https://github.com/Sanchitraina1999/ADSL/blob/master/02BinarySearchTree/src/02BinarySearchTree.cpp
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+/*
+ A Dictionary stores keywords & its meanings. Provide facility for
+adding new keywords, deleting keywords, updating values of any
+entry, assign a given tree into another tree (=). Provide facility to
+display whole data sorted in ascending/ Descending order. Also find
+how many maximum comparisons may require for finding any
+keyword. Use Binary Search Tree for implementation.
+ */
+
+#include <iostream>
+#include<vector>
+#include<string.h>
+using namespace std;
+
+class node{
+	string key;
+	vector<string> meanings;
+	node *left, *right;
+public:
+	node(){
+		left=right=NULL;
+	}
+	friend class BST;
+};
+
+class BST{
+	node *root;
+public:
+	BST(){
+		root=NULL;
+	}
+	void add();
+	void DELETE();
+	void updatemeaning();
+	void displayASC();
+	void displayDESC();
+	int maxComparisons();
+
+	void inorderRecursive(node *);
+	void RVLorderREcusive(node *);
+	node* search(string, node*);
+
+	friend class node;
+};
+
+void BST::add(){
+		int n;
+		string meaning;
+
+		node *temp= new node(); //temp is the new node to be added to the tree
+		cout<<"\nEnter keyword : ";
+		cin>>temp->key;
+		cout<<"\nNumbers of meanings you want to enter for "<<temp->key<<" key";
+		cin>>n;
+		cout<<"Enter "<<n<<" meanings";
+		cout<<endl;
+		while(n--){
+			cout<<">>";
+			cin>>meaning;
+			temp->meanings.push_back(meaning);
+		}
+
+		if(root==NULL){
+			root=temp;
+			cout<<"\n"<<root->key<<" added as ROOT node of the Binary Search Tree";
+		}
+		else{
+			node *temp1=root;       //temp1 is for primary root nodes at each level
+			int flag=0;           //flag 0 implies new node has NOT YET been added
+			while(flag==0){
+				if(temp->key.compare(temp1->key)<0){     //s1.compare(s2) returns a value < 0 (s1 is smaller then s2)
+					if(temp1->left==NULL){
+						temp1->left=temp;
+						cout<<"\n"<<temp->key<<" added to the left of "<<temp1->key;
+						flag=1;
+					}
+					else{
+						temp1=temp1->left;
+					}
+				}
+				else if(temp->key.compare(temp1->key)>0){
+					if(temp1->right==NULL){
+						temp1->right=temp;
+						cout<<"\n"<<temp->key<<" added to the right of "<<temp1->key;
+						flag=1;
+					}
+					else{
+						temp1=temp1->right;
+					}
+				}
+				else
+					cout<<"\n"<<temp->key<<" already exists in the dictionary";
+			}
+		}
+}
+
+void BST::displayASC(){
+	if(root)
+		inorderRecursive(root);
+	else
+		cout<<"\nDictionary has no keywords";
+}
+
+void BST::inorderRecursive(node* root){
+	if(root){
+		inorderRecursive(root->left);
+			cout<<root->key<<" :>> ";
+			for(unsigned int i=0;i<root->meanings.size();i++)
+				cout<<root->meanings[i]<<" ";
+			cout<<endl;
+		inorderRecursive(root->right);
+	}
+}
+
+void BST::displayDESC(){
+	if(root)
+		RVLorderREcusive(root);
+	else
+		cout<<"\nDictionary has no keywords";
+}
+
+void BST::RVLorderREcusive(node *root){
+	if(root){
+		RVLorderREcusive(root->right);
+			cout<<root->key<<" :>> ";
+			for(unsigned int i=0;i<root->meanings.size();i++)
+				cout<<root->meanings[i]<<" ";
+			cout<<endl;
+		RVLorderREcusive(root->left);
+	}
+}
+
+void BST::callupdatemeaning(){
+	char choice='y';
+	string key,meaningChange,changed;
+	cout<<"Enter the keyword for which you want to update the meanings";
+	cin>>key;
+	node* temp = search(key,root);
+	if(temp){
+		cout<<temp->meanings.size()<<" meanings exist for keyword: "<<key<<" , they are as follows: ";
+		for(int i=0;i<temp->meanings.size();i++){
+			cout<<temp->meanings[i]<<" ";
+			cout<<"\n";
+		}
+		while(choice=='y'){
+			cout<<"\nMeaning you want to change: ";
+			cin>>meaningChange;
+			cout<<"\nWhat do you want "<<meaningChange<<" to change with ?: ";
+			cin>>changed;
+			for(int i=0;i<temp->meanings.size();i++){
+				if(temp->meanings[i].compare(meaningChange)==0){
+					cout<<"\n "<<temp->meanings[i]<<" successfully changed to";
+					temp->meanings[i]=changed;
+					cout<<temp->meanings[i];
+				}
+			}
+			cout<<"\nDo you want to change more meanings of the keyword "<<key<<" ?: ";
+			cin>>choice;
+		}
+	}
+	else{
+		cout<<"\n"<<key<<" keyword not found in the dictionary";
+	}
+}
+
+node* BST::search(string meaningChange,node* root){
+	int found=0;
+	while(found!=1){
+		if (root->key.compare(meaningChange) < 0){
+			if(root->right!=NULL)
+				root = root->right;
+		}
+		else if (root->key.compare(meaningChange) > 0){
+			if(root->left!=NULL)
+				root = root->left;
+		}
+		else{
+			found = 1;
+			return root;
+		}
+	}
+	return NULL;
+}
+
+void BST::updatemeaning(node* temp){
+
+}
+
+int main(){
+	BST t;
+	int choice;
+	char stop='n';
+	do{
+		cout<<"\n MAIN MENU ";
+		cout<<"\n 1. INSERT WORD with its MEANINGS";
+		cout<<"\n 2. PRINT DICTIONARY(ascending)";
+		cout<<"\n 3. PRINT DICTIONARY(descending)";
+		cout<<"\n 4. UPDATE ";
+		cout<<"\n 5. DELETE";
+		cout<<"\n 6. COPY";
+		cout<<"\n 7. MAX comparisons";
+		cin>>choice;
+		switch(choice){
+		case 1:
+			t.add();
+			break;
+		case 2:
+			t.displayASC();
+			break;
+		case 3:
+			t.displayDESC();
+			break;
+		case 4:
+			t.updatemeaning();
+			break;
+		case 5:
+
+			break;
+		case 6:
+
+			break;
+		case 7:
+
+			break;
+		default:
+			cout<<"\nYou have entered a wrong choice";
+		}
+		cout<<"\n\nDo you want to stop execution (y/n)";
+		cin>>stop;
+	}
+	while(stop=='n' || stop=='N');
+	return 0;
+}
+
+
+

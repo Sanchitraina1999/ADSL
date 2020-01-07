@@ -139,43 +139,68 @@ void BST::RVLorderREcusive(node *root){
 }
 
 void BST::updatemeaning(){
-	string s,meanChange;
+	char choice='y';
+	string key,meaningChange,changed;
 	cout<<"Enter the keyword for which you want to update the meanings";
-	cin>>s;
-	node* temp = search(s,root);
+	cin>>key;
+	node* temp = search(key,root);
 	if(temp){
-		cout<<temp->meanings.size()<<" meanings exist for keyword: "<<s<<" , they are as follows: ";
+		cout<<temp->meanings.size()<<" meanings exist for keyword: "<<key<<" , they are as follows: "<<endl;
 		for(int i=0;i<temp->meanings.size();i++){
 			cout<<temp->meanings[i]<<" ";
 			cout<<"\n";
 		}
-		cout<<"Meaning you want to change: ";
-		cin>>meanChange;
-		//to do
+		while(choice=='y'){
+			int found=0;
+			cout<<"\nMeaning you want to change: ";
+			cin>>meaningChange;
+			cout<<"\nWhat do you want "<<meaningChange<<" to change with ?: ";
+			cin>>changed;
+			for(int i=0;i<temp->meanings.size();i++){
+				if(temp->meanings[i].compare(meaningChange)==0){
+					cout<<"\n "<<temp->meanings[i]<<" successfully changed to ";
+					temp->meanings[i]=changed;
+					cout<<temp->meanings[i];
+					found=1;
+				}
+			}
+			if(found==0)
+				cout<<"No such meaning ("<<meaningChange<<") exists for keyword "<<key<<" in the dictionary";
+			else{
+				cout<<"\nThe dictionary is updated as : "<<endl;
+				displayASC();
+			}
+			cout<<"\nDo you want to change more meanings of the keyword "<<key<<" ?: ";
+			cin>>choice;
+		}
 	}
 	else{
-		cout<<"\n"<<s<<" keyword not found in the dictionary";
-	}
+			cout<<"\n"<<key<<" keyword not found in the dictionary";
+		}
 }
 
-node* BST::search(string s,node* root){
+node* BST::search(string meaningChange,node* root){
 	int found=0;
-	while(found!=1){
-		if (root->key.compare(s) < 0){
+	while(found==0){
+		if (root->key.compare(meaningChange) < 0){
 			if(root->right!=NULL)
 				root = root->right;
+			else
+				return NULL;
 		}
-		else if (root->key.compare(s) > 0){
+		else if (root->key.compare(meaningChange) > 0){
 			if(root->left!=NULL)
 				root = root->left;
+			else
+				return NULL;
 		}
 		else{
 			found = 1;
 			return root;
 		}
 	}
-	return NULL;
 }
+
 
 int main(){
 	BST t;

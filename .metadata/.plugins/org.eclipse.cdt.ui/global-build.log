@@ -3634,3 +3634,1066 @@ make: Nothing to be done for `all'.
 11:01:28 **** Incremental Build of configuration Debug for project 01BinaryTree ****
 make all 
 make: Nothing to be done for `all'.
+11:56:31 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:56:31 **** Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::add()’:
+../src/02BinarySearchTree.cpp:62:38: error: ‘class node’ has no member named ‘data’
+      cout<<"\nDo you place "<< temp->data <<" left or right of "<< temp1->data<<" (l/r) : ";
+                                      ^
+../src/02BinarySearchTree.cpp:62:75: error: ‘class node’ has no member named ‘data’
+      cout<<"\nDo you place "<< temp->data <<" left or right of "<< temp1->data<<" (l/r) : ";
+                                                                           ^
+../src/02BinarySearchTree.cpp:68:26: error: ‘class node’ has no member named ‘data’
+        cout<<"\n"<<temp->data<<" added to the left of "<<temp1->data;
+                          ^
+../src/02BinarySearchTree.cpp:68:65: error: ‘class node’ has no member named ‘data’
+        cout<<"\n"<<temp->data<<" added to the left of "<<temp1->data;
+                                                                 ^
+../src/02BinarySearchTree.cpp:78:26: error: ‘class node’ has no member named ‘data’
+        cout<<"\n"<<temp->data<<" added to the right of "<<temp1->data;
+                          ^
+../src/02BinarySearchTree.cpp:78:66: error: ‘class node’ has no member named ‘data’
+        cout<<"\n"<<temp->data<<" added to the right of "<<temp1->data;
+                                                                  ^
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:130:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:130:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:130:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:130:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:06:53 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:06:53 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::add()’:
+../src/02BinarySearchTree.cpp:63:12: error: expected unqualified-id before ‘(’ token
+      root->(meanings.push_back(meaning));
+            ^
+../src/02BinarySearchTree.cpp:63:13: error: ‘meanings’ was not declared in this scope
+      root->(meanings.push_back(meaning));
+             ^
+../src/02BinarySearchTree.cpp:70:30: error: expected primary-expression before ‘)’ token
+      if(stringcmp(temp1->key,)){
+                              ^
+../src/02BinarySearchTree.cpp:70:30: error: ‘stringcmp’ was not declared in this scope
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:136:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:136:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:136:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:136:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:07:13 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:07:13 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::add()’:
+../src/02BinarySearchTree.cpp:63:12: error: expected unqualified-id before ‘(’ token
+      root->(meanings.push_back(meaning));
+            ^
+../src/02BinarySearchTree.cpp:63:13: error: ‘meanings’ was not declared in this scope
+      root->(meanings.push_back(meaning));
+             ^
+../src/02BinarySearchTree.cpp:70:30: error: expected primary-expression before ‘)’ token
+      if(stringcmp(temp1->key,)){
+                              ^
+../src/02BinarySearchTree.cpp:70:30: error: ‘stringcmp’ was not declared in this scope
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:136:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:136:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:136:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:136:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:07:29 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:07:29 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::add()’:
+../src/02BinarySearchTree.cpp:70:30: error: expected primary-expression before ‘)’ token
+      if(stringcmp(temp1->key,)){
+                              ^
+../src/02BinarySearchTree.cpp:70:30: error: ‘stringcmp’ was not declared in this scope
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:136:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:136:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:136:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:136:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:07:40 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:07:40 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::add()’:
+../src/02BinarySearchTree.cpp:70:27: error: expected primary-expression before ‘)’ token
+      if(strcmp(temp1->key,)){
+                           ^
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:136:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:136:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:136:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:136:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:10:10 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:10:11 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:136:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:136:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:136:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:136:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:22:06 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:22:06 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::callinorderRecursive()’:
+../src/02BinarySearchTree.cpp:106:24: error: no matching function for call to ‘BST::inorderRecursive(node*&)’
+   inorderRecursive(root);
+                        ^
+../src/02BinarySearchTree.cpp:106:24: note: candidate is:
+../src/02BinarySearchTree.cpp:48:7: note: void BST::inorderRecursive()
+  void inorderRecursive();
+       ^
+../src/02BinarySearchTree.cpp:48:7: note:   candidate expects 0 arguments, 1 provided
+../src/02BinarySearchTree.cpp: At global scope:
+../src/02BinarySearchTree.cpp:109:6: error: prototype for ‘void BST::inorderRecursive(node*)’ does not match any in class ‘BST’
+ void BST::inorderRecursive(node* root){
+      ^
+../src/02BinarySearchTree.cpp:48:7: error: candidate is: void BST::inorderRecursive()
+  void inorderRecursive();
+       ^
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:163:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:163:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:163:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:163:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:22:39 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:22:39 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::callinorderRecursive()’:
+../src/02BinarySearchTree.cpp:106:24: error: no matching function for call to ‘BST::inorderRecursive(node*&)’
+   inorderRecursive(root);
+                        ^
+../src/02BinarySearchTree.cpp:106:24: note: candidate is:
+../src/02BinarySearchTree.cpp:48:7: note: void BST::inorderRecursive()
+  void inorderRecursive();
+       ^
+../src/02BinarySearchTree.cpp:48:7: note:   candidate expects 0 arguments, 1 provided
+../src/02BinarySearchTree.cpp: At global scope:
+../src/02BinarySearchTree.cpp:109:6: error: prototype for ‘void BST::inorderRecursive(node*)’ does not match any in class ‘BST’
+ void BST::inorderRecursive(node* root){
+      ^
+../src/02BinarySearchTree.cpp:48:7: error: candidate is: void BST::inorderRecursive()
+  void inorderRecursive();
+       ^
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:163:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:163:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:163:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:163:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:22:48 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:22:48 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:163:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:163:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:163:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:163:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:23:35 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:23:35 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:158:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:158:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:158:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:158:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:23:40 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:23:40 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In function ‘int main()’:
+../src/02BinarySearchTree.cpp:158:25: error: expected ‘)’ before 'N'
+  while(stop=='n' || stop'N');
+                         ^
+../src/02BinarySearchTree.cpp:158:25: error: expected ‘;’ before 'N'
+../src/02BinarySearchTree.cpp:158:28: error: expected ‘;’ before ‘)’ token
+  while(stop=='n' || stop'N');
+                            ^
+../src/02BinarySearchTree.cpp:158:29: warning: statement has no effect [-Wunused-value]
+  while(stop=='n' || stop'N');
+                             ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:24:23 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:24:24 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:24:27 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:25:45 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:25:45 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:25:46 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:27:21 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:27:21 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:27:25 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:27:51 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:27:51 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:27:53 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:29:26 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:29:27 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:29:30 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:29:30 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:29:30 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:30:10 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:30:10 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:30:14 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:30:42 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:30:48 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:01 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:08 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:12 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:13 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:14 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:30 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:30 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:33 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:33 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:33 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:33 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:34 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:34 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:34 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:34 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:39 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:39 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:40 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:36:07 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:36:07 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::inorderRecursive(node*)’:
+../src/02BinarySearchTree.cpp:108:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<root->meanings.size();i++)
+                                     ^
+../src/02BinarySearchTree.cpp:109:8: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘std::vector<std::basic_string<char> >’)
+    cout<<root->meanings<<" ";
+        ^
+../src/02BinarySearchTree.cpp:109:8: note: candidates are:
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:108:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/4.8.3/ostream:108:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.8.3/ostream:117:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8.3/ostream:117:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8.3/ostream:127:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/4.8.3/ostream:127:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8.3/ostream:166:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/4.8.3/ostream:166:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘long int’
+/usr/include/c++/4.8.3/ostream:170:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/4.8.3/ostream:170:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘long unsigned int’
+/usr/include/c++/4.8.3/ostream:174:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/4.8.3/ostream:174:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘bool’
+In file included from /usr/include/c++/4.8.3/ostream:609:0,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/bits/ostream.tcc:91:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8.3/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘short int’
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:181:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/4.8.3/ostream:181:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘short unsigned int’
+In file included from /usr/include/c++/4.8.3/ostream:609:0,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/bits/ostream.tcc:105:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8.3/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘int’
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:192:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/4.8.3/ostream:192:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘unsigned int’
+/usr/include/c++/4.8.3/ostream:201:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/4.8.3/ostream:201:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘long long int’
+/usr/include/c++/4.8.3/ostream:205:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/4.8.3/ostream:205:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘long long unsigned int’
+/usr/include/c++/4.8.3/ostream:220:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/4.8.3/ostream:220:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘double’
+/usr/include/c++/4.8.3/ostream:224:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/4.8.3/ostream:224:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘float’
+/usr/include/c++/4.8.3/ostream:232:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/4.8.3/ostream:232:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘long double’
+/usr/include/c++/4.8.3/ostream:245:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/4.8.3/ostream:245:7: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘const void*’
+In file included from /usr/include/c++/4.8.3/ostream:609:0,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/bits/ostream.tcc:119:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8.3/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘std::vector<std::basic_string<char> >’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.8.3/string:52:0,
+                 from /usr/include/c++/4.8.3/bits/locale_classes.h:40,
+                 from /usr/include/c++/4.8.3/bits/ios_base.h:41,
+                 from /usr/include/c++/4.8.3/ios:42,
+                 from /usr/include/c++/4.8.3/ostream:38,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/bits/basic_string.h:2753:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.8.3/bits/basic_string.h:2753:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   ‘std::vector<std::basic_string<char> >’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+    cout<<root->meanings<<" ";
+                ^
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.8.3/ostream:471:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘std::vector<std::basic_string<char> >’)
+    cout<<root->meanings<<" ";
+                ^
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.8.3/ostream:476:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   cannot convert ‘root->node::meanings’ (type ‘std::vector<std::basic_string<char> >’) to type ‘char’
+    cout<<root->meanings<<" ";
+                ^
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.8.3/ostream:482:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   cannot convert ‘root->node::meanings’ (type ‘std::vector<std::basic_string<char> >’) to type ‘char’
+    cout<<root->meanings<<" ";
+                ^
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.8.3/ostream:488:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   cannot convert ‘root->node::meanings’ (type ‘std::vector<std::basic_string<char> >’) to type ‘signed char’
+    cout<<root->meanings<<" ";
+                ^
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.8.3/ostream:493:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   cannot convert ‘root->node::meanings’ (type ‘std::vector<std::basic_string<char> >’) to type ‘unsigned char’
+    cout<<root->meanings<<" ";
+                ^
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.8.3/ostream:513:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   mismatched types ‘const _CharT*’ and ‘std::vector<std::basic_string<char> >’
+    cout<<root->meanings<<" ";
+                ^
+In file included from /usr/include/c++/4.8.3/ostream:609:0,
+                 from /usr/include/c++/4.8.3/iostream:39,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.8.3/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   cannot convert ‘root->node::meanings’ (type ‘std::vector<std::basic_string<char> >’) to type ‘const char*’
+    cout<<root->meanings<<" ";
+                ^
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.8.3/ostream:530:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   cannot convert ‘root->node::meanings’ (type ‘std::vector<std::basic_string<char> >’) to type ‘const char*’
+    cout<<root->meanings<<" ";
+                ^
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.8.3/ostream:543:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   cannot convert ‘root->node::meanings’ (type ‘std::vector<std::basic_string<char> >’) to type ‘const signed char*’
+    cout<<root->meanings<<" ";
+                ^
+In file included from /usr/include/c++/4.8.3/iostream:39:0,
+                 from ../src/02BinarySearchTree.cpp:18:
+/usr/include/c++/4.8.3/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.8.3/ostream:548:5: note:   template argument deduction/substitution failed:
+../src/02BinarySearchTree.cpp:109:16: note:   cannot convert ‘root->node::meanings’ (type ‘std::vector<std::basic_string<char> >’) to type ‘const unsigned char*’
+    cout<<root->meanings<<" ";
+                ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:36:17 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:36:17 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::inorderRecursive(node*)’:
+../src/02BinarySearchTree.cpp:108:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<root->meanings.size();i++)
+                                     ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:36:45 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:36:45 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:36:50 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:37:11 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:37:11 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:37:12 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:40:14 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:40:14 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:40:16 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:42:09 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:42:09 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:43:56 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:43:56 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:43:57 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:17 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:17 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:45:25 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:25 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:25 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:46:26 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:56:08 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:56:08 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:56:09 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:57:48 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:57:48 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:57:52 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:34:49 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:34:50 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:149:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:158:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+11:34:55 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:35:33 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:35:50 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:37:44 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:37:44 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:150:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:158:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp:169:2: error: ‘else’ without a previous ‘if’
+  else{
+  ^
+make: *** [src/02BinarySearchTree.o] Error 1
+11:37:46 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:150:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:158:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp:169:2: error: ‘else’ without a previous ‘if’
+  else{
+  ^
+make: *** [src/02BinarySearchTree.o] Error 1
+11:39:27 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:39:28 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:149:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:158:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+11:39:35 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:42:42 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:42:42 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:149:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:159:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+11:42:43 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:43:10 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:43:10 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:43:11 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:44:56 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:44:56 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:149:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:159:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+11:44:58 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:50:04 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:50:04 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:149:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:159:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+11:50:05 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:50:10 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:50:10 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:50:12 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:50:16 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:50:16 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:50:17 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:51:58 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:51:58 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:149:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:159:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string, node*)’:
+../src/02BinarySearchTree.cpp:202:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+11:52:00 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.

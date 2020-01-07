@@ -1,0 +1,98 @@
+//============================================================================
+// Name        : 02BinarySearchTree.cpp
+// Author      : Sanchit Raina
+// Version     :
+// Copyright   : https://github.com/Sanchitraina1999/ADSL/blob/master/02BinarySearchTree/src/02BinarySearchTree.cpp
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+/*
+ A Dictionary stores keywords & its meanings. Provide facility for
+adding new keywords, deleting keywords, updating values of any
+entry, assign a given tree into another tree (=). Provide facility to
+display whole data sorted in ascending/ Descending order. Also find
+how many maximum comparisons may require for finding any
+keyword. Use Binary Search Tree for implementation.
+ */
+
+#include <iostream>
+#include<vector>
+using namespace std;
+
+class node{
+	string key;
+	vector<string> meanings;
+	node *left, *right;
+public:
+	node(){
+		left=right=NULL;
+	}
+	friend class BST;
+};
+
+class BST{
+	node *root;
+public:
+	BST(){
+		root=NULL;
+	}
+	void add();
+	void DELETE();
+	void updatemeaning();
+	void displayASC();
+	void displayDESC();
+	int maxComparisons();
+};
+
+void BST::add(){
+
+}
+
+int main(){
+	BST t;
+	int choice;
+	char stop='n';
+	do{
+		cout<<"\n MAIN MENU ";
+		cout<<"\n 1. INSERT WORD with its MEANINGS";
+		cout<<"\n 2. PRINT DICTIONARY(ascending)";
+		cout<<"\n 3. PRINT DICTIONARY(descending)";
+		cout<<"\n 4. UPDATE ";
+		cout<<"\n 5. DELETE";
+		cout<<"\n 6. COPY";
+		cout<<"\n 7. MAX compariosons";
+		cin>>choice;
+		switch(choice){
+		case 1:
+			t.add();
+			break;
+		case 2:
+
+			break;
+		case 3:
+
+			break;
+		case 4:
+
+			break;
+		case 5:
+
+			break;
+		case 6:
+
+			break;
+		case 7:
+
+			break;
+		default:
+			cout<<"\nYou have entered a wrong choice";
+		}
+		cout<<"Do you want to stop execution (y/n)";
+		cin>>stop;
+	}
+	while(stop=='n' || stop'N');
+	return 0;
+}
+
+
+
