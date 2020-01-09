@@ -255,26 +255,16 @@ void BST::deleteKeyword(){
 					delete(found);
 				}
 			}
-			else if(found->left!=NULL){
+			else if(found->right!=NULL){
 				if(founds_parent->left==found){
-					founds_parent->left=found->left;
+					founds_parent->left=found->right;
 					delete(found);
 				}
 				else if(founds_parent->right==found){
-					founds_parent->right=found->left;
+					founds_parent->right=found->right;
 					delete(found);
 				}
 			}
-			cout<<"\nKeyword "<<keyword<<" deleted from the dictionary";
-		}
-		else{                 //FOUND node has both left and right nodes present
-			node* temp_node=found;
-			temp_node=temp_node->right;
-			while(temp_node->left!=NULL)
-				temp_node=temp_node->left;
-			swap(found->key,temp_node->key); //the node to be deleted from the tree is replaced with its inorder successor node
-			/*Now, indirectly node we want to delete is TEMP_NODE's key that is now holding */
-
 		}
 
 		cout<<"\nThe dictionary is updated as : "<<endl;

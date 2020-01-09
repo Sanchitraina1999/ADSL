@@ -1,17 +1,21 @@
-12:51:24 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+11:45:16 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
 make all 
 Building file: ../src/02BinarySearchTree.cpp
 Invoking: GCC C++ Compiler
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
 ../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
-../src/02BinarySearchTree.cpp:150:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/02BinarySearchTree.cpp:151:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for(int i=0;i<temp->meanings.size();i++){
                                      ^
-../src/02BinarySearchTree.cpp:160:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../src/02BinarySearchTree.cpp:161:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
     for(int i=0;i<temp->meanings.size();i++){
                                       ^
 ../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string, node*)’:
-../src/02BinarySearchTree.cpp:203:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/02BinarySearchTree.cpp:204:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::parent(node*)’:
+../src/02BinarySearchTree.cpp:223:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
 Finished building: ../src/02BinarySearchTree.cpp
@@ -22,5 +26,5 @@ g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o
 Finished building target: 02BinarySearchTree
  
 
-12:51:24 Build Finished (took 774ms)
+11:45:19 Build Finished (took 2s.382ms)
 
