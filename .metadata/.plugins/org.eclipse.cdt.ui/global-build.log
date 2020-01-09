@@ -4806,3 +4806,233 @@ Invoking: GCC C++ Linker
 g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
 Finished building target: 02BinarySearchTree
  
+12:51:55 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:51:55 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:149:34: error: no matching function for call to ‘BST::search(std::string&, node*&)’
+  node* temp = search(keyword,root);
+                                  ^
+../src/02BinarySearchTree.cpp:149:34: note: candidate is:
+../src/02BinarySearchTree.cpp:50:8: note: node* BST::search(std::string)
+  node* search(string);
+        ^
+../src/02BinarySearchTree.cpp:50:8: note:   candidate expects 1 argument, 2 provided
+../src/02BinarySearchTree.cpp:152:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:162:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp: In member function ‘void BST::comparisons()’:
+../src/02BinarySearchTree.cpp:297:49: error: no matching function for call to ‘BST::searchwithcomparisons(std::string&, node*&)’
+  node* temp = searchwithcomparisons(keyword,root);
+                                                 ^
+../src/02BinarySearchTree.cpp:297:49: note: candidate is:
+../src/02BinarySearchTree.cpp:51:6: note: int BST::searchwithcomparisons(std::string)
+  int searchwithcomparisons(string);
+      ^
+../src/02BinarySearchTree.cpp:51:6: note:   candidate expects 1 argument, 2 provided
+../src/02BinarySearchTree.cpp:297:8: warning: unused variable ‘temp’ [-Wunused-variable]
+  node* temp = searchwithcomparisons(keyword,root);
+        ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string)’:
+../src/02BinarySearchTree.cpp:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::parent(node*)’:
+../src/02BinarySearchTree.cpp:224:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:52:10 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:52:10 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:152:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:162:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp: In member function ‘void BST::comparisons()’:
+../src/02BinarySearchTree.cpp:297:44: error: invalid conversion from ‘int’ to ‘node*’ [-fpermissive]
+  node* temp = searchwithcomparisons(keyword);
+                                            ^
+../src/02BinarySearchTree.cpp:297:8: warning: unused variable ‘temp’ [-Wunused-variable]
+  node* temp = searchwithcomparisons(keyword);
+        ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string)’:
+../src/02BinarySearchTree.cpp:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::parent(node*)’:
+../src/02BinarySearchTree.cpp:224:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/02BinarySearchTree.o] Error 1
+12:52:30 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:52:30 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:152:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:162:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp: In member function ‘void BST::comparisons()’:
+../src/02BinarySearchTree.cpp:297:6: warning: unused variable ‘maxx’ [-Wunused-variable]
+  int maxx = searchwithcomparisons(keyword);
+      ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string)’:
+../src/02BinarySearchTree.cpp:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::parent(node*)’:
+../src/02BinarySearchTree.cpp:224:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+./src/02BinarySearchTree.o: In function `BST::comparisons()':
+/home/SE/21154/ADSL/02BinarySearchTree/Debug/../src/02BinarySearchTree.cpp:297: undefined reference to `BST::searchwithcomparisons(std::string)'
+collect2: error: ld returned 1 exit status
+make: *** [02BinarySearchTree] Error 1
+12:55:36 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:36 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:152:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:162:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp: In member function ‘void BST::comparisons()’:
+../src/02BinarySearchTree.cpp:297:6: warning: unused variable ‘maxx’ [-Wunused-variable]
+  int maxx = searchwithcomparisons(keyword);
+      ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string)’:
+../src/02BinarySearchTree.cpp:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::parent(node*)’:
+../src/02BinarySearchTree.cpp:224:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘int BST::searchwithcomparisons(std::string)’:
+../src/02BinarySearchTree.cpp:325:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:55:53 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:53 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:152:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:162:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp: In member function ‘void BST::comparisons()’:
+../src/02BinarySearchTree.cpp:295:6: warning: variable ‘maxx’ set but not used [-Wunused-but-set-variable]
+  int maxx;
+      ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string)’:
+../src/02BinarySearchTree.cpp:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::parent(node*)’:
+../src/02BinarySearchTree.cpp:224:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘int BST::searchwithcomparisons(std::string)’:
+../src/02BinarySearchTree.cpp:326:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:57:24 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:57:24 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:152:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:162:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string)’:
+../src/02BinarySearchTree.cpp:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::parent(node*)’:
+../src/02BinarySearchTree.cpp:224:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘int BST::searchwithcomparisons(std::string)’:
+../src/02BinarySearchTree.cpp:327:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:57:29 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:57:29 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:57:31 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.

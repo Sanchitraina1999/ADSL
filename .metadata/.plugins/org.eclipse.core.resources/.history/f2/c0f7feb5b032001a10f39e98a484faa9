@@ -47,8 +47,7 @@ public:
 
 	void inorderRecursive(node *);
 	void RVLorderREcusive(node *);
-	node* search(string);
-	int searchwithcomparisons(string);
+	node* search(string, node*);
 	node* parent(node*);
 
 	friend class node;
@@ -144,9 +143,9 @@ void BST::RVLorderREcusive(node *root){
 void BST::updatemeaning(){
 	char choice='y';
 	string keyword,meaningChange,changed;
-	cout<<"\nEnter the keyword for which you want to update the meanings";
+	cout<<"Enter the keyword for which you want to update the meanings";
 	cin>>keyword;
-	node* temp = search(keyword);
+	node* temp = search(keyword,root);
 	if(temp){
 		cout<<temp->meanings.size()<<" meanings exist for keyword: "<<keyword<<" , they are as follows: "<<endl;
 		for(int i=0;i<temp->meanings.size();i++){
@@ -182,7 +181,7 @@ void BST::updatemeaning(){
 		}
 }
 
-node* BST::search(string keyword){
+node* BST::search(string keyword,node* root){
 	int found=0;
 	while(found==0){
 		if (root->key.compare(keyword) < 0){
@@ -229,7 +228,7 @@ void BST::deleteKeyword(){
 	string keyword;
 	cout<<"\nEnter the keyword you want to delete from the dictionary: ";
 	cin>>keyword;
-	node *found=search(keyword);
+	node *found=search(keyword,root);
 	node *founds_parent=parent(found);
 	if(found){
 		if(found->left==NULL && found->right==NULL){          //FOUND is LEAF node
@@ -291,39 +290,44 @@ void BST::copy(){
 }
 
 void BST::comparisons(){
-	string keyword;
-	int maxx;
-	cout<<"\nEnter the keyword for which you want to calculate the maximum comparisons";
+	char choice='y';
+	string keyword,meaningChange,changed;
+	cout<<"Enter the keyword for which you want to update the meanings";
 	cin>>keyword;
-	maxx = searchwithcomparisons(keyword);
-	cout<<"\nNumber of comparisons to find the keyword "<<keyword<<" in the dictionary are :"<<endl;
-	cout<<maxx;
-}
-
-int BST::searchwithcomparisons(string keyword){
-	int found=0,comparisons=0;
-	while(found==0){
-		if (root->key.compare(keyword) < 0){
-			if(root->right!=NULL){
-				root = root->right;
-				comparisons++;
-			}
-			else
-				return comparisons;
+	node* temp = search(keyword,root);
+	if(temp){
+		cout<<temp->meanings.size()<<" meanings exist for keyword: "<<keyword<<" , they are as follows: "<<endl;
+		for(int i=0;i<temp->meanings.size();i++){
+			cout<<temp->meanings[i]<<" ";
+			cout<<"\n";
 		}
-		else if (root->key.compare(keyword) > 0){
-			if(root->left!=NULL){
-				root = root->left;
-				comparisons++;
+		while(choice=='y'){
+			int found=0;
+			cout<<"\nMeaning you want to change: ";
+			cin>>meaningChange;
+			cout<<"\nWhat do you want "<<meaningChange<<" to change with ?: ";
+			cin>>changed;
+			for(int i=0;i<temp->meanings.size();i++){
+				if(temp->meanings[i].compare(meaningChange)==0){
+					cout<<"\n "<<temp->meanings[i]<<" successfully changed to ";
+					temp->meanings[i]=changed;
+					cout<<temp->meanings[i];
+					found=1;
+				}
 			}
-			else
-				return comparisons;
-		}
-		else{
-			found = 1;
-			return comparisons;
+			if(found==0)
+				cout<<"No such meaning ("<<meaningChange<<") exists for keyword "<<keyword<<" in the dictionary";
+			else{
+				cout<<"\nThe dictionary is updated as : "<<endl;
+				displayASC();
+			}
+			cout<<"\nDo you want to change more meanings of the keyword "<<keyword<<" ?: ";
+			cin>>choice;
 		}
 	}
+	else{
+			cout<<"\n"<<keyword<<" keyword not found in the dictionary";
+		}
 }
 
 int main(){

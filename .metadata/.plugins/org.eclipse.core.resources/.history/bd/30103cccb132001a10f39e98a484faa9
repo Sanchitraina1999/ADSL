@@ -144,7 +144,7 @@ void BST::RVLorderREcusive(node *root){
 void BST::updatemeaning(){
 	char choice='y';
 	string keyword,meaningChange,changed;
-	cout<<"\nEnter the keyword for which you want to update the meanings";
+	cout<<"Enter the keyword for which you want to update the meanings";
 	cin>>keyword;
 	node* temp = search(keyword);
 	if(temp){

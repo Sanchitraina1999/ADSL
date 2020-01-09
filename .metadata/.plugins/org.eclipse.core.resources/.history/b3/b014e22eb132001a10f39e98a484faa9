@@ -144,7 +144,7 @@ void BST::RVLorderREcusive(node *root){
 void BST::updatemeaning(){
 	char choice='y';
 	string keyword,meaningChange,changed;
-	cout<<"\nEnter the keyword for which you want to update the meanings";
+	cout<<"Enter the keyword for which you want to update the meanings";
 	cin>>keyword;
 	node* temp = search(keyword);
 	if(temp){
@@ -292,38 +292,11 @@ void BST::copy(){
 
 void BST::comparisons(){
 	string keyword;
-	int maxx;
-	cout<<"\nEnter the keyword for which you want to calculate the maximum comparisons";
+	cout<<"Enter the keyword for which you want to update the meanings";
 	cin>>keyword;
-	maxx = searchwithcomparisons(keyword);
-	cout<<"\nNumber of comparisons to find the keyword "<<keyword<<" in the dictionary are :"<<endl;
-	cout<<maxx;
-}
+	int maxx = searchwithcomparisons(keyword);
 
-int BST::searchwithcomparisons(string keyword){
-	int found=0,comparisons=0;
-	while(found==0){
-		if (root->key.compare(keyword) < 0){
-			if(root->right!=NULL){
-				root = root->right;
-				comparisons++;
-			}
-			else
-				return comparisons;
-		}
-		else if (root->key.compare(keyword) > 0){
-			if(root->left!=NULL){
-				root = root->left;
-				comparisons++;
-			}
-			else
-				return comparisons;
-		}
-		else{
-			found = 1;
-			return comparisons;
-		}
-	}
+
 }
 
 int main(){
