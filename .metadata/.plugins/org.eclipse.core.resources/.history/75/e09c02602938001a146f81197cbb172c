@@ -178,7 +178,7 @@ void BST::updatemeaning(){
 		}
 	}
 	else{
-			cout<<"\n"<<keyword	<<" keyword not found in the dictionary";
+			cout<<"\n"<<keyword<<" keyword not found in the dictionary";
 		}
 }
 

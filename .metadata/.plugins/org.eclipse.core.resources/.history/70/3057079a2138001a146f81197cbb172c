@@ -178,7 +178,7 @@ void BST::updatemeaning(){
 		}
 	}
 	else{
-			cout<<"\n"<<keyword	<<" keyword not found in the dictionary";
+			cout<<"\n"<<keyword<<" keyword not found in the dictionary";
 		}
 }
 
@@ -329,7 +329,7 @@ int BST::searchwithcomparisons(string keyword){
 int main(){
 	BST t;
 	int choice;
-	char stop='y';
+	char stop='n';
 	do{
 		cout<<"\n MAIN MENU ";
 		cout<<"\n 1. INSERT WORD with its MEANINGS";
@@ -365,7 +365,7 @@ int main(){
 		default:
 			cout<<"\nYou have entered a wrong choice";
 		}
-		cout<<"\n\nDo you want to continue (y/n)";
+		cout<<"\n\nDo you want to stop execution (y/n)";
 		cin>>stop;
 	}
 	while(stop=='n' || stop=='N');
