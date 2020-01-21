@@ -368,7 +368,7 @@ int main(){
 		cout<<"\n\nDo you want to continue (y/n)";
 		cin>>stop;
 	}
-	while(stop=='Y' || stop=='y');
+	while(stop=='n' || stop=='N');
 	return 0;
 }
 

@@ -5036,3 +5036,40 @@ make: Nothing to be done for `all'.
 12:57:31 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
 make all 
 make: Nothing to be done for `all'.
+12:55:45 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:47 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:152:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:162:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string)’:
+../src/02BinarySearchTree.cpp:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::parent(node*)’:
+../src/02BinarySearchTree.cpp:224:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘int BST::searchwithcomparisons(std::string)’:
+../src/02BinarySearchTree.cpp:327:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+12:55:50 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
