@@ -1,0 +1,68 @@
+//============================================================================
+// Name        : 03ThreadedBT.cpp
+// Author      : Sanchit Raina
+// Version     :
+// Copyright   : https://github.com/Sanchitraina1999/ADSL/blob/master/03ThreadedBinaryTree/src/03ThreadedBinaryTree.cpp
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+/*
+ Create inorder threaded binary tree and perform inorder, preorder traversal.
+ */
+
+#include <iostream>
+using namespace std;
+
+class node{
+	int data;
+	node *left, *right;
+	bool rightThread;
+};
+
+class TBT{
+	node* root;
+public:
+	TBT(){
+		root = NULL;
+	}
+	void create();
+	void inorder();
+	void preorder();
+};
+
+void TBT::create(){
+
+}
+
+void TBT::inorder(){
+
+}
+
+void TBT::preorder(){
+
+}
+
+
+int main() {
+	TBT t;
+	cout<<"MAIN MENU\n";
+	cout<<"1. Create Threaded Binary Tree\n";
+	cout<<"2. Inorder Traversal\n";
+	cout<<"3. Preorder Traversal\n";
+	int choice;
+	cin>>choice;
+	switch(choice){
+		case 1:
+			t.create();
+			break;
+		case 2:
+			t.inorder();
+			break;
+		case 3:
+			t.preorder();
+			break;
+		default:
+			cout<<"No such choice"<<endl;
+	}
+	return 0;
+}
