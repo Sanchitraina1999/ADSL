@@ -32,7 +32,6 @@ public:
 };
 
 void TBT::create(){
-	cout<<"Enter the data you want to enter\n";
 
 }
 
