@@ -17,7 +17,7 @@ class node{
 	int data;
 	node *left, *right;
 	bool rightThread;       // 0 for right child, 1 for inorder successor
-	bool leftThread;		// 0 for left child, 1 for inorder predecessor
+	bool leftThread;		// 0 for left child, 1 for inordr predecessor
 };
 
 class TBT{
@@ -32,16 +32,8 @@ public:
 };
 
 void TBT::create(){
-	int data;
 	cout<<"Enter the data you want to enter\n";
-	cin>>data;
-	node* temp = new node();
-	temp->data = data;
-	if(root==NULL)
-		root=temp;
-	else{
-		//to be done
-	}
+
 }
 
 void TBT::inorder(){

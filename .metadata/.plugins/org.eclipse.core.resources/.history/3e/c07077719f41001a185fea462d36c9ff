@@ -32,16 +32,8 @@ public:
 };
 
 void TBT::create(){
-	int data;
 	cout<<"Enter the data you want to enter\n";
-	cin>>data;
-	node* temp = new node();
-	temp->data = data;
-	if(root==NULL)
-		root=temp;
-	else{
-		//to be done
-	}
+
 }
 
 void TBT::inorder(){
