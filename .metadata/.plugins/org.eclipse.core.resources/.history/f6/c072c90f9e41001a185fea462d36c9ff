@@ -17,7 +17,6 @@ class node{
 	int data;
 	node *left, *right;
 	bool rightThread;       // 0 for right child, 1 for inorder successor
-	bool leftThread;		// 0 for left child, 1 for inordr predecessor
 };
 
 class TBT{
