@@ -5259,3 +5259,437 @@ make: Nothing to be done for `all'.
 11:45:48 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
 make all 
 make: Nothing to be done for `all'.
+12:31:26 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:26 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:27 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:27 **** Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+12:31:32 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:32 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:33 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:33 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:29:2: error: ‘vector’ was not declared in this scope
+  vector<string> city;
+  ^
+../src/04Graph.cpp:29:15: error: expected primary-expression before ‘>’ token
+  vector<string> city;
+               ^
+../src/04Graph.cpp:29:17: error: ‘city’ was not declared in this scope
+  vector<string> city;
+                 ^
+make: *** [src/04Graph.o] Error 1
+12:31:41 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:41 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:41 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:31:41 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+12:44:57 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:57 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:58 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:58 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In member function ‘void graph::accept()’:
+../src/04Graph.cpp:47:8: error: ‘cityname’ was not declared in this scope
+   cin>>cityname;
+        ^
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:56:11: error: ‘total’ was not declared in this scope
+  int cost[total][total]={0};
+           ^
+../src/04Graph.cpp:60:53: error: ‘city’ was not declared in this scope
+    cout<<"Enter the cost of the ticket from city "<<city[i]<<" to "<<city[j]<<"\n";
+                                                     ^
+../src/04Graph.cpp:62:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1
+12:45:11 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:11 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:11 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:11 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:56:11: error: ‘total’ was not declared in this scope
+  int cost[total][total]={0};
+           ^
+../src/04Graph.cpp:60:53: error: ‘city’ was not declared in this scope
+    cout<<"Enter the cost of the ticket from city "<<city[i]<<" to "<<city[j]<<"\n";
+                                                     ^
+../src/04Graph.cpp:62:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1
+12:45:19 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:19 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:20 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:20 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In member function ‘void graph::accept()’:
+../src/04Graph.cpp:47:8: error: ‘cityname’ was not declared in this scope
+   cin>>cityname;
+        ^
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:56:11: error: ‘total’ was not declared in this scope
+  int cost[total][total]={0};
+           ^
+../src/04Graph.cpp:60:53: error: ‘city’ was not declared in this scope
+    cout<<"Enter the cost of the ticket from city "<<city[i]<<" to "<<city[j]<<"\n";
+                                                     ^
+../src/04Graph.cpp:62:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1
+12:45:43 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:44 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:44 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:44 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In member function ‘void graph::accept()’:
+../src/04Graph.cpp:28:9: error: ‘std::string node::cityname’ is private
+  string cityname;
+         ^
+../src/04Graph.cpp:44:8: error: within this context
+   cin>>cityname;
+        ^
+../src/04Graph.cpp:28:9: error: ‘std::string node::cityname’ is private
+  string cityname;
+         ^
+../src/04Graph.cpp:45:18: error: within this context
+   city.push_back(cityname);
+                  ^
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:53:11: error: ‘total’ was not declared in this scope
+  int cost[total][total]={0};
+           ^
+../src/04Graph.cpp:57:53: error: ‘city’ was not declared in this scope
+    cout<<"Enter the cost of the ticket from city "<<city[i]<<" to "<<city[j]<<"\n";
+                                                     ^
+../src/04Graph.cpp:59:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1
+12:47:21 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:47:21 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:47:21 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:47:21 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:58:11: error: ‘total’ was not declared in this scope
+  int cost[total][total]={0};
+           ^
+../src/04Graph.cpp:61:53: error: ‘city’ was not declared in this scope
+    cout<<"Enter the cost of the ticket from city "<<city[i]<<" to "<<city[j]<<"\n";
+                                                     ^
+../src/04Graph.cpp:62:9: error: ‘money’ was not declared in this scope
+    cin>>money;
+         ^
+../src/04Graph.cpp:63:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1
+12:49:17 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:49:17 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:49:17 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:49:17 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:37:6: error: invalid use of non-static data member ‘graph::total’
+  int total;
+      ^
+../src/04Graph.cpp:38:11: error: from this location
+  int cost[total][total]={0};
+           ^
+../src/04Graph.cpp:37:6: error: invalid use of non-static data member ‘graph::total’
+  int total;
+      ^
+../src/04Graph.cpp:38:18: error: from this location
+  int cost[total][total]={0};
+                  ^
+../src/04Graph.cpp: In member function ‘void graph::costForRoutes()’:
+../src/04Graph.cpp:60:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1
+12:50:03 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:50:04 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:50:04 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:50:04 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:25:15: error: expected unqualified-id before numeric constant
+ #define total 10
+               ^
+../src/04Graph.cpp:38:6: note: in expansion of macro ‘total’
+  int total;
+      ^
+../src/04Graph.cpp:39:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int cost[total][total]={0};
+                           ^
+../src/04Graph.cpp:39:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+../src/04Graph.cpp:39:27: error: array must be initialized with a brace-enclosed initializer
+../src/04Graph.cpp: In member function ‘void graph::accept()’:
+../src/04Graph.cpp:48:7: error: lvalue required as left operand of assignment
+  total=cities;
+       ^
+make: *** [src/04Graph.o] Error 1
+12:51:15 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:51:15 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:51:15 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:51:15 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:27:1: error: ‘define’ does not name a type
+ define total 10
+ ^
+../src/04Graph.cpp:35:24: error: expected class-name before ‘{’ token
+ class graph:public node{
+                        ^
+../src/04Graph.cpp:39:6: error: invalid use of non-static data member ‘graph::total’
+  int total;
+      ^
+../src/04Graph.cpp:40:11: error: from this location
+  int cost[total][total]={0};
+           ^
+../src/04Graph.cpp:39:6: error: invalid use of non-static data member ‘graph::total’
+  int total;
+      ^
+../src/04Graph.cpp:40:18: error: from this location
+  int cost[total][total]={0};
+                  ^
+../src/04Graph.cpp: In member function ‘void graph::accept()’:
+../src/04Graph.cpp:52:8: error: ‘cityname’ was not declared in this scope
+   cin>>cityname;
+        ^
+../src/04Graph.cpp: In member function ‘void graph::costForRoutes()’:
+../src/04Graph.cpp:62:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1
+12:51:21 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:51:21 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:51:21 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:51:21 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:25:15: error: expected unqualified-id before numeric constant
+ #define total 10
+               ^
+../src/04Graph.cpp:38:6: note: in expansion of macro ‘total’
+  int total;
+      ^
+../src/04Graph.cpp:39:27: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+  int cost[total][total]={0};
+                           ^
+../src/04Graph.cpp:39:27: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+../src/04Graph.cpp:39:27: error: array must be initialized with a brace-enclosed initializer
+../src/04Graph.cpp: In member function ‘void graph::accept()’:
+../src/04Graph.cpp:48:7: error: lvalue required as left operand of assignment
+  total=cities;
+       ^
+make: *** [src/04Graph.o] Error 1
+12:52:08 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:52:08 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:52:08 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:52:09 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:35:6: error: invalid use of non-static data member ‘graph::cities’
+  int cities;
+      ^
+../src/04Graph.cpp:38:11: error: from this location
+  int cost[cities][cities];
+           ^
+../src/04Graph.cpp:35:6: error: invalid use of non-static data member ‘graph::cities’
+  int cities;
+      ^
+../src/04Graph.cpp:38:19: error: from this location
+  int cost[cities][cities];
+                   ^
+../src/04Graph.cpp: In member function ‘void graph::costForRoutes()’:
+../src/04Graph.cpp:59:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1
+12:52:48 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:52:49 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:52:49 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:52:49 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In constructor ‘graph::graph()’:
+../src/04Graph.cpp:40:3: error: ‘cost’ was not declared in this scope
+   cost[10][10]={0};
+   ^
+../src/04Graph.cpp:40:18: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   cost[10][10]={0};
+                  ^
+../src/04Graph.cpp: In member function ‘void graph::costForRoutes()’:
+../src/04Graph.cpp:61:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1
+12:53:02 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:53:02 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:53:02 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:53:02 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:38:2: error: ‘cost’ does not name a type
+  cost[10][10];
+  ^
+../src/04Graph.cpp: In constructor ‘graph::graph()’:
+../src/04Graph.cpp:41:3: error: ‘cost’ was not declared in this scope
+   cost[10][10]={0};
+   ^
+../src/04Graph.cpp:41:18: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   cost[10][10]={0};
+                  ^
+../src/04Graph.cpp: In member function ‘void graph::costForRoutes()’:
+../src/04Graph.cpp:62:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1

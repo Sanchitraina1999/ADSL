@@ -1,0 +1,67 @@
+//============================================================================
+// Name        : 04Graph.cpp
+// Author      : Sanchit Raina
+// Version     :
+// Copyright   : https://www.github.com/Sanchitraina1999/ADSL
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+/*
+
+ 	There are flight paths between cities. If there is a flight between city
+	A and city B then there is an edge between the cities. The cost of the
+	edge can be the time that flight takes to reach city B from A, or the
+	amount of fuel used for the journey. Represent this as a graph. The
+	node can be represented by airport name or name of the city. Use
+	adjacency list representation of the graph. (Operation to be
+	performed adding and deleting edge, adding and deleting vertices,
+	calculated in-degree and out-degree for directed graph. Use any
+	traversal to traverse graph)
+
+ */
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class node{
+	string cityname;
+public:
+	friend  class graph;
+};
+
+class graph:public node{
+	vector<string> city;
+public:
+	void accept();
+
+	friend class node;
+};
+
+void graph::accept(){
+	cout<<"Enter the number of cities in the country\n";
+	int cities;	cin>>cities;
+	int total=cities;
+	while(cities--){
+		cout<<"Enter the name of city "<<total-cities+1<<endl;
+		cin>>cityname;
+		city.push_back(cityname);
+	}
+}
+
+int main() {
+	cout<<"Country FLIGHT MECHANISM\n";
+
+
+	int cost[total][total]={0};
+	int money;
+	for(int i=0;i<total;i++){
+		for(int j=i;j<total;j++){
+			cout<<"Enter the cost of the ticket from city "<<city[i]<<" to "<<city[j]<<"\n";
+			cin>>money;
+			cost[i][j]=money;
+			cost[j][i]=money;
+		}
+	}
+	return 0;
+}

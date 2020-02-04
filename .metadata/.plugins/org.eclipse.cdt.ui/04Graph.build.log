@@ -1,0 +1,23 @@
+12:53:02 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:38:2: error: ‘cost’ does not name a type
+  cost[10][10];
+  ^
+../src/04Graph.cpp: In constructor ‘graph::graph()’:
+../src/04Graph.cpp:41:3: error: ‘cost’ was not declared in this scope
+   cost[10][10]={0};
+   ^
+../src/04Graph.cpp:41:18: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   cost[10][10]={0};
+                  ^
+../src/04Graph.cpp: In member function ‘void graph::costForRoutes()’:
+../src/04Graph.cpp:62:4: error: ‘cost’ was not declared in this scope
+    cost[i][j]=money;
+    ^
+make: *** [src/04Graph.o] Error 1
+
+12:53:03 Build Finished (took 214ms)
+
