@@ -5113,3 +5113,149 @@ make: Nothing to be done for `all'.
 11:08:02 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
 make all 
 make: Nothing to be done for `all'.
+11:07:20 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+Building file: ../src/01BinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/01BinaryTree.d" -MT"src/01BinaryTree.d" -o "src/01BinaryTree.o" "../src/01BinaryTree.cpp"
+Finished building: ../src/01BinaryTree.cpp
+ 
+Building target: 01BinaryTree
+Invoking: GCC C++ Linker
+g++  -o "01BinaryTree"  ./src/01BinaryTree.o   
+Finished building target: 01BinaryTree
+ 
+11:07:22 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:152:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:162:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string)’:
+../src/02BinarySearchTree.cpp:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::parent(node*)’:
+../src/02BinarySearchTree.cpp:224:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘int BST::searchwithcomparisons(std::string)’:
+../src/02BinarySearchTree.cpp:327:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+11:07:23 **** Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+Building file: ../src/03ThreadedBinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/03ThreadedBinaryTree.d" -MT"src/03ThreadedBinaryTree.d" -o "src/03ThreadedBinaryTree.o" "../src/03ThreadedBinaryTree.cpp"
+../src/03ThreadedBinaryTree.cpp: In member function ‘void TBT::create()’:
+../src/03ThreadedBinaryTree.cpp:17:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/03ThreadedBinaryTree.cpp:39:8: error: within this context
+  temp->data = data;
+        ^
+make: *** [src/03ThreadedBinaryTree.o] Error 1
+11:07:24 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:11:29 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:11:29 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+Building file: ../src/02BinarySearchTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/02BinarySearchTree.d" -MT"src/02BinarySearchTree.d" -o "src/02BinarySearchTree.o" "../src/02BinarySearchTree.cpp"
+../src/02BinarySearchTree.cpp: In member function ‘void BST::updatemeaning()’:
+../src/02BinarySearchTree.cpp:152:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i=0;i<temp->meanings.size();i++){
+                                     ^
+../src/02BinarySearchTree.cpp:162:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    for(int i=0;i<temp->meanings.size();i++){
+                                      ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::search(std::string)’:
+../src/02BinarySearchTree.cpp:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘node* BST::parent(node*)’:
+../src/02BinarySearchTree.cpp:224:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../src/02BinarySearchTree.cpp: In member function ‘int BST::searchwithcomparisons(std::string)’:
+../src/02BinarySearchTree.cpp:327:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/02BinarySearchTree.cpp
+ 
+Building target: 02BinarySearchTree
+Invoking: GCC C++ Linker
+g++  -o "02BinarySearchTree"  ./src/02BinarySearchTree.o   
+Finished building target: 02BinarySearchTree
+ 
+11:11:30 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+Building file: ../src/03ThreadedBinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/03ThreadedBinaryTree.d" -MT"src/03ThreadedBinaryTree.d" -o "src/03ThreadedBinaryTree.o" "../src/03ThreadedBinaryTree.cpp"
+../src/03ThreadedBinaryTree.cpp: In member function ‘void TBT::create()’:
+../src/03ThreadedBinaryTree.cpp:17:6: error: ‘int node::data’ is private
+  int data;
+      ^
+../src/03ThreadedBinaryTree.cpp:39:8: error: within this context
+  temp->data = data;
+        ^
+make: *** [src/03ThreadedBinaryTree.o] Error 1
+11:11:31 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:31:37 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:31:38 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:31:39 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+Building file: ../src/03ThreadedBinaryTree.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/03ThreadedBinaryTree.d" -MT"src/03ThreadedBinaryTree.d" -o "src/03ThreadedBinaryTree.o" "../src/03ThreadedBinaryTree.cpp"
+../src/03ThreadedBinaryTree.cpp: In constructor ‘tbst::tbst()’:
+../src/03ThreadedBinaryTree.cpp:48:8: warning: unused variable ‘directionRight’ [-Wunused-variable]
+   bool directionRight = false;
+        ^
+../src/03ThreadedBinaryTree.cpp:49:8: warning: unused variable ‘directionLeft’ [-Wunused-variable]
+   bool directionLeft = false;
+        ^
+Finished building: ../src/03ThreadedBinaryTree.cpp
+ 
+Building target: 03ThreadedBinaryTree
+Invoking: GCC C++ Linker
+g++  -o "03ThreadedBinaryTree"  ./src/03ThreadedBinaryTree.o   
+Finished building target: 03ThreadedBinaryTree
+ 
+11:45:42 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:45:43 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:45:44 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:45:48 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
