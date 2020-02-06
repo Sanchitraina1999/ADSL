@@ -35,11 +35,9 @@ class graph:public node{
 	int cities;
 	vector<string> city;
 	int money;
-	int cost[10][10];
+	cost[10][10];
 public:
 	graph(){
-		money=0;
-		cities=0;
 		cost[10][10]={0};
 	}
 	void accept();
