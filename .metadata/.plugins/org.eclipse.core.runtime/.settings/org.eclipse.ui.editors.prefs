@@ -4,3 +4,4 @@ indexResultIndicationInOverviewRuler=false
 indexResultIndicationInVerticalRuler=false
 org.eclipse.ptp.rdt.ui.hasRun=true
 overviewRuler_migration=migrated_3.1
+spellingEngine=org.eclipse.jdt.internal.ui.text.spelling.DefaultSpellingEngine

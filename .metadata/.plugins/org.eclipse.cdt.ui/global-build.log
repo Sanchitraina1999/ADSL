@@ -5693,3 +5693,889 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Gr
     cost[i][j]=money;
     ^
 make: *** [src/04Graph.o] Error 1
+11:57:45 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:57:47 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:57:47 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:57:47 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+11:57:53 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+11:58:13 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:58:13 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:58:13 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:58:13 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+11:58:14 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+11:58:34 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+11:58:54 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:58:54 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+11:58:55 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+11:58:55 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+11:58:57 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:10:46 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:10:46 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:10:46 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:10:46 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:46:19: error: return type specification for constructor invalid
+ void graph::graph(){
+                   ^
+../src/04Graph.cpp:46:19: error: definition of implicitly-declared ‘graph::graph()’
+make: *** [src/04Graph.o] Error 1
+12:11:25 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:11:25 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:11:25 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:11:25 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:46:14: error: definition of implicitly-declared ‘graph::graph()’
+ graph::graph(){
+              ^
+make: *** [src/04Graph.o] Error 1
+12:11:55 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:11:55 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:11:55 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:11:55 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:125:2: warning: ‘yn’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if(yn=='y' || yn=='Y')
+  ^
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+12:12:04 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:12:04 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:12:04 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:12:04 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:12:14 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:12:14 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:12:14 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:12:14 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:14:05 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:14:06 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:14:06 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:14:06 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:14:21 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:14:46 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:14:46 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:14:47 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:14:47 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:16:58 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:16:58 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:16:58 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:16:59 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:18:02 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:18:02 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:18:03 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:18:03 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:18:19 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:18:19 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:18:19 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:18:19 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:19:58 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:26:00 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:26:01 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:26:01 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:26:01 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:40:41 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:40:42 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:40:42 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:40:43 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In constructor ‘graph::graph()’:
+../src/04Graph.cpp:62:12: warning: unused variable ‘adj_list’ [-Wunused-variable]
+  list<int> adj_list[cities];
+            ^
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:132:2: warning: ‘yn’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if(yn=='y' || yn=='Y')
+  ^
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+12:41:50 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:41:50 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:41:50 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:41:50 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In constructor ‘graph::graph()’:
+../src/04Graph.cpp:63:12: warning: unused variable ‘adj_list’ [-Wunused-variable]
+  list<int> adj_list[cities];
+            ^
+../src/04Graph.cpp: In member function ‘void graph::addRoute()’:
+../src/04Graph.cpp:85:3: error: ‘adj_list’ was not declared in this scope
+   adj_list[u].push_back(v);
+   ^
+../src/04Graph.cpp:85:12: error: ‘u’ was not declared in this scope
+   adj_list[u].push_back(v);
+            ^
+../src/04Graph.cpp:85:25: error: ‘v’ was not declared in this scope
+   adj_list[u].push_back(v);
+                         ^
+make: *** [src/04Graph.o] Error 1
+12:42:12 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:42:12 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:42:12 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:42:13 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:38:6: error: invalid use of non-static data member ‘graph::cities’
+  int cities;
+      ^
+../src/04Graph.cpp:40:21: error: from this location
+  list<int> adj_list[cities];
+                     ^
+../src/04Graph.cpp: In member function ‘void graph::addRoute()’:
+../src/04Graph.cpp:86:3: error: ‘adj_list’ was not declared in this scope
+   adj_list[u].push_back(v);
+   ^
+../src/04Graph.cpp:86:12: error: ‘u’ was not declared in this scope
+   adj_list[u].push_back(v);
+            ^
+../src/04Graph.cpp:86:25: error: ‘v’ was not declared in this scope
+   adj_list[u].push_back(v);
+                         ^
+make: *** [src/04Graph.o] Error 1
+12:42:32 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:42:32 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:42:32 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:42:32 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In constructor ‘graph::graph()’:
+../src/04Graph.cpp:64:12: warning: unused variable ‘adj_list’ [-Wunused-variable]
+  list<int> adj_list[cities];
+            ^
+../src/04Graph.cpp: In member function ‘void graph::addRoute()’:
+../src/04Graph.cpp:86:12: error: ‘u’ was not declared in this scope
+   adj_list[u].push_back(v);
+            ^
+../src/04Graph.cpp:86:25: error: ‘v’ was not declared in this scope
+   adj_list[u].push_back(v);
+                         ^
+make: *** [src/04Graph.o] Error 1
+12:44:06 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:06 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:06 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:06 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In constructor ‘graph::graph()’:
+../src/04Graph.cpp:64:12: warning: unused variable ‘adj_list’ [-Wunused-variable]
+  list<int> adj_list[cities];
+            ^
+../src/04Graph.cpp: In member function ‘void graph::addRoute()’:
+../src/04Graph.cpp:84:13: error: no match for ‘operator[]’ (operand types are ‘std::list<int>’ and ‘int’)
+     adj_list[i].push_back(j);
+             ^
+../src/04Graph.cpp:85:13: error: no match for ‘operator[]’ (operand types are ‘std::list<int>’ and ‘int’)
+     adj_list[j].push_back(i);
+             ^
+make: *** [src/04Graph.o] Error 1
+12:44:19 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:19 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:19 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:19 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In constructor ‘graph::graph()’:
+../src/04Graph.cpp:63:12: warning: unused variable ‘adj_list’ [-Wunused-variable]
+  list<int> adj_list[cities];
+            ^
+../src/04Graph.cpp: In member function ‘void graph::addRoute()’:
+../src/04Graph.cpp:83:5: error: ‘adj_list’ was not declared in this scope
+     adj_list[i].push_back(j);
+     ^
+make: *** [src/04Graph.o] Error 1
+12:44:28 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:28 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:28 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:28 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In constructor ‘graph::graph()’:
+../src/04Graph.cpp:63:12: warning: unused variable ‘adj_list’ [-Wunused-variable]
+  list<int> adj_list[cities];
+            ^
+../src/04Graph.cpp: In member function ‘void graph::addRoute()’:
+../src/04Graph.cpp:83:5: error: ‘adj_list’ was not declared in this scope
+     adj_list[i].push_back(j);
+     ^
+make: *** [src/04Graph.o] Error 1
+12:44:56 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:56 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:57 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:44:57 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In member function ‘void graph::addRoute()’:
+../src/04Graph.cpp:82:5: error: ‘adj_list’ was not declared in this scope
+     adj_list[i].push_back(j);
+     ^
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:38:6: error: ‘int graph::cities’ is private
+  int cities;
+      ^
+../src/04Graph.cpp:112:23: error: within this context
+  list<int> adj_list[g.cities];
+                       ^
+../src/04Graph.cpp:112:12: warning: unused variable ‘adj_list’ [-Wunused-variable]
+  list<int> adj_list[g.cities];
+            ^
+make: *** [src/04Graph.o] Error 1
+12:45:37 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:37 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:37 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:45:37 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:65:6: error: prototype for ‘void graph::addRoute(int*)’ does not match any in class ‘graph’
+ void graph::addRoute(int adj_list[]){
+      ^
+../src/04Graph.cpp:42:7: error: candidate is: void graph::addRoute()
+  void addRoute();
+       ^
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:38:6: error: ‘int graph::cities’ is private
+  int cities;
+      ^
+../src/04Graph.cpp:112:23: error: within this context
+  list<int> adj_list[g.cities];
+                       ^
+../src/04Graph.cpp:124:23: error: expected primary-expression before ‘]’ token
+   g.addRoute(adj_list[]);
+                       ^
+make: *** [src/04Graph.o] Error 1
+12:46:02 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:02 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:02 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:02 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:65:6: error: prototype for ‘void graph::addRoute(std::list<int>*)’ does not match any in class ‘graph’
+ void graph::addRoute(list<int> adj_list[]){
+      ^
+../src/04Graph.cpp:42:7: error: candidate is: void graph::addRoute()
+  void addRoute();
+       ^
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:38:6: error: ‘int graph::cities’ is private
+  int cities;
+      ^
+../src/04Graph.cpp:112:23: error: within this context
+  list<int> adj_list[g.cities];
+                       ^
+../src/04Graph.cpp:124:23: error: expected primary-expression before ‘]’ token
+   g.addRoute(adj_list[]);
+                       ^
+make: *** [src/04Graph.o] Error 1
+12:46:13 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:13 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:13 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:13 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:65:6: error: prototype for ‘void graph::addRoute(std::list<int>*)’ does not match any in class ‘graph’
+ void graph::addRoute(list<int> adj_list[]){
+      ^
+../src/04Graph.cpp:42:7: error: candidate is: void graph::addRoute(std::list<int>)
+  void addRoute(list<int>);
+       ^
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:38:6: error: ‘int graph::cities’ is private
+  int cities;
+      ^
+../src/04Graph.cpp:112:23: error: within this context
+  list<int> adj_list[g.cities];
+                       ^
+../src/04Graph.cpp:124:23: error: expected primary-expression before ‘]’ token
+   g.addRoute(adj_list[]);
+                       ^
+make: *** [src/04Graph.o] Error 1
+12:46:38 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:38 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:39 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:39 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp:65:6: error: prototype for ‘void graph::addRoute(std::list<int>*)’ does not match any in class ‘graph’
+ void graph::addRoute(list<int> adj_list[]){
+      ^
+../src/04Graph.cpp:42:7: error: candidate is: void graph::addRoute(std::list<int>)
+  void addRoute(list<int>);
+       ^
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:124:23: error: expected primary-expression before ‘]’ token
+   g.addRoute(adj_list[]);
+                       ^
+make: *** [src/04Graph.o] Error 1
+12:46:54 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:54 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:54 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:46:54 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:124:23: error: expected primary-expression before ‘]’ token
+   g.addRoute(adj_list[]);
+                       ^
+make: *** [src/04Graph.o] Error 1
+12:47:05 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:47:05 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:47:05 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:47:05 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:146:2: warning: ‘yn’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if(yn=='y' || yn=='Y')
+  ^
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+12:47:14 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:47:14 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:47:14 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:47:14 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+make: Nothing to be done for `all'.
+12:53:35 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:53:35 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:53:36 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:53:36 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In member function ‘void graph::addRoute(std::list<int>*)’:
+../src/04Graph.cpp:90:33: error: expected primary-expression before ‘;’ token
+   cout << v << "'s header -> "<<;
+                                 ^
+../src/04Graph.cpp:91:8: warning: ‘auto’ changes meaning in C++11; please remove it [-Wc++0x-compat]
+   for (auto x : adj_list[v])
+        ^
+../src/04Graph.cpp:91:13: error: ‘x’ does not name a type
+   for (auto x : adj_list[v])
+             ^
+../src/04Graph.cpp:93:3: error: expected ‘;’ before ‘cout’
+   cout<<endl;
+   ^
+../src/04Graph.cpp:94:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/04Graph.cpp:94:2: error: expected ‘)’ before ‘}’ token
+../src/04Graph.cpp:94:2: error: expected primary-expression before ‘}’ token
+../src/04Graph.cpp:94:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/04Graph.o] Error 1
+12:53:48 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:53:48 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:53:48 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:53:48 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In member function ‘void graph::addRoute(std::list<int>*)’:
+../src/04Graph.cpp:91:8: warning: ‘auto’ changes meaning in C++11; please remove it [-Wc++0x-compat]
+   for (auto x : adj_list[v])
+        ^
+../src/04Graph.cpp:91:13: error: ‘x’ does not name a type
+   for (auto x : adj_list[v])
+             ^
+../src/04Graph.cpp:93:3: error: expected ‘;’ before ‘cout’
+   cout<<endl;
+   ^
+../src/04Graph.cpp:94:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/04Graph.cpp:94:2: error: expected ‘)’ before ‘}’ token
+../src/04Graph.cpp:94:2: error: expected primary-expression before ‘}’ token
+../src/04Graph.cpp:94:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/04Graph.o] Error 1
+12:54:35 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:54:35 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:54:35 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:54:35 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In member function ‘void graph::addRoute(std::list<int>*)’:
+../src/04Graph.cpp:91:8: warning: ‘auto’ changes meaning in C++11; please remove it [-Wc++0x-compat]
+   for (auto x : adj_list[v])
+        ^
+../src/04Graph.cpp:91:13: error: ‘x’ does not name a type
+   for (auto x : adj_list[v])
+             ^
+../src/04Graph.cpp:93:3: error: expected ‘;’ before ‘cout’
+   cout<<"\n";
+   ^
+../src/04Graph.cpp:94:2: error: expected primary-expression before ‘}’ token
+  }
+  ^
+../src/04Graph.cpp:94:2: error: expected ‘)’ before ‘}’ token
+../src/04Graph.cpp:94:2: error: expected primary-expression before ‘}’ token
+../src/04Graph.cpp:94:2: error: expected ‘;’ before ‘}’ token
+make: *** [src/04Graph.o] Error 1
+12:55:18 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:19 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:19 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:19 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In member function ‘void graph::addRoute(std::list<int>*)’:
+../src/04Graph.cpp:91:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0;x<adj_list[v].size();x++)
+                                     ^
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:154:2: warning: ‘yn’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if(yn=='y' || yn=='Y')
+  ^
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+12:55:30 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:30 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:30 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:30 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:154:2: warning: ‘yn’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if(yn=='y' || yn=='Y')
+  ^
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+12:55:38 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:38 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:38 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:55:38 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:154:2: warning: ‘yn’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if(yn=='y' || yn=='Y')
+  ^
+Finished building: ../src/04Graph.cpp
+ 
+Building target: 04Graph
+Invoking: GCC C++ Linker
+g++  -o "04Graph"  ./src/04Graph.o   
+Finished building target: 04Graph
+ 
+12:58:48 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:58:48 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:58:48 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:58:48 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:140:24: error: ‘class graph’ has no member named ‘citie’
+   list<int> adj_list[g.citie]
+                        ^
+../src/04Graph.cpp:141:3: error: expected initializer before ‘g’
+   g.addCity();
+   ^
+make: *** [src/04Graph.o] Error 1
+12:59:10 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:59:10 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:59:10 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:59:10 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:143:7: error: jump to case label [-fpermissive]
+  case 4:
+       ^
+../src/04Graph.cpp:140:13: error:   crosses initialization of ‘std::list<int> adj_list [(((sizetype)(((ssizetype)g.graph::cities) + -1)) + 1)]’
+   list<int> adj_list[g.cities];
+             ^
+../src/04Graph.cpp:146:7: error: jump to case label [-fpermissive]
+  case 5:
+       ^
+../src/04Graph.cpp:140:13: error:   crosses initialization of ‘std::list<int> adj_list [(((sizetype)(((ssizetype)g.graph::cities) + -1)) + 1)]’
+   list<int> adj_list[g.cities];
+             ^
+../src/04Graph.cpp:149:7: error: jump to case label [-fpermissive]
+  case 6:
+       ^
+../src/04Graph.cpp:140:13: error:   crosses initialization of ‘std::list<int> adj_list [(((sizetype)(((ssizetype)g.graph::cities) + -1)) + 1)]’
+   list<int> adj_list[g.cities];
+             ^
+../src/04Graph.cpp:152:7: error: jump to case label [-fpermissive]
+  case 7:
+       ^
+../src/04Graph.cpp:140:13: error:   crosses initialization of ‘std::list<int> adj_list [(((sizetype)(((ssizetype)g.graph::cities) + -1)) + 1)]’
+   list<int> adj_list[g.cities];
+             ^
+../src/04Graph.cpp:140:13: warning: unused variable ‘adj_list’ [-Wunused-variable]
+make: *** [src/04Graph.o] Error 1
+12:59:28 **** Incremental Build of configuration Debug for project 01BinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:59:28 **** Incremental Build of configuration Debug for project 02BinarySearchTree ****
+make all 
+make: Nothing to be done for `all'.
+12:59:28 **** Incremental Build of configuration Debug for project 03ThreadedBinaryTree ****
+make all 
+make: Nothing to be done for `all'.
+12:59:29 **** Incremental Build of configuration Debug for project 04Graph ****
+make all 
+Building file: ../src/04Graph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/04Graph.d" -MT"src/04Graph.d" -o "src/04Graph.o" "../src/04Graph.cpp"
+../src/04Graph.cpp: In function ‘int main()’:
+../src/04Graph.cpp:140:12: error: request for member ‘resize’ in ‘adj_list’, which is of non-class type ‘std::list<int> [(((sizetype)(((ssizetype)g.graph::cities) + -1)) + 1)]’
+   adj_list.resize[g.cities];
+            ^
+make: *** [src/04Graph.o] Error 1

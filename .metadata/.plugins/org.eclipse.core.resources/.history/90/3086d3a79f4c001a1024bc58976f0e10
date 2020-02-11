@@ -1,0 +1,157 @@
+//============================================================================
+// Name        : 04Graph.cpp
+// Author      : Sanchit Raina
+// Version     :
+// Copyright   : https://github.com/Sanchitraina1999/ADSL/blob/master/04Graph/src/04Graph.cpp
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+/*
+
+ 	There are flight paths between cities. If there is a flight between city
+	A and city B then there is an edge between the cities. The cost of the
+	edge can be the time that flight takes to reach city B from A, or the
+	amount of fuel used for the journey. Represent this as a graph. The
+	node can be represented by airport name or name of the city. Use
+	adjacency list representation of the graph. (Operation to be
+	performed adding and deleting edge, adding and deleting vertices,
+	calculated in-degree and out-degree for directed graph. Use any
+	traversal to traverse graph)
+
+ */
+
+#include <iostream>
+#include <vector>
+#include<list>
+#include<iterator>
+#define total 10
+using namespace std;
+
+
+class node{
+public:
+	string cityname;
+	friend class graph;
+};
+
+class graph:public node{
+public:
+	int cities;
+	vector<string> city;
+	graph();
+	void addRoute(list<int> l[]);
+	void deleteRoute();
+	void addCity();
+	void deleteCity();
+	void degree();
+	void traversal();
+};
+
+graph::graph(){
+	cities=0;
+	cout<<"Initialize cities\n";
+	cout<<"How many cities?\n";
+	int cities;
+	cin>>cities;
+	string take;
+	for(int i=0;i<cities;i++){
+		cout<<"\nEnter the name of the city"<<i+1<<": ";
+		cin>>take;
+		city.push_back(take);
+	}
+	/*list for N cities*/
+}
+
+void graph::addRoute(list<int> adj_list[]){
+	cout<<"The cities are:\n";
+	for(int i=0;i<cities;i++){
+		cout<<city[i]<<" ";
+	}
+	cout<<endl;
+	for(int i=0;i<cities;i++){
+		for(int j=0;j<cities;j++){
+			char exist='n';
+			if(i<j){
+				cout<<"Does route exist between "<<city[i]<<" & "<<city[j]<<":(y/n) ";
+				cin>>exist;
+			}
+			else{
+				exist='y';
+			}
+			if(exist=='y'){
+				adj_list[i].push_back(j);
+				adj_list[j].push_back(i);
+			}
+		}
+	}
+	cout<<"\nAfter adding routes the adjacency list is as: ";
+	for (int v = 0; v < cities; ++v)
+	{
+		cout << v << "'s header -> ";
+		for (auto x : adj_list[v])
+		   cout << "-> " << x;
+		cout<<"\n";
+	}
+}
+
+void graph::deleteRoute(){
+
+}
+
+void graph::addCity(){
+
+}
+
+void graph::deleteCity(){
+
+}
+
+void graph::degree(){
+
+}
+
+void graph::traversal(){
+
+}
+
+
+int main() {
+	graph g;
+	list<int> adj_list[g.cities];
+up:
+	cout<<"Country FLIGHT MECHANISM\n";
+	cout<<"1. ADD a Route\n";
+	cout<<"2. DELETE a Route\n";
+	cout<<"3. ADDING a city\n";
+	cout<<"4. DELETING a city\n";
+	cout<<"5. Indegree and Outdegree for directed graph\n";
+	cout<<"6. Traversal";
+	int choice;	cin>>choice;
+	switch(choice){
+	case 1:
+		g.addRoute(adj_list);
+		break;
+	case 2:
+		g.deleteRoute();
+		break;
+	case 3:
+		g.addCity();
+		break;
+	case 4:
+		g.deleteCity();
+		break;
+	case 5:
+		g.degree();
+		break;
+	case 6:
+		g.traversal();
+		break;
+	case 7:
+		cout<<"Not a valid choice\n";
+	}
+	cout<<"Do you want to continue(y/n)?: ";
+	char yn;
+	if(yn=='y' || yn=='Y')
+		goto up;
+	return 0;
+}
