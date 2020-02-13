@@ -371,6 +371,3 @@ int main(){
 	while(stop=='Y' || stop=='y');
 	return 0;
 }
-
-//for adding to git
-
