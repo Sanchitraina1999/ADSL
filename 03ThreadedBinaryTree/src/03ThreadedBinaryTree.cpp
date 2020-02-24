@@ -187,13 +187,13 @@ public:
 			while(current->lbit!=0)
 			{
 				current=current->lchild;
-				cout<<current->data<<"\t";
+				cout<<current->data<<" ";
 			}
 			while(current->rbit==0)
 				current=current->rchild;
 			current=current->rchild;
 			if(current!=root)
-				cout<<current->data<<"\t";
+				cout<<current->data<<" ";
 		}
 
 	}
