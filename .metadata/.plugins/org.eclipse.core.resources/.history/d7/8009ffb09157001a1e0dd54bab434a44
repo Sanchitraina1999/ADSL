@@ -2,7 +2,7 @@
 // Name        : 05GraphAlgorithms.cpp
 // Author      : Sanchit Raina
 // Version     :
-// Copyright   : https://github.com/Sanchitraina1999/ADSL/blob/master/05GraphAlgorithms/src/05GraphAlgorithms.cpp
+// Copyright   : https://www.github.com/Sanchitraina1999/ADSL
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
@@ -219,7 +219,7 @@ cin>>n;
 Graph obj(n);
 obj.create();
     do{
-    cout<<"\nCompute MINIMUM SPANNING TREE by:\n\t 1. Prim's Algorithm\n\t 2. Kruskal's Algorithm\n3. EXIT\n";
+    cout<<"\nCompute MINIMUM SPANNING TREE by:\n\t 1. Prim's Algorithm\n\t 2. Kruskal's Algorithm\n3. EXIT";
     cin>>n;
     if(n==1)
     obj.prims();
