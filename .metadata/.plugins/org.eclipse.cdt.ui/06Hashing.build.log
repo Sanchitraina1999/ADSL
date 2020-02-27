@@ -1,0 +1,19 @@
+11:30:46 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+Building file: ../src/06Hashing.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/06Hashing.d" -MT"src/06Hashing.d" -o "src/06Hashing.o" "../src/06Hashing.cpp"
+../src/06Hashing.cpp: In member function ‘void HashTable::withinsert(node)’:
+../src/06Hashing.cpp:121:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if(HT[l].key.length()%n==l)
+                             ^
+Finished building: ../src/06Hashing.cpp
+ 
+Building target: 06Hashing
+Invoking: GCC C++ Linker
+g++  -o "06Hashing"  ./src/06Hashing.o   
+Finished building target: 06Hashing
+ 
+
+11:30:46 Build Finished (took 268ms)
+

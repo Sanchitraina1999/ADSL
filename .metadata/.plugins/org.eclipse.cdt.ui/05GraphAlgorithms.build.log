@@ -1,15 +1,6 @@
-11:44:47 **** Build of configuration Debug for project 05GraphAlgorithms ****
+11:30:46 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
 make all 
-Building file: ../src/05GraphAlgorithms.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/05GraphAlgorithms.d" -MT"src/05GraphAlgorithms.d" -o "src/05GraphAlgorithms.o" "../src/05GraphAlgorithms.cpp"
-Finished building: ../src/05GraphAlgorithms.cpp
- 
-Building target: 05GraphAlgorithms
-Invoking: GCC C++ Linker
-g++  -o "05GraphAlgorithms"  ./src/05GraphAlgorithms.o   
-Finished building target: 05GraphAlgorithms
- 
+make: Nothing to be done for `all'.
 
-11:44:53 Build Finished (took 5s.134ms)
+11:30:46 Build Finished (took 62ms)
 

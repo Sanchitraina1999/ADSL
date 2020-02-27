@@ -1,0 +1,18 @@
+//============================================================================
+// Name        : 06Hashing.cpp
+// Author      : Sanchit Raina
+// Version     :
+// Copyright   : https://www.github.com/Sanchitraina1999/ADSL
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+/*
+
+Implement all the functions of a dictionary (ADT) using hashing.
+Data: Set of (key, value) pairs, Keys are mapped to values, Keys
+must be comparable, Keys must be unique Standard Operations:
+Insert(key, value), Find(key), Delete(key)
+(Use linear probing with and without replacement. Calculate the
+average search cost for both.)
+
+*/

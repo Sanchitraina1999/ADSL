@@ -6591,3 +6591,70 @@ Invoking: GCC C++ Linker
 g++  -o "05GraphAlgorithms"  ./src/05GraphAlgorithms.o   
 Finished building target: 05GraphAlgorithms
  
+11:28:15 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
+make all 
+Building file: ../src/05GraphAlgorithms.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/05GraphAlgorithms.d" -MT"src/05GraphAlgorithms.d" -o "src/05GraphAlgorithms.o" "../src/05GraphAlgorithms.cpp"
+Finished building: ../src/05GraphAlgorithms.cpp
+ 
+Building target: 05GraphAlgorithms
+Invoking: GCC C++ Linker
+g++  -o "05GraphAlgorithms"  ./src/05GraphAlgorithms.o   
+Finished building target: 05GraphAlgorithms
+ 
+11:28:19 **** Build of configuration Debug for project 06Hashing ****
+make all 
+Building file: ../src/06Hashing.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/06Hashing.d" -MT"src/06Hashing.d" -o "src/06Hashing.o" "../src/06Hashing.cpp"
+../src/06Hashing.cpp: In member function ‘void HashTable::withinsert(node)’:
+../src/06Hashing.cpp:121:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if(HT[l].key.length()%n==l)
+Finished building: ../src/06Hashing.cpp
+ 
+Building target: 06Hashing
+Invoking: GCC C++ Linker
+g++  -o "06Hashing"  ./src/06Hashing.o   
+                             ^
+Finished building target: 06Hashing
+ 
+11:28:22 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+make: Nothing to be done for `all'.
+11:30:27 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
+make all 
+make: Nothing to be done for `all'.
+11:30:27 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+Building file: ../src/06Hashing.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/06Hashing.d" -MT"src/06Hashing.d" -o "src/06Hashing.o" "../src/06Hashing.cpp"
+../src/06Hashing.cpp: In member function ‘void HashTable::withinsert(node)’:
+../src/06Hashing.cpp:121:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if(HT[l].key.length()%n==l)
+                             ^
+../src/06Hashing.cpp: In member function ‘void HashTable::create()’:
+../src/06Hashing.cpp:165:10: error: base operand of ‘->’ has non-pointer type ‘node’
+   cin>>nn->key;
+          ^
+make: *** [src/06Hashing.o] Error 1
+11:30:46 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
+make all 
+make: Nothing to be done for `all'.
+11:30:46 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+Building file: ../src/06Hashing.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/06Hashing.d" -MT"src/06Hashing.d" -o "src/06Hashing.o" "../src/06Hashing.cpp"
+../src/06Hashing.cpp: In member function ‘void HashTable::withinsert(node)’:
+../src/06Hashing.cpp:121:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if(HT[l].key.length()%n==l)
+                             ^
+Finished building: ../src/06Hashing.cpp
+ 
+Building target: 06Hashing
+Invoking: GCC C++ Linker
+g++  -o "06Hashing"  ./src/06Hashing.o   
+Finished building target: 06Hashing
+ 
