@@ -1,598 +1,327 @@
-//============================================================================
-// Name        : 02BinarySearchTree.cpp
-// Author      : Sanchit Raina
-// Version     :
-// Copyright   : https://github.com/Sanchitraina1999/ADSL/blob/master/02BinarySearchTree/src/02BinarySearchTree.cpp
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 /*
+
  A Dictionary stores keywords & its meanings. Provide facility for
 adding new keywords, deleting keywords, updating values of any
 entry, assign a given tree into another tree (=). Provide facility to
 display whole data sorted in ascending/ Descending order. Also find
 how many maximum comparisons may require for finding any
 keyword. Use Binary Search Tree for implementation.
- */
-
-#include <iostream>
-#include <vector>
-#include <string.h>
-using namespace std;
-
-class node{
-	string key;
-	vector<string> meanings;
-	node *left, *right;
-public:
-	node(){
-		left=right=NULL;
-	}
-	friend class BST;
-};
-
-class BST{
-	node *root;
-public:
-	BST(){
-		root=NULL;
-	}
-	void add();
-	void deleteKeyword();
-	void updatemeaning();
-	void displayASC();
-	void displayDESC();
-	void copy();
-	void comparisons();
-
-	void inorderRecursive(node *);
-	void RVLorderREcusive(node *);
-	node* search(string);
-	int searchwithcomparisons(string);
-	node* parent(node*);
-
-	friend class node;
-};
-
-void BST::add(){
-		int n;
-		string meaning;
-
-		node *temp= new node(); //temp is the new node to be added to the tree
-		cout<<"\nEnter keyword : ";
-		cin>>temp->key;
-		cout<<"\nNumbers of meanings you want to enter for "<<temp->key<<" key";
-		cin>>n;
-		cout<<"Enter "<<n<<" meanings";
-		cout<<endl;
-		while(n--){
-			cout<<">>";
-			cin>>meaning;
-			temp->meanings.push_back(meaning);
-		}
-
-		if(root==NULL){
-			root=temp;
-			cout<<"\n"<<root->key<<" added as ROOT node of the Binary Search Tree";
-		}
-		else{
-			node *temp1=root;       //temp1 is for primary root nodes at each level
-			int flag=0;           //flag 0 implies new node has NOT YET been added
-			while(flag==0){
-				if(temp->key.compare(temp1->key)<0){     //s1.compare(s2) returns a value < 0 (s1 is smaller then s2)
-					if(temp1->left==NULL){
-						temp1->left=temp;
-						cout<<"\n"<<temp->key<<" added to the left of "<<temp1->key;
-						flag=1;
-					}
-					else{
-						temp1=temp1->left;
-					}
-				}
-				else if(temp->key.compare(temp1->key)>0){
-					if(temp1->right==NULL){
-						temp1->right=temp;
-						cout<<"\n"<<temp->key<<" added to the right of "<<temp1->key;
-						flag=1;
-					}
-					else{
-						temp1=temp1->right;
-					}
-				}
-				else
-					cout<<"\n"<<temp->key<<" already exists in the dictionary";
-			}
-		}
-}
-
-void BST::displayASC(){
-	if(root)
-		inorderRecursive(root);
-	else
-		cout<<"\nDictionary has no keywords";
-}
-
-void BST::inorderRecursive(node* root){
-	if(root){
-		inorderRecursive(root->left);
-			cout<<root->key<<" :>> ";
-			for(unsigned int i=0;i<root->meanings.size();i++)
-				cout<<root->meanings[i]<<" ";
-			cout<<endl;
-		inorderRecursive(root->right);
-	}
-}
-
-void BST::displayDESC(){
-	if(root)
-		RVLorderREcusive(root);
-	else
-		cout<<"\nDictionary has no keywords";
-}
-
-void BST::RVLorderREcusive(node *root){
-	if(root){
-		RVLorderREcusive(root->right);
-			cout<<root->key<<" :>> ";
-			for(unsigned int i=0;i<root->meanings.size();i++)
-				cout<<root->meanings[i]<<" ";
-			cout<<endl;
-		RVLorderREcusive(root->left);
-	}
-}
-
-void BST::updatemeaning(){
-	char choice='y';
-	string keyword,meaningChange,changed;
-	cout<<"\nEnter the keyword for which you want to update the meanings";
-	cin>>keyword;
-	node* temp = search(keyword);
-	if(temp){
-		cout<<temp->meanings.size()<<" meanings exist for keyword: "<<keyword<<" , they are as follows: "<<endl;
-		for(int i=0;i<temp->meanings.size();i++){
-			cout<<temp->meanings[i]<<" ";
-			cout<<"\n";
-		}
-		while(choice=='y'){
-			int found=0;
-			cout<<"\nMeaning you want to change: ";
-			cin>>meaningChange;
-			cout<<"\nWhat do you want "<<meaningChange<<" to change with ?: ";
-			cin>>changed;
-			for(int i=0;i<temp->meanings.size();i++){
-				if(temp->meanings[i].compare(meaningChange)==0){
-					cout<<"\n "<<temp->meanings[i]<<" successfully changed to ";
-					temp->meanings[i]=changed;
-					cout<<temp->meanings[i];
-					found=1;
-				}
-			}
-			if(found==0)
-				cout<<"No such meaning ("<<meaningChange<<") exists for keyword "<<keyword<<" in the dictionary";
-			else{
-				cout<<"\nThe dictionary is updated as : "<<endl;
-				displayASC();
-			}
-			cout<<"\nDo you want to change more meanings of the keyword "<<keyword<<" ?: (y/n)";
-			cin>>choice;
-		}
-	}
-	else{
-			cout<<"\n"<<keyword	<<" keyword not found in the dictionary";
-		}
-}
-
-node* BST::search(string keyword){
-	int found=0;
-	while(found==0){
-		if (root->key.compare(keyword) < 0){
-			if(root->right!=NULL)
-				root = root->right;
-			else
-				return NULL;
-		}
-		else if (root->key.compare(keyword) > 0){
-			if(root->left!=NULL)
-				root = root->left;
-			else
-				return NULL;
-		}
-		else{
-			found = 1;
-			return root;
-		}
-	}
-}
-
-node* BST::parent(node* temp){
-	int look=0;
-	node* temp_root=root;
-	if(temp==root)
-		return NULL;
-	while(look==0){
-		if(temp->key.compare(temp_root->key)>0){
-			if(temp_root->right->key==temp->key || temp_root->left->key==temp->key)
-				return temp_root;
-			temp_root=temp_root->right;
-		}
-		if(temp->key.compare(temp_root->key)<0){
-			if(temp_root->right->key==temp->key || temp_root->left->key==temp->key)
-				return temp_root;
-			temp_root=temp_root->left;
-		}
-	}
-}
-
-void BST::deleteKeyword(){
-	cout<<"\nDictionary is as follows:"<<endl;
-	displayASC();
-	string keyword;
-	cout<<"\nEnter the keyword you want to delete from the dictionary: ";
-	cin>>keyword;
-	//pending
-}
-
-void BST::copy(){
-	//pending
-}
-
-void BST::comparisons(){
-	string keyword;
-	int maxx;
-	cout<<"\nEnter the keyword for which you want to calculate the maximum comparisons";
-	cin>>keyword;
-	maxx = searchwithcomparisons(keyword);
-	cout<<"\nNumber of comparisons to find the keyword "<<keyword<<" in the dictionary are :"<<endl;
-	cout<<maxx;
-}
-
-int BST::searchwithcomparisons(string keyword){
-	int found=0,comparisons=0;
-	while(found==0){
-		if (root->key.compare(keyword) < 0){
-			if(root->right!=NULL){
-				root = root->right;
-				comparisons++;
-			}
-			else
-				return comparisons;
-		}
-		else if (root->key.compare(keyword) > 0){
-			if(root->left!=NULL){
-				root = root->left;
-				comparisons++;
-			}
-			else
-				return comparisons;
-		}
-		else{
-			found = 1;
-			return comparisons;
-		}
-	}
-}
-
-int main(){
-	BST t;
-	int choice;
-	char stop='y';
-	do{
-		cout<<"\n MAIN MENU ";
-		cout<<"\n 1. INSERT WORD with its MEANINGS";
-		cout<<"\n 2. PRINT DICTIONARY(ascending)";
-		cout<<"\n 3. PRINT DICTIONARY(descending)";
-		cout<<"\n 4. UPDATE ";
-		cout<<"\n 5. DELETE"; //pending
-		cout<<"\n 6. COPY";	//pending
-		cout<<"\n 7. MAX comparisons";
-		cin>>choice;
-		switch(choice){
-		case 1:
-			t.add();
-			break;
-		case 2:
-			t.displayASC();
-			break;
-		case 3:
-			t.displayDESC();
-			break;
-		case 4:
-			t.updatemeaning();
-			break;
-		case 5:
-			t.deleteKeyword();
-			break;
-		case 6:
-			t.copy();
-			break;
-		case 7:
-			t.comparisons();
-			break;
-		default:
-			cout<<"\nYou have entered a wrong choice";
-		}
-		cout<<"\n\nDo you want to continue (y/n)";
-		cin>>stop;
-	}
-	while(stop=='Y' || stop=='y');
-	return 0;
-}
-/*
-
-#include <iostream>
-#include <string>
-using namespace std;
-
-class node {
-	string key, meaning;
-	node *lchild, *rchild;
-
-public:
-
-	node() {
-		lchild = NULL;
-		rchild = NULL;
-	}
-	friend class bst;
-	string retkey() {
-		return key;
-	}
-};
-
-class bst {
-	node * root;
-
-public:
-	node* getdata(string);
-	node * insert(node*, string);
-	void inorder(node *);
-	void inorderev(node*);
-	void update(string);
-	void del(node *, string);
-	node* copy(node*);
-
-	node * retroot() {
-		return root;
-	}
-
-	void assignroot(node * temp) {
-		root = temp;
-	}
-	bst() {
-		root = NULL;
-	}
-};
-
-node* bst::copy(node* t) {
-	if (t == NULL)
-		return NULL;
-	else {
-		node* mr = new node();
-		mr->key = t->key;
-		mr->meaning=t->meaning;
-		mr->lchild = copy(t->lchild);
-		mr->rchild = copy(t->rchild);
-		return mr;
-	}
-}
-
-
-void bst::del(node* T, string fkey) {
-	if (T == NULL)
-		cout << "\n Empty Tree!";
-	else {
-		node* temp = root;
-		node* p;
-		while (temp->key != fkey && temp != NULL) {
-			p = temp;
-			if (temp->key < fkey)
-				temp = temp->rchild;
-
-			else if (temp->key > fkey)
-				temp = temp->lchild;
-
-		}
-		if (temp == NULL) {
-			cout << "\n Not found";
-			return;
-		}
-
-		if (temp->rchild == NULL && temp->lchild == NULL) {
-			if(temp==root){
-				root=NULL;
-				delete temp;
-				cout<<"\nDeleted Successfully";
-				return;
-			}
-			if (p->rchild == temp)
-				p->rchild = NULL;
-			else
-				p->lchild = NULL;
-			cout<<"\nDeleted Successfully";
-			delete temp;
-		} else if (temp->rchild == NULL && temp->lchild != NULL) {
-			if(temp==root){
-							root=temp->lchild;
-							delete temp;
-						}else{
-			if (p->rchild == temp)
-				p->rchild = temp->lchild;
-			else
-				p->lchild = temp->lchild;
-			cout<<"\nDeleted Successfully";
-			delete temp;
-						}
-		} else if (temp->lchild == NULL && temp->rchild != NULL) {
-			if(temp==root){
-				root=temp->rchild;
-				cout<<"\nDeleted Successfully";
-				delete temp;
-			}else{
-			if (p->rchild == temp)
-				p->rchild = temp->rchild;
-			else
-				p->lchild = temp->rchild;
-			cout<<"\nDeleted Successfully";
-			delete temp;
-			}
-
-		} else {
-			node* pre = temp->lchild;
-			node* prep = temp->lchild;
-
-			while (pre->rchild != NULL) {
-				prep = pre;
-				pre = pre->rchild;
-			}
-			temp->key = pre->key;
-			temp->meaning = pre->meaning;
-			if (pre->lchild != NULL)
-				prep->rchild = pre->lchild;
-			else
-				prep->rchild = NULL;
-			cout<<"\nDeleted Successfully";
-			delete pre;
-		}
-
-	}
-
-}
-
-void bst::update(string fkey) {
-	node* T=root;
-	while(T!=NULL){
-		if(T->key<fkey)
-			T=T->rchild;
-		else if(T->key>fkey)
-			T=T->lchild;
-		else if(T->key==fkey){
-			cout << "Enter new meaning";
-					getline(cin, T->meaning);
-					cout<<"\nUpated Successfully";
-					return;
-		}
-	}
-	if(T==NULL)
-		cout<<"\nEntered Node does not exists";
-}
-
-node* bst::getdata(string fkey) {
-	node * newnode = new node();
-	newnode->key = fkey;
-	cout << "\n Enter meaning";
-	getline(cin, newnode->meaning);
-	return newnode;
-}
-
-node * bst::insert(node * T, string fkey) {
-	if (T == NULL) {
-		return getdata(fkey);
-	} else if (T->key<fkey) {
-		T->rchild = insert(T->rchild, fkey);
-	} else if(T->key>fkey){
-		T->lchild = insert(T->lchild, fkey);
-	}else
-	{
-		cout<<"\nDuplicate entries not allowed.";
-	}
-
-	return T;
-
-}
-
-void bst::inorder(node *T) {
-	if(T==NULL){
-		if(root==NULL)
-			cout<<"\nEmpty Tree";
-		return;}
-	if (T != NULL) {
-		inorder(T->lchild);
-		cout << T->key << "\t" << T->meaning << "\n";
-		inorder(T->rchild);
-	}
-}
-
-void bst::inorderev(node *T) {
-	if(T==NULL){
-		if(root==NULL)
-					cout<<"\nEmpty Tree";
-		return;}
-	if (T != NULL) {
-		inorderev(T->rchild);
-		cout << T->key << "\t" << T->meaning << "\n";
-		inorderev(T->lchild);
-	}
-}
-
-int main() {
-	string s;
-	bst b1,b2;
-	int dec;
-	char dec1;
-	do {
-		cout
-				<< "\n MENU \n1.INSERT WORD \n2.PRINT DICTIONARY(ascending) \n3.PRINT DICTIONARY(descending) \n4.UPDATE \n5.DELETE \n6.COPY";
-		cin >> dec;
-
-		switch (dec) {
-		case 1:
-			do {
-				cin.ignore();
-				if (b1.retroot() == NULL) {
-					cout << "\n Enter Word";
-					getline(cin, s);
-					b1.assignroot(b1.insert(b1.retroot(), s));
-				} else {
-					cout << "\n Enter Word";
-					getline(cin, s);
-					b1.insert(b1.retroot(), s);
-				}
-
-				cout << "\n Do you want to continue inserting words ?(y/n)";
-				cin >> dec1;
-			} while (dec1 == 'y'|| dec1=='Y');
-
-			break;
-
-		case 2:
-			b1.inorder(b1.retroot());
-			break;
-
-		case 3:
-			b1.inorderev(b1.retroot());
-			break;
-		case 4:
-			if(b1.retroot()==NULL)
-					cout<<"\nEmpty Tree";
-			else{
-
-			cout << "\n Enter word to be updated";
-			cin.ignore();
-			getline(cin, s);
-			b1.update(s);
-			}
-			break;
-		case 5:
-			if(b1.retroot()==NULL)
-				cout<<"\nEmpty Tree";
-			else
-			{cout << "\n Enter word to be deleted";
-			cin.ignore();
-			getline(cin, s);
-			b1.del(b1.retroot(), s);
-			}break;
-		case 6:
-			node* root1 = b1.copy(b1.retroot());
-				cout << "\n\nCOPIED TREE SUCCESSFULLY\n";
-				b2.assignroot(root1);
-			break;
-		}
-		cout << "\nDo you want to continue?(y\\n)";
-		cin >> dec1;
-	} while (dec1 == 'y'||dec1=='Y');
-
-	return 0;
-}
-
 
 */
+
+#include <iostream>
+using namespace std;
+
+class node
+{
+    int data, meaning;
+    node *left, *right;
+
+public:
+    node()
+    {
+        left = right = NULL;
+    }
+    friend class bst;
+};
+
+class bst
+{
+    node *root;
+
+public:
+    bst();
+    void mainmenu();
+    void Add();
+    node* Delete(node*, int);
+    node* Findmax(node*);
+    void Update(int);
+    node* present(int);
+    void Assign();
+    void SortASC();
+    void SORTDESC();
+    int Comparisons(int);
+    int findcomparisons(int);
+    void inorderREC(node *);
+    void RVLorderREcusive(node *);
+    node* returnroot();
+};
+
+bst::bst()
+{
+    root = NULL;
+    cout << "\nDictionary made with root as NULL";
+}
+
+void bst::mainmenu()
+{
+    cout << "\n1. Add keywords and its meaning";
+    cout << "\n2. Delete keyword";
+    cout << "\n3. Update entries";
+    cout << "\n4. Assign this dictionary into another dictionary";
+    cout << "\n5. Sort in ascending order";
+    cout << "\n6. Sort in descending order";
+    cout << "\n7. Number of comparisons for finding a keyword";
+}
+
+void bst::Add()
+{
+    node *toBeAdded = new node();
+    cout << "\nEnter keyword and its meaning";
+    cin >> toBeAdded->data >> toBeAdded->meaning;
+    if (root == NULL)
+    {
+        root = toBeAdded;
+        cout << "\nAdded as root in bst";
+    }
+    else
+    {
+        int flag = 0;
+        node *current = root;
+        while (flag == 0)
+        {
+            if (current->data == toBeAdded->data)
+            {
+                cout << "\nSame data exists already in the dictionary";
+                flag = 1;
+                return;
+            }
+            else if (toBeAdded->data < current->data)
+            {
+                if (current->left != NULL)
+                    current = current->left;
+                else
+                {
+                    current->left = toBeAdded;
+                    flag = 1;
+                }
+            }
+            else
+            {
+                if (current->right != NULL)
+                    current = current->right;
+                else
+                {
+                    current->right = toBeAdded;
+                    flag = 1;
+                }
+            }
+        }
+        if (flag == 1)
+            cout << toBeAdded->data << " inserted";
+    }
+}
+
+node* bst::Delete(node* root,int key)
+{
+    node * temp ;
+    if(root==NULL)
+        cout<<"\nKeyword doesnt exist";
+    else if(key < root->data)
+        root->left = Delete(root->left,key);
+    else if(key > root->data)
+        root->right = Delete(root->right,key);
+    else{   //Element found
+        if(root->left && root->right){
+            //replace with largest in left subtree
+            temp = Findmax(root->left);
+            root->data = temp->data;
+            root->left = Delete(root->left,root->data);
+        }
+        else{
+            //ONE child condition
+            temp = root->left;
+            if(root->left==NULL)
+                root = root->right;
+            if(root->right==NULL)
+                root=root->left;
+            delete(temp);
+        }
+    }
+    return root;
+}
+
+node* bst::Findmax(node* root){
+    if(!root)
+        return NULL;
+    else if(root->right==NULL)
+        return root;
+    else
+        return (Findmax(root->right));    
+}
+
+void bst::Update(int key)
+{
+    if(root){
+        if(present(key)){
+            cout<<"Found Keyword "<< (present(key))->data <<" :>> "<< (present(key))->meaning;
+            cout<<"\nYou want to change the meaning to ____? : ";
+            cin>>(present(key))->meaning; 
+        }
+        else
+            cout<<"\nKeyword "<< key <<" is not present in the dictionary";
+    }
+    else
+        cout<<"\nDictionary empty";
+}
+
+node* bst::present(int key){
+    int flag = 0;
+    node* current=root;
+    while(true){
+        if(current->data==key){
+            return current;
+        }
+        else if(key > current->data){
+            current = current->right;
+            if(current->data<key)
+                return NULL;
+        }
+        else{
+            current=current->left;
+            if(current->data>key)
+                return NULL;
+        }
+    }
+}
+
+void bst::Assign()
+{
+    bst t1;
+    t1.SortASC();
+}
+
+void bst::SortASC()
+{
+    cout << "\nIncreasing order: ";
+    inorderREC(root);
+}
+
+void bst::inorderREC(node *root)
+{
+    if (root)
+    {
+        inorderREC(root->left);
+        cout << root->data << " :>> " << root->meaning << "\n";
+        inorderREC(root->right);
+    }
+    return;
+}
+
+void bst::SORTDESC()
+{
+    if (root)
+        RVLorderREcusive(root);
+    else
+        cout << "\nDictionary has no keywords\n";
+}
+
+void bst::RVLorderREcusive(node *root)
+{
+    if (root)
+    {
+        RVLorderREcusive(root->right);
+        cout << root->data << " :>> " << root->meaning << "\n";
+        RVLorderREcusive(root->left);
+    }
+}
+
+int bst::Comparisons(int key)
+{
+    if (!root)
+    {
+        cout << "\nTree is empty. 0 comparisons";
+    }
+    else
+    {
+        if (root->data == key)
+            return 1;
+        else
+            return findcomparisons(key);
+    }
+}
+
+int bst::findcomparisons(int key)
+{
+    int level = 0, flag = 0;
+    node *current = root;
+    while (flag == 0)
+    {
+        if (current->data == key)
+        {
+            level++;
+            flag = 1;
+        }
+        else if (key > current->data)
+        {
+            current = current->right;
+            if (current->data < key)
+            {
+                return level;
+            }
+            level++;
+        }
+        else if (key < current->data)
+        {
+            current = current->left;
+            if (current->data > key)
+            {
+                return level;
+            }
+            level++;
+        }
+    }
+    return level;
+}
+
+node* bst::returnroot(){
+    return root;
+}
+int main()
+{
+    bst t;
+up:
+    t.mainmenu();
+    char continu = 'y';
+    int choice, key, num;
+    cout << "\nEnter choice : ";
+    cin >> choice;
+    switch (choice)
+    {
+    case 1:
+        cout << "\nNumber of keywords : ";
+        cin >> num;
+        while (num--)
+            t.Add(); //done
+        break;
+    case 2:
+        cout<<"\nEnter keyword you want to delete : ";
+        cin>>key;
+        t.Delete(t.returnroot(),key);
+        break;
+    case 3:
+        cout<<"\nEnter the keyword you want to update";
+        cin>>key;
+        t.Update(key); 
+        break;
+    case 4:
+        t.Assign(); 
+        break;
+    case 5:
+        t.SortASC(); 
+        break;
+    case 6:
+        t.SORTDESC(); 
+        break;
+    case 7:
+        cout << "Enter key you want to search ? ";
+        cin >> key;
+        cout << "\nNumber of Comparisons for finding " << key << " are: " << t.Comparisons(key) << "\n"; //done
+        break;
+    }
+    cout << "\nDo you want to continue (y/n)";
+    cin >> continu;
+    if (continu == 'y')
+        goto up;
+    return 0;
+}
