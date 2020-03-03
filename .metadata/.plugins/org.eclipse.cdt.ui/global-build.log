@@ -6658,3 +6658,80 @@ Invoking: GCC C++ Linker
 g++  -o "06Hashing"  ./src/06Hashing.o   
 Finished building target: 06Hashing
  
+12:26:00 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
+make all 
+make: Nothing to be done for `all'.
+12:26:03 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+Building file: ../src/06Hashing.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/06Hashing.d" -MT"src/06Hashing.d" -o "src/06Hashing.o" "../src/06Hashing.cpp"
+../src/06Hashing.cpp: In member function ‘void HashTable::withinsert(node)’:
+../src/06Hashing.cpp:118:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if(HT[l].key.length()%n==l)
+                             ^
+Finished building: ../src/06Hashing.cpp
+ 
+Building target: 06Hashing
+Invoking: GCC C++ Linker
+g++  -o "06Hashing"  ./src/06Hashing.o   
+Finished building target: 06Hashing
+ 
+12:26:05 **** Build of configuration Debug for project 07Chaining ****
+make all 
+Building file: ../src/07Chaining.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/07Chaining.d" -MT"src/07Chaining.d" -o "src/07Chaining.o" "../src/07Chaining.cpp"
+../src/07Chaining.cpp: In member function ‘void HashTable::find()’:
+../src/07Chaining.cpp:121:5: warning: unused variable ‘v’ [-Wunused-variable]
+ int v,u;
+     ^
+../src/07Chaining.cpp: At global scope:
+../src/07Chaining.cpp:147:6: error: prototype for ‘void HashTable::withinsert(node)’ does not match any in class ‘HashTable’
+ void HashTable::withinsert(node nn)
+      ^
+../src/07Chaining.cpp:42:7: error: candidate is: void HashTable::withinsert()
+  void withinsert();
+       ^
+../src/07Chaining.cpp:199:6: error: prototype for ‘void HashTable::withoutinsert(node)’ does not match any in class ‘HashTable’
+ void HashTable::withoutinsert(node nn)
+      ^
+../src/07Chaining.cpp:41:7: error: candidate is: void HashTable::withoutinsert()
+  void withoutinsert();
+       ^
+../src/07Chaining.cpp: In member function ‘void HashTable::create()’:
+../src/07Chaining.cpp:247:22: error: no matching function for call to ‘HashTable::withoutinsert(node&)’
+      withoutinsert(nn);
+                      ^
+../src/07Chaining.cpp:247:22: note: candidate is:
+../src/07Chaining.cpp:41:7: note: void HashTable::withoutinsert()
+  void withoutinsert();
+       ^
+../src/07Chaining.cpp:41:7: note:   candidate expects 0 arguments, 1 provided
+../src/07Chaining.cpp:249:19: error: no matching function for call to ‘HashTable::withinsert(node&)’
+      withinsert(nn);
+                   ^
+../src/07Chaining.cpp:249:19: note: candidate is:
+../src/07Chaining.cpp:42:7: note: void HashTable::withinsert()
+  void withinsert();
+       ^
+../src/07Chaining.cpp:42:7: note:   candidate expects 0 arguments, 1 provided
+make: *** [src/07Chaining.o] Error 1
+12:29:35 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
+make all 
+make: Nothing to be done for `all'.
+12:29:35 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+make: Nothing to be done for `all'.
+12:29:35 **** Incremental Build of configuration Debug for project 07Chaining ****
+make all 
+Building file: ../src/07Chaining.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/07Chaining.d" -MT"src/07Chaining.d" -o "src/07Chaining.o" "../src/07Chaining.cpp"
+../src/07Chaining.cpp:148:6: error: redefinition of ‘void HashTable::withinsert(node)’
+ void HashTable::withinsert(node nn)
+      ^
+../src/07Chaining.cpp:136:6: error: ‘void HashTable::withinsert(node)’ previously defined here
+ void HashTable::withinsert(node nn){
+      ^
+make: *** [src/07Chaining.o] Error 1

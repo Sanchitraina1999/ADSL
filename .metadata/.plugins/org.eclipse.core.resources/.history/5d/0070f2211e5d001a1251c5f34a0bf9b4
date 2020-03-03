@@ -140,39 +140,61 @@ void HashTable::withinsert(node nn){
 		HT[l].chain=-1;
 	}
 	else{
-		if(HT[l].key.length()%n==l){
-			int v,u;
-			v = l;
-			u=HT[l].chain;
 
-			while(u!=-1)
-			{
-				v=u;
-				u=HT[v].chain;
-			}
+	}
+}
+
+
+void HashTable::withinsert(node nn)
+{
+int l=nn.key.length()%n;
+
+		if(HT[l].key=="#")
+		{
+			HT[l]=nn;
+			HT[l].chain=-1;
+		}
+		else
+		{
+			if(HT[l].key.length()%n==l)
+			{int v,u;
+
+		v=l;
+		u=HT[l].chain;
+
+		while(u!=-1)
+		{
+		v=u;
+		u=HT[v].chain;
+		}
 				int i;
 				for(i=(l+1)%n;HT[i].key!="#";i=(i+1)%n);
 				HT[i]=nn;
 				HT[v].chain=i;
 				HT[i].chain=-1;
-		}
-		else{
-			node temp;
-			temp=HT[l];
-			HT[l]=nn;
-			HT[l].chain=-1;
-			int i;
-			for(i=(l+1)%n;HT[i].key!="#";i=(i+1)%n);
-			HT[i]=temp;
 
-			int k;
-			for(k=0;HT[k].chain!=l;k=(k+1)%n);
-			HT[k].chain=i;
-			HT[i].chain=-1;
 			}
+			else
+			{
+				node temp;
+				temp=HT[l];
+				HT[l]=nn;
+				HT[l].chain=-1;
+				int i;
+				for(i=(l+1)%n;HT[i].key!="#";i=(i+1)%n);
+				HT[i]=temp;
+
+				int k;
+				for(k=0;HT[k].chain!=l;k=(k+1)%n);
+				HT[k].chain=i;
+				HT[i].chain=-1;
+			}
+
+
 		}
-	for(int i=0;i<n;i++)
-		cout<<"\n"<<HT[i].key<<"\t"<<HT[i].chain;
+		for(int i=0;i<n;i++)
+cout<<"\n"<<HT[i].key<<"\t"<<HT[i].chain;
+
 }
 
 void HashTable::withoutinsert(node nn)
