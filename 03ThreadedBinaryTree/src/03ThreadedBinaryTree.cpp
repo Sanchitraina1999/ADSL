@@ -162,6 +162,7 @@ public:
 			current = nextInOrder(current);
 		}
 	}
+
 	node* nextInOrder(node* current)
 	{
 		if (current->rbit == 0) {
