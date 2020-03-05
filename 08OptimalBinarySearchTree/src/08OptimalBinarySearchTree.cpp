@@ -46,6 +46,7 @@ public:
 	void postorder(node* );
 	void preorder(node* );
 	void inorder(node*);
+	void mainmenu();
 };
 
 void OBST::optimal(char, float, float){
@@ -54,5 +55,19 @@ void OBST::optimal(char, float, float){
 
 int main(){
 	OBST t;
+	int choice;
+	char yn='y';
+up:
+	t.mainmenu();
+	cin>>choice;
+	switch(choice){
+	case 1:
+
+		break;
+	}
+	cout<<"\nDo you want to continue? (y/n) : ";
+	cin>>yn;
+	if(yn=='y')
+		goto up;
 	return 0;
 }

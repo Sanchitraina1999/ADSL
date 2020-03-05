@@ -6838,3 +6838,85 @@ make: Nothing to be done for `all'.
 12:03:29 **** Incremental Build of configuration Debug for project 07Chaining ****
 make all 
 make: Nothing to be done for `all'.
+12:45:38 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
+make all 
+make: Nothing to be done for `all'.
+12:45:38 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+make: Nothing to be done for `all'.
+12:45:39 **** Incremental Build of configuration Debug for project 07Chaining ****
+make all 
+Building file: ../src/07Chaining.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/07Chaining.d" -MT"src/07Chaining.d" -o "src/07Chaining.o" "../src/07Chaining.cpp"
+../src/07Chaining.cpp: In member function ‘void HashTable::withinsert(node)’:
+../src/07Chaining.cpp:143:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(HT[l].key.length()%n==l){
+                            ^
+../src/07Chaining.cpp: In member function ‘void HashTable::find()’:
+../src/07Chaining.cpp:125:14: warning: ‘l’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  int l = HT[l].chain;
+              ^
+Finished building: ../src/07Chaining.cpp
+ 
+Building target: 07Chaining
+Invoking: GCC C++ Linker
+g++  -o "07Chaining"  ./src/07Chaining.o   
+Finished building target: 07Chaining
+ 
+12:45:42 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+make: Nothing to be done for `all'.
+12:46:35 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
+make all 
+make: Nothing to be done for `all'.
+12:46:35 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+make: Nothing to be done for `all'.
+12:46:35 **** Incremental Build of configuration Debug for project 07Chaining ****
+make all 
+make: Nothing to be done for `all'.
+12:46:36 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+make: Nothing to be done for `all'.
+12:46:41 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
+make all 
+make: Nothing to be done for `all'.
+12:46:41 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+make: Nothing to be done for `all'.
+12:46:41 **** Incremental Build of configuration Debug for project 07Chaining ****
+make all 
+make: Nothing to be done for `all'.
+12:46:42 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+make: Nothing to be done for `all'.
+12:49:35 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
+make all 
+make: Nothing to be done for `all'.
+12:49:35 **** Incremental Build of configuration Debug for project 06Hashing ****
+make all 
+make: Nothing to be done for `all'.
+12:49:36 **** Incremental Build of configuration Debug for project 07Chaining ****
+make all 
+Building file: ../src/07Chaining.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/07Chaining.d" -MT"src/07Chaining.d" -o "src/07Chaining.o" "../src/07Chaining.cpp"
+../src/07Chaining.cpp: In member function ‘void HashTable::withinsert(node)’:
+../src/07Chaining.cpp:143:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if(HT[l].key.length()%n==l){
+                            ^
+../src/07Chaining.cpp: In member function ‘void HashTable::find()’:
+../src/07Chaining.cpp:125:14: warning: ‘l’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  int l = HT[l].chain;
+              ^
+Finished building: ../src/07Chaining.cpp
+ 
+Building target: 07Chaining
+Invoking: GCC C++ Linker
+g++  -o "07Chaining"  ./src/07Chaining.o   
+Finished building target: 07Chaining
+ 
+12:49:38 **** Incremental Build of configuration Debug for project 07Chaining ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,9 +1,9 @@
 //============================================================================
 // Name        : 07Chaining.cpp
 // Author      : Sanchit Raina
-// Version     : 2.0
+// Version     :
 // Copyright   : https://www.github.com/Sanchitraina1999/ADSL
-// Description : Hello World in C++, ANSI-style
+// Description : Hello World in C++, Ansi-style
 //============================================================================
 
 /*
@@ -237,17 +237,12 @@ int main(){
 		cout<<"\n3. Modify";
 		cout<<"\n4. Exit";
 		cin>>n;
-		switch(n){
-		case 1:
+		if(n==1)
 			obj.find();
-			break;
-		case 2:
+		else if(n==2)
 			obj.del();
-			break;
-		case 3:
+		else if(n==3)
 			obj.modify();
-			break;
-		}
 
 	}while(n!=4);
 	return 0;

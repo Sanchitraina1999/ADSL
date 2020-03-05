@@ -1,6 +1,6 @@
-12:03:29 **** Incremental Build of configuration Debug for project 06Hashing ****
+12:49:35 **** Incremental Build of configuration Debug for project 06Hashing ****
 make all 
 make: Nothing to be done for `all'.
 
-12:03:29 Build Finished (took 63ms)
+12:49:35 Build Finished (took 70ms)
 
