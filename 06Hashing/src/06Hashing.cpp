@@ -56,14 +56,14 @@ void HashTable::del()
 	{
 		HT[l].key="#";
 		HT[l].meaning="";
-		cout<<"\nDELETED SUCCESSFULLY";
+		cout<<"\nDELETED SUCCESSFULLY";	//element deleted
 	}
 	else
 	{
 		int i;
 		for(i=(l+1)%n;i!=l&&HT[i].key!=k;i=(i+1)%n);
 		if(i==l)
-			cout<<"\nENTRY DOES NOT EXISTS";
+			cout<<"\nENTRY DOES NOT EXISTS";	//element doesn't exist
 		else
 		{
 			HT[i].key="#";
@@ -174,12 +174,15 @@ int main() {
 	HashTable obj(n);
 	obj.create();
 	do{
-		cout<<"\nSELECT OPTION\n1. Retrieve\n2. Delete\n3. Exit";
+		cout<<"\nSELECT OPTION : ";
+		cout<<"\n1. Retrieve";
+		cout<<"\n2. Delete";
+		cout<<"\n3. Exit";
 		cin>>n;
 		if(n==1)
-		obj.find();
+			obj.find();
 		if(n==2)
-		obj.del();
+			obj.del();
 	}
 	while(n!=3);
 	return 0;
