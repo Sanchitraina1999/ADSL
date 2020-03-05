@@ -64,6 +64,12 @@ up:
 	case 1:
 
 		break;
+	case 2:
+
+		break;
+	case 3:
+
+		break;
 	}
 	cout<<"\nDo you want to continue? (y/n) : ";
 	cin>>yn;
