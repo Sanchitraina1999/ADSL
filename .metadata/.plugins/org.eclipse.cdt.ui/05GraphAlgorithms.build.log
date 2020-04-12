@@ -1,6 +1,6 @@
-12:29:35 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
+12:49:35 **** Incremental Build of configuration Debug for project 05GraphAlgorithms ****
 make all 
 make: Nothing to be done for `all'.
 
-12:29:35 Build Finished (took 75ms)
+12:49:35 Build Finished (took 63ms)
 

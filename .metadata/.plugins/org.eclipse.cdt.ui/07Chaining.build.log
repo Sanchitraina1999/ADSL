@@ -1,15 +1,6 @@
-12:29:35 **** Incremental Build of configuration Debug for project 07Chaining ****
+12:49:38 **** Incremental Build of configuration Debug for project 07Chaining ****
 make all 
-Building file: ../src/07Chaining.cpp
-Invoking: GCC C++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/07Chaining.d" -MT"src/07Chaining.d" -o "src/07Chaining.o" "../src/07Chaining.cpp"
-../src/07Chaining.cpp:148:6: error: redefinition of ‘void HashTable::withinsert(node)’
- void HashTable::withinsert(node nn)
-      ^
-../src/07Chaining.cpp:136:6: error: ‘void HashTable::withinsert(node)’ previously defined here
- void HashTable::withinsert(node nn){
-      ^
-make: *** [src/07Chaining.o] Error 1
+make: Nothing to be done for `all'.
 
-12:29:36 Build Finished (took 189ms)
+12:49:38 Build Finished (took 78ms)
 
